@@ -1,0 +1,52 @@
+package com.team1160.feathers.subsystems;
+
+import edu.wpi.first.wpilibj.Jaguar;
+import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.command.Subsystem;
+
+import com.team1160.feathers.OI;
+import com.team1160.feathers.api.Constants;
+import com.team1160.feathers.commands.AssistClimb;
+import com.team1160.feathers.commands.ManualDrive;
+
+public class Drivetrain extends Subsystem {
+
+	Jaguar right, left;
+	Joystick drive;
+	
+	private static Drivetrain instance;
+	
+	public static Drivetrain getInstance(){
+		if(instance == null){
+			instance = new Drivetrain();
+		}
+		return instance;
+	}
+	
+	
+	private Drivetrain() {
+		right = new Jaguar(Constants.DT_RIGHT_JAG_CAR, Constants.DT_RIGHT_JAG_CHAN);
+		left = new Jaguar(Constants.DT_LEFT_JAG_CAR, Constants.DT_LEFT_JAG_CHAN);
+		drive = OI.getInstance().getDriveStick();
+	}
+
+	protected void initDefaultCommand() {
+		this.setDefaultCommand(new ManualDrive());
+	}
+
+	public void manualDrive(){
+		left.set(drive.getX()-drive.getY());
+		right.set(drive.getX()+drive.getY());
+	}
+	
+	public void assistClimb(){
+		left.set(Constants.ClimbAssist);
+		right.set(-Constants.ClimbAssist);
+	}
+	
+	public void halt(){
+		left.set(0);
+		right.set(0);
+	}
+
+}
