@@ -27,7 +27,6 @@ public class Drivetrain extends Subsystem {
 	private Drivetrain() {
 		right = new Jaguar(Constants.DT_RIGHT_JAG_CAR, Constants.DT_RIGHT_JAG_CHAN);
 		left = new Jaguar(Constants.DT_LEFT_JAG_CAR, Constants.DT_LEFT_JAG_CHAN);
-		drive = OI.getInstance().getDriveStick();
 	}
 
 	protected void initDefaultCommand() {
@@ -35,6 +34,9 @@ public class Drivetrain extends Subsystem {
 	}
 
 	public void manualDrive(){
+		if(drive == null){
+			drive = OI.getInstance().getDriveStick();
+		}
 		left.set(drive.getX()-drive.getY());
 		right.set(drive.getX()+drive.getY());
 	}

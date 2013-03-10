@@ -2,6 +2,7 @@ package com.team1160.feathers;
 
 import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.commands.AssistClimb;
+import com.team1160.feathers.commands.ManualDrive;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
@@ -12,7 +13,7 @@ public class OI {
 	protected Joystick driveStick;
 	
 	protected Button test;
-	
+	protected Button test2;
 	protected static OI instance;
 	
 	public static OI getInstance(){
@@ -26,6 +27,8 @@ public class OI {
 		driveStick = new Joystick(Constants.DRIVESTICK);
 		test = new JoystickButton(driveStick, 1);
 		test.whenPressed(new AssistClimb());
+		test2 = new JoystickButton(driveStick, 2);
+		test2.whenPressed(new ManualDrive());
 	}
 	
 	public Joystick getDriveStick(){

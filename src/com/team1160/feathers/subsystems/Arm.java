@@ -10,7 +10,7 @@ public class Arm extends Subsystem {
 	protected Victor motor;
 	protected DigitalServo grip;
 	
-	private Arm instance;
+	private static Arm instance;
 	
 	public Arm getInstance(){
 		if(instance == null){
