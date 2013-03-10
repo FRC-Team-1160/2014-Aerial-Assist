@@ -11,8 +11,8 @@ import com.team1160.feathers.commands.ManualDrive;
 
 public class Drivetrain extends Subsystem {
 
-	Jaguar right, left;
-	Joystick drive;
+	protected Jaguar right, left;
+	protected Joystick drive;
 	
 	private static Drivetrain instance;
 	
@@ -47,6 +47,14 @@ public class Drivetrain extends Subsystem {
 	public void halt(){
 		left.set(0);
 		right.set(0);
+	}
+	
+	public void setRight(double set){
+		right.set(set);
+	}
+	
+	public void setLeft(double set){
+		left.set(set);
 	}
 
 }

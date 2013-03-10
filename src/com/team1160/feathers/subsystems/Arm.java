@@ -1,9 +1,15 @@
 package com.team1160.feathers.subsystems;
 
+import com.team1160.feathers.api.DigitalServo;
+
+import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class Arm extends Subsystem {
 
+	protected Victor motor;
+	protected DigitalServo grip;
+	
 	private Arm instance;
 	
 	public Arm getInstance(){
@@ -13,8 +19,8 @@ public class Arm extends Subsystem {
 		return instance;
 	}
 	
-	public Arm() {
-		// TODO Auto-generated constructor stub
+	private Arm() {
+		
 	}
 
 	public Arm(String name) {
@@ -22,7 +28,6 @@ public class Arm extends Subsystem {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
 	protected void initDefaultCommand() {
 		// TODO Auto-generated method stub
 

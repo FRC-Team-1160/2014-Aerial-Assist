@@ -4,12 +4,10 @@ import com.team1160.feathers.subsystems.Drivetrain;
 
 import edu.wpi.first.wpilibj.command.Command;
 
-public class ManualDrive extends Command {
+public class ManualDrive extends CommandBase {
 
-	Drivetrain dt;
 	
 	public ManualDrive() {
-		dt = Drivetrain.getInstance();
 		requires(dt);
 	}
 
