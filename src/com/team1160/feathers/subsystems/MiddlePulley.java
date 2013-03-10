@@ -1,0 +1,33 @@
+package com.team1160.feathers.subsystems;
+
+import com.team1160.feathers.api.Constants;
+import com.team1160.feathers.api.DigitalServo;
+
+import edu.wpi.first.wpilibj.Jaguar;
+import edu.wpi.first.wpilibj.command.Subsystem;
+
+public class MiddlePulley extends Subsystem{
+
+	protected DigitalServo angle;
+	protected Jaguar am;
+	
+	protected static MiddlePulley instance;
+	
+	public static MiddlePulley getInstance(){
+		if(instance == null){
+			instance = new MiddlePulley();
+		}
+		return instance;
+	}
+	
+	protected MiddlePulley(){
+		angle = new DigitalServo(Constants.P_TOP_SERVO_CAR, Constants.P_TOP_SERVO_CHAN);
+		am = new Jaguar(Constants.P_TOP_JAG_CAR, Constants.P_TOP_JAG_CHAN);
+	}
+	
+	protected void initDefaultCommand() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
