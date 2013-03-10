@@ -29,7 +29,22 @@ public class LeftPulley extends Subsystem{
 	}
 	
 	protected void initDefaultCommand() {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub		
+	}
+	
+	public void setAngle(double set){
+		this.angle.set(set);
+	}
+	
+	public void setVelocity(double set){
+		this.am.set(set);
+	}
+
+	public void lock(boolean lock){
+		if(lock){
+			this.lock.set(Constants.P_LEFT_LOCK_LOCKED);
+		}else{
+			this.lock.set(Constants.P_LEFT_LOCK_OPEN);
+		}
 	}
 }

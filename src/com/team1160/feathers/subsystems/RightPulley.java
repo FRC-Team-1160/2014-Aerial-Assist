@@ -32,4 +32,20 @@ public class RightPulley extends Subsystem{
 		// TODO Auto-generated method stub
 		
 	}
+	public void setAngle(double set){
+		this.angle.set(set);
+	}
+	
+	public void setVelocity(double set){
+		this.am.set(set);
+	}
+
+	public void lock(boolean lock){
+		if(lock){
+			this.lock.set(Constants.P_RIGHT_LOCK_LOCKED);
+		}else{
+			this.lock.set(Constants.P_RIGHT_LOCK_OPEN);
+		}
+	}
+
 }

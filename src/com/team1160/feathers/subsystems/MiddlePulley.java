@@ -25,9 +25,17 @@ public class MiddlePulley extends Subsystem{
 		am = new Jaguar(Constants.P_TOP_JAG_CAR, Constants.P_TOP_JAG_CHAN);
 	}
 	
+	
 	protected void initDefaultCommand() {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub	
+	}
+	
+	public void setAngle(double set){
+		this.angle.set(set);
+	}
+	
+	public void setVelocity(double set){
+		this.am.set(set);
 	}
 
 }
