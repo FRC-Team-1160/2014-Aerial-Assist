@@ -14,7 +14,7 @@ public class Drivetrain extends Subsystem {
 	protected Jaguar right, left;
 	protected Joystick drive;
 	
-	private static Drivetrain instance;
+	private static Drivetrain instance = null;
 	
 	public static Drivetrain getInstance(){
 		if(instance == null){

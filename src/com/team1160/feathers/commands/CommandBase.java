@@ -1,14 +1,21 @@
 package com.team1160.feathers.commands;
 
+import com.team1160.feathers.OI;
 import com.team1160.feathers.subsystems.Drivetrain;
 
 import edu.wpi.first.wpilibj.command.Command;
 
 public class CommandBase extends Command {
+	
+	
 	protected static Drivetrain dt;
 	
-	protected void initialize() {
+	public static void init(){
 		dt = Drivetrain.getInstance();
+		OI.getInstance();
+	}
+	
+	protected void initialize() {
 	}
 
 	protected void execute() {

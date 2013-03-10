@@ -1,8 +1,5 @@
 package com.team1160.feathers.commands;
 
-import com.team1160.feathers.subsystems.Drivetrain;
-
-import edu.wpi.first.wpilibj.command.Command;
 
 public class ManualDrive extends CommandBase {
 
