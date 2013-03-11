@@ -28,7 +28,6 @@ public class LeftPulley extends Subsystem{
 	}
 	
 	protected LeftPulley(){
-		lock = new Servo(Constants.P_LEFT_LOCK_CAR, Constants.P_LEFT_LOCK_CHAN);
 		angle = new DigitalServo(Constants.P_LEFT_SERVO_CAR, Constants.P_LEFT_SERVO_CHAN);
 		am = new Jaguar(Constants.P_LEFT_JAG_CAR, Constants.P_LEFT_JAG_CHAN);
 	}
@@ -57,13 +56,5 @@ public class LeftPulley extends Subsystem{
 			stick = OI.getInstance().getLeftStick();
 		}
 		am.set(stick.getY());
-	}
-
-	public void lock(boolean lock){
-		if(lock){
-			this.lock.set(Constants.P_LEFT_LOCK_LOCKED);
-		}else{
-			this.lock.set(Constants.P_LEFT_LOCK_OPEN);
-		}
 	}
 }

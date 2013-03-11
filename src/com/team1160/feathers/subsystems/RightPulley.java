@@ -28,7 +28,6 @@ public class RightPulley extends Subsystem{
 	}
 	
 	protected RightPulley(){
-		lock = new Servo(Constants.P_RIGHT_LOCK_CAR, Constants.P_RIGHT_LOCK_CHAN);
 		angle = new DigitalServo(Constants.P_RIGHT_SERVO_CAR, Constants.P_RIGHT_SERVO_CHAN);
 		am = new Jaguar(Constants.P_RIGHT_JAG_CAR, Constants.P_RIGHT_JAG_CHAN);
 	}	
@@ -57,14 +56,4 @@ public class RightPulley extends Subsystem{
 		}
 		am.set(stick.getY());
 	}
-
-	
-	public void lock(boolean lock){
-		if(lock){
-			this.lock.set(Constants.P_RIGHT_LOCK_LOCKED);
-		}else{
-			this.lock.set(Constants.P_RIGHT_LOCK_OPEN);
-		}
-	}
-
 }

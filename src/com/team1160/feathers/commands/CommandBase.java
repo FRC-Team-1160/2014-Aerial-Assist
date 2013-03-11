@@ -13,12 +13,16 @@ public class CommandBase extends Command {
         protected static LeftPulley lp;
         protected static RightPulley rp;
         protected static MiddlePulley mp;
+        protected static RightLock rl;
+        protected static LeftLock ll;
 	
 	public static void init(){
 		dt = Drivetrain.getInstance();
                 lp = LeftPulley.getInstance();
                 rp = RightPulley.getInstance();
                 mp = MiddlePulley.getInstance();
+                ll = LeftLock.getInstance();
+                rl = RightLock.getInstance();
 		OI.getInstance();
 	}
 	
