@@ -3,6 +3,7 @@ package com.team1160.feathers.subsystems;
 import com.team1160.feathers.OI;
 import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.api.DigitalServo;
+import com.team1160.feathers.commands.pulleys.middle.MiddleNothing;
 
 import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.Joystick;
@@ -31,7 +32,7 @@ public class MiddlePulley extends Subsystem{
 	
 	
 	protected void initDefaultCommand() {
-		// TODO Auto-generated method stub	
+		setDefaultCommand(new MiddleNothing());
 	}
 	
 	public void setAngle(double set){

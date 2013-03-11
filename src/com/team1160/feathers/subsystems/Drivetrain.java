@@ -6,7 +6,6 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 
 import com.team1160.feathers.OI;
 import com.team1160.feathers.api.Constants;
-import com.team1160.feathers.commands.drivetrain.AssistClimb;
 import com.team1160.feathers.commands.drivetrain.ManualDrive;
 
 public class Drivetrain extends Subsystem {

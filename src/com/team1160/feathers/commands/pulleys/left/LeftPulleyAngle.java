@@ -5,7 +5,7 @@ import com.team1160.feathers.commands.CommandBase;
 public class LeftPulleyAngle extends CommandBase {
     
     
-    public LeftPulleyAngle(double setTo){
+    public LeftPulleyAngle(){
         requires(lp);
     }
     
