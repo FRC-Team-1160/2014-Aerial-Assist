@@ -1,18 +1,18 @@
-package com.team1160.feathers.commands;
+package com.team1160.feathers.commands.pulleys.right;
+
+import com.team1160.feathers.commands.CommandBase;
 
 
 public class RightPulleyExtend extends CommandBase {
     
-    private double setTo;
     
-    public RightPulleyExtend(double setTo){
+    public RightPulleyExtend(){
         requires(rp);
-        this.setTo = setTo;
     }
     
     
     protected void execute(){
-        rp.setVelocity(setTo);
+        rp.joyVelocity();
     }
     
     protected boolean isFinished(){

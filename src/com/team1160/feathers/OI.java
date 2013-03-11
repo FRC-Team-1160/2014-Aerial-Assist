@@ -1,8 +1,8 @@
 package com.team1160.feathers;
 
 import com.team1160.feathers.api.Constants;
-import com.team1160.feathers.commands.AssistClimb;
-import com.team1160.feathers.commands.ManualDrive;
+import com.team1160.feathers.commands.drivetrain.AssistClimb;
+import com.team1160.feathers.commands.drivetrain.ManualDrive;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;

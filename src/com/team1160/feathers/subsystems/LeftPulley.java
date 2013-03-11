@@ -1,14 +1,18 @@
 package com.team1160.feathers.subsystems;
 
+import com.team1160.feathers.OI;
 import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.api.DigitalServo;
 
 import edu.wpi.first.wpilibj.Jaguar;
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Servo;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class LeftPulley extends Subsystem{
 
+	protected Joystick stick;
+	
 	protected Servo lock;
 	protected DigitalServo angle;
 	protected Jaguar am;
@@ -38,6 +42,20 @@ public class LeftPulley extends Subsystem{
 	
 	public void setVelocity(double set){
 		this.am.set(set);
+	}
+	
+	public void joyAngle(){
+		if(stick == null){
+			stick = OI.getInstance().getLeftStick();
+		}
+		angle.set((stick.getY()+1)/2);
+	}
+	
+	public void joyVelocity(){
+		if(stick == null){
+			stick = OI.getInstance().getLeftStick();
+		}
+		am.set(stick.getY());
 	}
 
 	public void lock(boolean lock){

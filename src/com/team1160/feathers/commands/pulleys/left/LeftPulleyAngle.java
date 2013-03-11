@@ -1,16 +1,16 @@
-package com.team1160.feathers.commands;
+package com.team1160.feathers.commands.pulleys.left;
+
+import com.team1160.feathers.commands.CommandBase;
 
 public class LeftPulleyAngle extends CommandBase {
     
-    private double setTo;
     
     public LeftPulleyAngle(double setTo){
         requires(lp);
-        this.setTo = setTo;
     }
     
     protected void execute(){
-        lp.setAngle(setTo);
+        lp.joyAngle();
     }
     
     protected boolean isFinished(){

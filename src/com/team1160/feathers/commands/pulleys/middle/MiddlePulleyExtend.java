@@ -1,16 +1,16 @@
-package com.team1160.feathers.commands;
+package com.team1160.feathers.commands.pulleys.middle;
+
+import com.team1160.feathers.commands.CommandBase;
 
 public class MiddlePulleyExtend extends CommandBase{
     
-    private double setTo;
     
-    public MiddlePulleyExtend(double setTo){
+    public MiddlePulleyExtend(){
         requires(mp);
-        this.setTo = setTo;
     }
     
     protected void execute(){
-        mp.setVelocity(setTo);
+        mp.joyVelocity();
     }
     
     protected boolean isFinished(){

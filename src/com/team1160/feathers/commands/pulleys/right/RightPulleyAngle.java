@@ -1,16 +1,16 @@
-package com.team1160.feathers.commands;
+package com.team1160.feathers.commands.pulleys.right;
+
+import com.team1160.feathers.commands.CommandBase;
 
 public class RightPulleyAngle extends CommandBase{
     
-    private double setTo;
     
-    public RightPulleyAngle(double setTo){
+    public RightPulleyAngle(){
         requires(rp);
-        this.setTo = setTo;
     }
     
     protected void execute(){
-        rp.setAngle(setTo);
+        rp.joyAngle();
     }
     
     protected boolean isFinished(){

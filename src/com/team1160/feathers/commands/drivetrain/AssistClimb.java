@@ -1,21 +1,19 @@
-package com.team1160.feathers.commands;
+package com.team1160.feathers.commands.drivetrain;
+
+import com.team1160.feathers.commands.CommandBase;
 
 
-public class ManualDrive extends CommandBase {
+public class AssistClimb extends CommandBase {
 
-	
-	public ManualDrive() {
+	public AssistClimb() {
 		requires(dt);
 	}
 
-
 	protected void initialize() {
 		// TODO Auto-generated method stub
-
 	}
-
 	protected void execute() {
-		dt.manualDrive();
+		dt.assistClimb();
 	}
 
 	protected boolean isFinished() {

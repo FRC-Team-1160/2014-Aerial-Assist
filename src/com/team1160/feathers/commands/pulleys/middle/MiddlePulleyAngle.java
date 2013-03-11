@@ -1,16 +1,16 @@
-package com.team1160.feathers.commands;
+package com.team1160.feathers.commands.pulleys.middle;
+
+import com.team1160.feathers.commands.CommandBase;
 
 public class MiddlePulleyAngle extends CommandBase{
     
-    private double setTo;
     
-    public MiddlePulleyAngle(double setTo){
+    public MiddlePulleyAngle(){
         requires(mp);
-        this.setTo = setTo;
     }
     
     protected void execute(){
-        mp.setAngle(setTo);
+        mp.joyAngle();
     }
     
     protected boolean isFinished(){
