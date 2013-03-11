@@ -6,8 +6,10 @@ import com.team1160.feathers.commands.groups.wills.WillAngle;
 import com.team1160.feathers.commands.groups.wills.WillLength;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyAngle;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyExtend;
+import com.team1160.feathers.commands.pulleys.left.LeftPulleyLock;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyAngle;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyExtend;
+import com.team1160.feathers.commands.pulleys.right.RightPulleyLock;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
@@ -27,10 +29,13 @@ public class OI {
 	// Left Buttons
 	protected Button lAngle;
 	protected Button lLength;
+        protected Button lLock;
 	
 	//Right Buttons
 	protected Button rAngle;
 	protected Button rLength;
+        protected Button rLock;
+        
 	
 	protected static OI instance;
 	
@@ -57,10 +62,12 @@ public class OI {
 		//Right Buttons
 		rAngle = new JoystickButton(rightStick, 1);
 		rLength = new JoystickButton(rightStick, 2);
+                rLock = new JoystickButton(rightStick, 3);
 		
 		//Left Buttons
 		lAngle = new JoystickButton(leftStick, 1);
 		lLength = new JoystickButton(leftStick,2);
+                lLock = new JoystickButton(leftStick, 3);
 		
 		//Assign the buttons to their commands
 		tieButtons();
@@ -75,10 +82,12 @@ public class OI {
 		//Right buttons
 		rAngle.whenPressed(new RightPulleyAngle());
 		rLength.whenPressed(new RightPulleyExtend());
+                rLock.whenPressed(new RightPulleyLock());
 	
 		//Left buttons
 		lAngle.whenPressed(new LeftPulleyAngle());
 		lLength.whenPressed(new LeftPulleyExtend());
+                lLock.whenPressed(new LeftPulleyLock());
 	}
 
 	public Joystick getDriveStick(){
