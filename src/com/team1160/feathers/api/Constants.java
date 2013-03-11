@@ -57,7 +57,8 @@ public interface Constants {
 	
 	//Human Input
 	int DRIVESTICK = 1;
-	
+	int LeftStick = 2;
+	int RightStick = 3;
 	//Robot Input
 	
 	//Values

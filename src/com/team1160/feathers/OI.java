@@ -12,6 +12,9 @@ public class OI {
 
 	protected Joystick driveStick;
 	
+	protected Joystick leftStick;
+	protected Joystick rightStick;
+	
 	protected Button test;
 	protected Button test2;
 	protected static OI instance;
@@ -25,6 +28,9 @@ public class OI {
 	
 	private OI() {
 		driveStick = new Joystick(Constants.DRIVESTICK);
+		leftStick = new Joystick(Constants.LeftStick);
+		rightStick = new Joystick(Constants.RightStick);
+		
 		test = new JoystickButton(driveStick, 1);
 		test.whenPressed(new AssistClimb());
 		test2 = new JoystickButton(driveStick, 2);
@@ -33,6 +39,14 @@ public class OI {
 	
 	public Joystick getDriveStick(){
 		return driveStick;
+	}
+	
+	public Joystick getLeftStick(){
+		return leftStick;
+	}
+	
+	public Joystick getRightStick(){
+		return rightStick;
 	}
 
 }
