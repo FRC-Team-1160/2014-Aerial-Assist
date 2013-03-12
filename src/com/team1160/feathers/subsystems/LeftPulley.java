@@ -16,7 +16,7 @@ public class LeftPulley extends Subsystem{
 	protected DigitalServo angle;
 	protected Jaguar am;
 	
-	protected Double lastSet;
+	protected double lastSet;
 	
 	protected static LeftPulley instance;
 	
@@ -69,7 +69,7 @@ public class LeftPulley extends Subsystem{
 		}
 		//z axis is untested just a hunch as of now
 		setDeltaAngle(stick.getZ()/3);
-		lastSet-=(stick.getZ()/3); //This stops the servo from moving for ever by reseting last to its previous value
+		lastSet = lastSet -(stick.getZ()/3); //This stops the servo from moving for ever by reseting last to its previous value
 	}
 	
 	public void joyVelocity(){

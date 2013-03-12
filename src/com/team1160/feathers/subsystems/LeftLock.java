@@ -27,7 +27,7 @@ public class LeftLock extends Subsystem {
     }
 
     public void lock(boolean lock) {
-        if (lock) {
+        if(lock) {
             this.lock.set(Constants.P_LEFT_LOCK_LOCKED);
         } else {
             this.lock.set(Constants.P_LEFT_LOCK_OPEN);

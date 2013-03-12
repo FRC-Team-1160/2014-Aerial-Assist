@@ -16,7 +16,7 @@ public class RightPulley extends Subsystem{
 	
 	protected Joystick stick;
 	
-	protected Double lastSet;
+	protected double lastSet;
 	
 	protected static RightPulley instance;
 	
@@ -68,7 +68,7 @@ public class RightPulley extends Subsystem{
 		}
 		//z axis is untested just a hunch as of now
 		setDeltaAngle(stick.getZ()/3);
-		lastSet-=(stick.getZ()/3); //This stops the servo from moving for ever by reseting last to its previous value
+		lastSet = lastSet-(stick.getZ()/3); //This stops the servo from moving for ever by reseting last to its previous value
 	}
 	
 	public void joyVelocity(){
