@@ -33,17 +33,16 @@ public class OI {
 	protected Button lAngle;
 	protected Button lLength;
 	protected Button lLock;
+	protected Button lULock;
 	protected Button lAdjust;
 	
 	//Right Buttons
 	protected Button rAngle;
 	protected Button rLength;
 	protected Button rLock;
-    protected Button rAdjust;
+    protected Button rULock;
+	protected Button rAdjust;
 	
-	//Lock Boolean
-	boolean LLock = false;
-	boolean RLock = false;
 	
 	protected static OI instance;
 	
@@ -70,13 +69,15 @@ public class OI {
 		//Right Buttons
 		rAngle = new JoystickButton(rightStick, 1);
 		rLength = new JoystickButton(rightStick, 2);
-		rLock = new JoystickButton(rightStick, 3);
+		rLock = new JoystickButton(rightStick, 4);
+		rULock = new JoystickButton(rightStick, 5);
 		rAdjust = new JoystickButton(rightStick, 8);
 		
 		//Left Buttons
 		lAngle = new JoystickButton(leftStick, 1);
 		lLength = new JoystickButton(leftStick,2);
-		lLock = new JoystickButton(leftStick, 3);
+		lLock = new JoystickButton(leftStick, 4);
+		lULock = new JoystickButton(leftStick, 5);
 		lAdjust = new JoystickButton(leftStick, 8);
 		
 		//Assign the buttons to their commands
@@ -92,13 +93,15 @@ public class OI {
 		//Right buttons
 		rAngle.whenPressed(new RightPulleyAngle());
 		rLength.whenPressed(new RightPulleyExtend());
-		rLock.whenPressed(new RightPulleyLock(rLock()));
+		rLock.whenPressed(new RightPulleyLock(true));
+		rULock.whenPressed(new RightPulleyLock(false));
 		rAdjust.whenPressed(new RightPulleyAdjust());
 		
 		//Left buttons
 		lAngle.whenPressed(new LeftPulleyAngle());
 		lLength.whenPressed(new LeftPulleyExtend());
-		lLock.whenPressed(new LeftPulleyLock(lLock()));
+		lLock.whenPressed(new LeftPulleyLock(true));
+		lULock.whenPressed(new LeftPulleyLock(false));
 		lAdjust.whenPressed(new LeftPulleyAdjust());
 	}
 
@@ -112,15 +115,5 @@ public class OI {
 	
 	public Joystick getRightStick(){
 		return rightStick;
-	}
-	
-	protected boolean lLock(){
-		this.LLock = !(this.LLock);
-		return this.LLock;
-	}
-
-	protected boolean rLock(){
-		this.RLock = !(this.RLock);
-		return this.RLock;
-	}
+	}	
 }
