@@ -16,6 +16,8 @@ public class RightPulley extends Subsystem{
 	
 	protected Joystick stick;
 	
+	protected Double lastSet;
+	
 	protected static RightPulley instance;
 	
 	public static RightPulley getInstance(){
@@ -33,25 +35,46 @@ public class RightPulley extends Subsystem{
 	protected void initDefaultCommand() {
 		setDefaultCommand(new RightPulleyAngle());
 	}
+	
+	/* 
+	 * Set angle and set velocity are our final output destitation 
+	 * for every command, this allows us to do stuff like final range
+	 * checks with out having to repeat our selfs
+	 */
+	
 	public void setAngle(double set){
 		this.angle.set(set);
+		this.lastSet = set;
 	}
 	
 	public void setVelocity(double set){
 		this.am.set(set);
 	}
-
+	
+	public void setDeltaAngle(double delta){
+		setAngle(lastSet+delta);
+	}
+	
 	public void joyAngle(){
 		if(stick == null){
 			stick = OI.getInstance().getRightStick();
 		}
-		angle.set((-stick.getY()+1)/2);
+		setAngle((-stick.getY()+1)/2);
+	}
+	// Used for fine tuning the rod angle
+	public void joyAdjust(){
+		if(stick == null){
+			stick = OI.getInstance().getLeftStick();
+		}
+		//z axis is untested just a hunch as of now
+		setDeltaAngle(stick.getZ()/3);
+		lastSet-=(stick.getZ()/3); //This stops the servo from moving for ever by reseting last to its previous value
 	}
 	
 	public void joyVelocity(){
 		if(stick == null){
 			stick = OI.getInstance().getRightStick();
 		}
-		am.set(-stick.getY());
+		setVelocity(-stick.getY());
 	}
 }

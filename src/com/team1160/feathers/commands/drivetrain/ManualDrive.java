@@ -7,7 +7,7 @@ public class ManualDrive extends CommandBase {
 
 	
 	public ManualDrive() {
-		requires(dt);
+		requires(drivetrain);
 	}
 
 
@@ -17,7 +17,7 @@ public class ManualDrive extends CommandBase {
 	}
 
 	protected void execute() {
-		dt.manualDrive();
+		drivetrain.manualDrive();
 	}
 
 	protected boolean isFinished() {

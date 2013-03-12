@@ -7,10 +7,13 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 
 public class team1160 extends IterativeRobot{
 
+	String version;
+	
 	public void robotInit(){
-		System.out.println("fucking servos");
+		version = "1.0";
+		System.out.println("In Robot Init, good luck. Version: " + version );
 		CommandBase.init();		
-	}
+	}	
 	
 	public void teleopPeriodic(){
 		Scheduler.getInstance().run();

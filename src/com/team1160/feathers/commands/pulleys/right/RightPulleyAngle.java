@@ -6,15 +6,31 @@ public class RightPulleyAngle extends CommandBase{
     
     
     public RightPulleyAngle(){
-        requires(rp);
+        requires(rightPulley);
     }
     
     protected void execute(){
-        rp.joyAngle();
+        rightPulley.joyAngle();
     }
     
     protected boolean isFinished(){
         return false;
     }
+
+    protected void end() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	protected void initialize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	protected void interrupted() {
+		// TODO Auto-generated method stub
+		
+	}
     
 }

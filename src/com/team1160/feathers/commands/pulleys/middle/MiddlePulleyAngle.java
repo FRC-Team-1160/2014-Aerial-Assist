@@ -6,15 +6,31 @@ public class MiddlePulleyAngle extends CommandBase{
     
     
     public MiddlePulleyAngle(){
-        requires(mp);
+        requires(middlePulley);
     }
     
     protected void execute(){
-        mp.joyAngle();
+        middlePulley.joyAngle();
     }
     
     protected boolean isFinished(){
         return false;
     }
+    protected void end() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	protected void initialize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	protected void interrupted() {
+		// TODO Auto-generated method stub
+		
+	}
+    
     
 }

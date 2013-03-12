@@ -6,8 +6,6 @@ import com.team1160.feathers.commands.pulleys.right.RightPulleyLock;
 import edu.wpi.first.wpilibj.Servo;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
-
-
 public class RightLock extends Subsystem{
     
     protected Servo lock;
@@ -39,4 +37,3 @@ public class RightLock extends Subsystem{
         setDefaultCommand(new RightPulleyLock(false));
     }
 }
-

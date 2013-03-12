@@ -5,14 +5,31 @@ import com.team1160.feathers.commands.CommandBase;
 public class MiddleNothing extends CommandBase {
 	
 	public MiddleNothing(){
-		requires(mp);
+		requires(middlePulley);
 	}
 	
 	public void execute(){
-		mp.setVelocity(0);
+		middlePulley.setVelocity(0);
 	}
 	
 	public boolean isFinished(){
 		return false;
 	}
+	
+    protected void end() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	protected void initialize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	protected void interrupted() {
+		// TODO Auto-generated method stub
+		
+	}
+    
 }

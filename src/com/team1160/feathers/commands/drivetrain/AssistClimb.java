@@ -6,14 +6,14 @@ import com.team1160.feathers.commands.CommandBase;
 public class AssistClimb extends CommandBase {
 
 	public AssistClimb() {
-		requires(dt);
+		requires(drivetrain);
 	}
 
 	protected void initialize() {
 		// TODO Auto-generated method stub
 	}
 	protected void execute() {
-		dt.assistClimb();
+		drivetrain.assistClimb();
 	}
 
 	protected boolean isFinished() {

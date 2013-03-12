@@ -6,47 +6,23 @@ import com.team1160.feathers.subsystems.*;
 
 import edu.wpi.first.wpilibj.command.Command;
 
-public class CommandBase extends Command {
-	
-	
-	protected static Drivetrain dt;
-        protected static LeftPulley lp;
-        protected static RightPulley rp;
-        protected static MiddlePulley mp;
-        protected static RightLock rl;
-        protected static LeftLock ll;
+public abstract class CommandBase extends Command {
+
+	protected static LeftLock leftLock;
+	protected static RightLock rightLock;
+	protected static Drivetrain drivetrain;
+	protected static LeftPulley leftPulley;
+	protected static RightPulley rightPulley;
+	protected static MiddlePulley middlePulley;
 	
 	public static void init(){
-		dt = Drivetrain.getInstance();
-		lp = LeftPulley.getInstance();
-		rp = RightPulley.getInstance();
-		mp = MiddlePulley.getInstance();
-		ll = LeftLock.getInstance();
-		rl = RightLock.getInstance();
+		leftLock = LeftLock.getInstance();
+		rightLock = RightLock.getInstance();
+		drivetrain = Drivetrain.getInstance();
+		leftPulley = LeftPulley.getInstance();
+		rightPulley = RightPulley.getInstance();
+		middlePulley = MiddlePulley.getInstance();
 		OI.getInstance();
-	}
-	
-	protected void initialize() {
-	}
-
-	protected void execute() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	protected boolean isFinished() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	protected void end() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	protected void interrupted() {
-		// TODO Auto-generated method stub
-		
 	}
 	
 }

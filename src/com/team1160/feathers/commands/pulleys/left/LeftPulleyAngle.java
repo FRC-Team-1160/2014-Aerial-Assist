@@ -6,15 +6,32 @@ public class LeftPulleyAngle extends CommandBase {
     
     
     public LeftPulleyAngle(){
-        requires(lp);
+        requires(leftPulley);
     }
     
     protected void execute(){
-        lp.joyAngle();
+        leftPulley.joyAngle();
     }
     
     protected boolean isFinished(){
         return false;
     }
+    
+    protected void end() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	protected void initialize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	protected void interrupted() {
+		// TODO Auto-generated method stub
+		
+	}
+    
     
 }

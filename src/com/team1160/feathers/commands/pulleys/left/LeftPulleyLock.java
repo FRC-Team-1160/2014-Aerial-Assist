@@ -7,17 +7,32 @@ public class LeftPulleyLock extends CommandBase{
 	boolean b;
 	
     public LeftPulleyLock(boolean b){
-        requires(ll);
+        requires(leftLock);
         this.b = b;
     }
     
     protected void execute(){
-        ll.lock(b);
+        leftLock.lock(b);
     }
     
     protected boolean isFinished(){
         return false;
     }
     
+    protected void end() {
+		// TODO Auto-generated method stub
+		
+	}
 
+	
+	protected void initialize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	protected void interrupted() {
+		// TODO Auto-generated method stub
+		
+	}
+    
 }

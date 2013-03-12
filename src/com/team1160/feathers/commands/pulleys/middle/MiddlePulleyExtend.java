@@ -6,15 +6,32 @@ public class MiddlePulleyExtend extends CommandBase{
     
     
     public MiddlePulleyExtend(){
-        requires(mp);
+        requires(middlePulley);
     }
     
     protected void execute(){
-        mp.joyVelocity();
+        middlePulley.joyVelocity();
     }
     
     protected boolean isFinished(){
         return false;
     }
+    
+    protected void end() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	protected void initialize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	protected void interrupted() {
+		// TODO Auto-generated method stub
+		
+	}
+    
     
 }
