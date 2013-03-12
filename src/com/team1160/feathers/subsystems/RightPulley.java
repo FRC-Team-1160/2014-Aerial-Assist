@@ -67,8 +67,8 @@ public class RightPulley extends Subsystem{
 			stick = OI.getInstance().getLeftStick();
 		}
 		//z axis is untested just a hunch as of now
-		setDeltaAngle(stick.getZ()/3);
-		lastSet = lastSet-(stick.getZ()/3); //This stops the servo from moving for ever by reseting last to its previous value
+		setDeltaAngle(-stick.getZ()/4);
+		lastSet = lastSet-(-stick.getZ()/4); //This stops the servo from moving for ever by reseting last to its previous value
 	}
 	
 	public void joyVelocity(){
