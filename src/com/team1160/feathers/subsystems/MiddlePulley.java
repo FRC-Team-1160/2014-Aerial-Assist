@@ -47,7 +47,7 @@ public class MiddlePulley extends Subsystem{
 		if(stick == null){
 			stick = OI.getInstance().getDriveStick();
 		}
-		angle.set((stick.getY()+1)/2);
+		angle.set((-stick.getY()+1)/2);
 	}
 	
 	public void joyVelocity(){

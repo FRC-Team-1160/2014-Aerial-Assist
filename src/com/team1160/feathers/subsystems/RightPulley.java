@@ -47,13 +47,13 @@ public class RightPulley extends Subsystem{
 		if(stick == null){
 			stick = OI.getInstance().getRightStick();
 		}
-		angle.set((stick.getY()+1)/2);
+		angle.set((-stick.getY()+1)/2);
 	}
 	
 	public void joyVelocity(){
 		if(stick == null){
 			stick = OI.getInstance().getRightStick();
 		}
-		am.set(stick.getY());
+		am.set(-stick.getY());
 	}
 }

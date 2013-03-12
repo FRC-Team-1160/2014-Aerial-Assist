@@ -55,6 +55,6 @@ public class LeftPulley extends Subsystem{
 		if(stick == null){
 			stick = OI.getInstance().getLeftStick();
 		}
-		am.set(stick.getY());
+		am.set(-stick.getY());
 	}
 }
