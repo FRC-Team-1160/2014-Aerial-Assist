@@ -16,6 +16,7 @@ import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
 public class OI {
+	
 	//Joystick
 	protected Joystick driveStick;
 	protected Joystick leftStick;
@@ -29,13 +30,16 @@ public class OI {
 	// Left Buttons
 	protected Button lAngle;
 	protected Button lLength;
-        protected Button lLock;
+	protected Button lLock;
 	
 	//Right Buttons
 	protected Button rAngle;
 	protected Button rLength;
-        protected Button rLock;
-        
+	protected Button rLock;
+    
+	//Lock Boolean
+	boolean LLock = false;
+	boolean RLock = false;
 	
 	protected static OI instance;
 	
@@ -62,12 +66,12 @@ public class OI {
 		//Right Buttons
 		rAngle = new JoystickButton(rightStick, 1);
 		rLength = new JoystickButton(rightStick, 2);
-                rLock = new JoystickButton(rightStick, 3);
+		rLock = new JoystickButton(rightStick, 3);
 		
 		//Left Buttons
 		lAngle = new JoystickButton(leftStick, 1);
 		lLength = new JoystickButton(leftStick,2);
-                lLock = new JoystickButton(leftStick, 3);
+		lLock = new JoystickButton(leftStick, 3);
 		
 		//Assign the buttons to their commands
 		tieButtons();
@@ -82,12 +86,12 @@ public class OI {
 		//Right buttons
 		rAngle.whenPressed(new RightPulleyAngle());
 		rLength.whenPressed(new RightPulleyExtend());
-                rLock.whenPressed(new RightPulleyLock());
+		rLock.whenPressed(new RightPulleyLock(rLock()));
 	
 		//Left buttons
 		lAngle.whenPressed(new LeftPulleyAngle());
 		lLength.whenPressed(new LeftPulleyExtend());
-                lLock.whenPressed(new LeftPulleyLock());
+		lLock.whenPressed(new LeftPulleyLock(lLock()));
 	}
 
 	public Joystick getDriveStick(){
@@ -101,5 +105,14 @@ public class OI {
 	public Joystick getRightStick(){
 		return rightStick;
 	}
+	
+	protected boolean lLock(){
+		this.LLock = !(this.LLock);
+		return this.LLock;
+	}
 
+	protected boolean rLock(){
+		this.RLock = !(this.RLock);
+		return this.RLock;
+	}
 }

@@ -1,7 +1,8 @@
 package com.team1160.feathers.subsystems;
 
 import com.team1160.feathers.api.Constants;
-import com.team1160.feathers.commands.pulleys.right.RightPulleyUnlock;
+import com.team1160.feathers.commands.pulleys.right.RightPulleyLock;
+
 import edu.wpi.first.wpilibj.Servo;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
@@ -30,7 +31,7 @@ public class RightLock extends Subsystem{
         }
     }
     protected void initDefaultCommand() {
-        setDefaultCommand(new RightPulleyUnlock());
+        setDefaultCommand(new RightPulleyLock(false));
     }
 }
 

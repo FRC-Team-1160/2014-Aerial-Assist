@@ -4,12 +4,15 @@ import com.team1160.feathers.commands.CommandBase;
 
 public class RightPulleyLock extends CommandBase{
     
-    public RightPulleyLock(){
+	boolean b;
+	
+    public RightPulleyLock(boolean b){
         requires(rl);
-    }
+        this.b = b;
+	}
     
     protected void execute(){
-        rl.lock(true);
+        rl.lock(b);
     }
     
     protected boolean isFinished(){
