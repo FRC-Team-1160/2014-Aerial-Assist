@@ -12,7 +12,6 @@ public class RightLock extends Subsystem{
     
     protected Servo lock;
     
-    
     protected static RightLock instance;
 
     public static RightLock getInstance(){
@@ -22,14 +21,20 @@ public class RightLock extends Subsystem{
         return instance;
     }
     
+    private RightLock(){
+        this.lock = new Servo(Constants.P_RIGHT_LOCK_CAR, Constants.P_RIGHT_LOCK_CHAN);       
+    }
+    
 
     public void lock(boolean lock) {
-        if (lock) {
+    	if (lock) {
             this.lock.set(Constants.P_RIGHT_LOCK_LOCKED);
         } else {
             this.lock.set(Constants.P_RIGHT_LOCK_OPEN);
         }
+    
     }
+    
     protected void initDefaultCommand() {
         setDefaultCommand(new RightPulleyLock(false));
     }

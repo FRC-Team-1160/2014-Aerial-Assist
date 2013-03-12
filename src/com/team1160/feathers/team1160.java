@@ -8,7 +8,7 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 public class team1160 extends IterativeRobot{
 
 	public void robotInit(){
-		System.out.println("yup still in the restroom");
+		System.out.println("fucking servos");
 		CommandBase.init();		
 	}
 	

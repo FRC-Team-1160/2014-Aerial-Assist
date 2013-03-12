@@ -7,12 +7,10 @@ import com.team1160.feathers.commands.pulleys.right.RightPulleyAngle;
 
 import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.Joystick;
-import edu.wpi.first.wpilibj.Servo;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class RightPulley extends Subsystem{
 
-	protected Servo lock;
 	protected DigitalServo angle;
 	protected Jaguar am;
 	

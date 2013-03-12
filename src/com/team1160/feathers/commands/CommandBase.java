@@ -18,11 +18,11 @@ public class CommandBase extends Command {
 	
 	public static void init(){
 		dt = Drivetrain.getInstance();
-                lp = LeftPulley.getInstance();
-                rp = RightPulley.getInstance();
-                mp = MiddlePulley.getInstance();
-                ll = LeftLock.getInstance();
-                rl = RightLock.getInstance();
+		lp = LeftPulley.getInstance();
+		rp = RightPulley.getInstance();
+		mp = MiddlePulley.getInstance();
+		ll = LeftLock.getInstance();
+		rl = RightLock.getInstance();
 		OI.getInstance();
 	}
 	
