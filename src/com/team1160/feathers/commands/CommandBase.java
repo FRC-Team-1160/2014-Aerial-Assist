@@ -24,5 +24,4 @@ public abstract class CommandBase extends Command {
 		middlePulley = MiddlePulley.getInstance();
 		OI.getInstance();
 	}
-	
 }

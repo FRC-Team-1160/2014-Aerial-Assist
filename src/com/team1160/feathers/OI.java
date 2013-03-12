@@ -4,9 +4,11 @@ import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.commands.groups.wills.DriveMode;
 import com.team1160.feathers.commands.groups.wills.WillAngle;
 import com.team1160.feathers.commands.groups.wills.WillLength;
+import com.team1160.feathers.commands.pulleys.left.LeftPulleyAdjust;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyAngle;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyExtend;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyLock;
+import com.team1160.feathers.commands.pulleys.right.RightPulleyAdjust;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyAngle;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyExtend;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyLock;
@@ -31,12 +33,14 @@ public class OI {
 	protected Button lAngle;
 	protected Button lLength;
 	protected Button lLock;
+	protected Button lAdjust;
 	
 	//Right Buttons
 	protected Button rAngle;
 	protected Button rLength;
 	protected Button rLock;
-    
+    protected Button rAdjust;
+	
 	//Lock Boolean
 	boolean LLock = false;
 	boolean RLock = false;
@@ -67,11 +71,13 @@ public class OI {
 		rAngle = new JoystickButton(rightStick, 1);
 		rLength = new JoystickButton(rightStick, 2);
 		rLock = new JoystickButton(rightStick, 3);
+		rAdjust = new JoystickButton(rightStick, 8);
 		
 		//Left Buttons
 		lAngle = new JoystickButton(leftStick, 1);
 		lLength = new JoystickButton(leftStick,2);
 		lLock = new JoystickButton(leftStick, 3);
+		lAdjust = new JoystickButton(leftStick, 8);
 		
 		//Assign the buttons to their commands
 		tieButtons();
@@ -87,11 +93,13 @@ public class OI {
 		rAngle.whenPressed(new RightPulleyAngle());
 		rLength.whenPressed(new RightPulleyExtend());
 		rLock.whenPressed(new RightPulleyLock(rLock()));
-	
+		rAdjust.whenPressed(new RightPulleyAdjust());
+		
 		//Left buttons
 		lAngle.whenPressed(new LeftPulleyAngle());
 		lLength.whenPressed(new LeftPulleyExtend());
 		lLock.whenPressed(new LeftPulleyLock(lLock()));
+		lAdjust.whenPressed(new LeftPulleyAdjust());
 	}
 
 	public Joystick getDriveStick(){

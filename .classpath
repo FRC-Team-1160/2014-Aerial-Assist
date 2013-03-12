@@ -4,6 +4,6 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/networktables-crio.jar"/>
 	<classpathentry kind="lib" path="lib/squawk.jar"/>
-	<classpathentry kind="lib" path="lib/wpilibj.jar"/>
+	<classpathentry kind="lib" path="lib/wpilibj.jar" sourcepath="lib/wpilibj.src.zip"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
