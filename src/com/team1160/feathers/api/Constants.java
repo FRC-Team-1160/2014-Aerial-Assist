@@ -60,6 +60,10 @@ public interface Constants {
 	int LeftStick = 2;
 	int RightStick = 3;
 	//Robot Input
+	int GYRO = 1;
+	int LEFT_POT = 2;
+	int RIGHT_POT = 3;
+	int MID_POT = 4;
 	
 	//Values
 	double ClimbAssist = .3;

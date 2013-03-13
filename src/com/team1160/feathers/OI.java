@@ -8,6 +8,7 @@ import com.team1160.feathers.commands.pulleys.left.LeftPulleyAdjust;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyAngle;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyExtend;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyLock;
+import com.team1160.feathers.commands.pulleys.left.VelocityTest;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyAdjust;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyAngle;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyExtend;
@@ -35,6 +36,7 @@ public class OI {
 	protected Button lLock;
 	protected Button lULock;
 	protected Button lAdjust;
+	protected Button test;
 	
 	//Right Buttons
 	protected Button rAngle;
@@ -71,14 +73,16 @@ public class OI {
 		rLength = new JoystickButton(rightStick, 2);
 		rLock = new JoystickButton(rightStick, 4);
 		rULock = new JoystickButton(rightStick, 5);
-		rAdjust = new JoystickButton(rightStick, 8);
+		rAdjust = new JoystickButton(rightStick, 6);
 		
 		//Left Buttons
 		lAngle = new JoystickButton(leftStick, 1);
 		lLength = new JoystickButton(leftStick,2);
 		lLock = new JoystickButton(leftStick, 4);
 		lULock = new JoystickButton(leftStick, 5);
-		lAdjust = new JoystickButton(leftStick, 8);
+		lAdjust = new JoystickButton(leftStick, 6);
+		
+		test = new JoystickButton(leftStick, 10);
 		
 		//Assign the buttons to their commands
 		tieButtons();
@@ -103,6 +107,8 @@ public class OI {
 		lLock.whenPressed(new LeftPulleyLock(true));
 		lULock.whenPressed(new LeftPulleyLock(false));
 		lAdjust.whenPressed(new LeftPulleyAdjust());
+	
+		test.whenPressed(new VelocityTest());
 	}
 
 	public Joystick getDriveStick(){
