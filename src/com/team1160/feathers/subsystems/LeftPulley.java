@@ -62,7 +62,7 @@ public class LeftPulley extends Subsystem{
 	 */
 	
 	public void setAngle(double set){
-		set = Math.min(Math.max(set, angleMin), angleMax);  // Fun little one line to figure out if set is in bounds and to fix it if not
+		set = Math.min(Math.max(set, angleMin), angleMax);  //Fun little line to figure out if set is in bounds and to fix it if not
 		this.angle.set(set);
 		this.lastSet = set;
 	}
