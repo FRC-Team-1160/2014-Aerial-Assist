@@ -10,8 +10,8 @@ public class team1160 extends IterativeRobot{
 	String version;
 	
 	public void robotInit(){
-		version = "1.0";
-		System.out.println("In Robot Init, good luck. Version: " + version );
+		version = "X.1";
+		System.out.println("In Dev Robot Init, if you see this and are at comp STOP this is an experimental build. Version: " + version );
 		CommandBase.init();		
 	}	
 	

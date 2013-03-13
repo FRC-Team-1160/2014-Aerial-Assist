@@ -10,7 +10,8 @@ public class LeftLock extends Subsystem {
 
     protected static LeftLock instance;
     protected Servo lock;
-
+    protected boolean l;
+    
     public static LeftLock getInstance() {
         if (instance == null) {
             instance = new LeftLock();
@@ -27,10 +28,15 @@ public class LeftLock extends Subsystem {
     }
 
     public void lock(boolean lock) {
-        if(lock) {
+        this.l = lock;
+    	if(lock) {
             this.lock.set(Constants.P_LEFT_LOCK_LOCKED);
         } else {
             this.lock.set(Constants.P_LEFT_LOCK_OPEN);
         }
+    }
+    
+    public boolean getLockStatus(){
+    	return l;
     }
 }

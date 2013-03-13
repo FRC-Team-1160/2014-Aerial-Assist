@@ -15,6 +15,8 @@ public class LeftPulley extends Subsystem{
 
 	protected Joystick stick;
 	
+	protected LeftLock lLock;
+	
 	protected DigitalServo angle;
 	protected Jaguar am;
 	
@@ -49,6 +51,7 @@ public class LeftPulley extends Subsystem{
 		am = new Jaguar(Constants.P_LEFT_JAG_CAR, Constants.P_LEFT_JAG_CHAN);
 		q = new Quad(-.6296,-12.2,74.12);
 		pot = new AnalogChannel(Constants.LEFT_POT);
+		lLock = LeftLock.getInstance();
 	}
 	
 	protected void initDefaultCommand() {
@@ -68,8 +71,8 @@ public class LeftPulley extends Subsystem{
 	}
 	
 	public void setVelocity(double set){
-		boolean locked = false;     //TODO get the lock condition in here somehow... either by intergrating the lock and pulley systems or other bad assery
-		if((getTapeLength() >= tapeLenMax || locked ) && set > 0){
+		//Bad assery engaged
+		if((getTapeLength() >= tapeLenMax || lLock.getLockStatus() ) && set > 0){
 			this.am.set(0);
 		}else if(getTapeLength() <= tapeLenMin && set < 0){
 			this.am.set(0);
@@ -88,9 +91,6 @@ public class LeftPulley extends Subsystem{
 	
 	public void setTapeLength(double goalLength, double error){
 		error = Math.max(Math.min(error, pulleyErrorMax), pulleyErrorMin);
-		//I think this has to be two conditions... one for forward one for back
-		//Admitdly I didnt know what myoung did in some of his...
-		//TODO ask myoung about that
 		if((goalLength - getTapeLength()) > error){
 			setVelocity(.5);
 		}else if((getTapeLength() - goalLength) > error){
