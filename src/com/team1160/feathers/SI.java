@@ -1,21 +1,15 @@
 package com.team1160.feathers;
 
 import com.team1160.feathers.api.Constants;
-import com.team1160.feathers.api.Quad;
+import com.team1160.feathers.sensors.LengthSensor;
 
-import edu.wpi.first.wpilibj.AnalogChannel;
 import edu.wpi.first.wpilibj.Gyro;
 
 public class SI {
 	
-	protected AnalogChannel top;
-	protected AnalogChannel left;
-	protected AnalogChannel right;
-	
-	protected Quad qTop;
-	protected Quad qLeft;
-	protected Quad qRight;
-	
+	protected LengthSensor mid;
+	protected LengthSensor left;
+	protected LengthSensor right;
 	protected Gyro gyro;
 	
 	protected static SI instance;
@@ -28,29 +22,24 @@ public class SI {
 	}
 	
 	protected SI(){
-		top = new AnalogChannel(Constants.MID_POT);
-		left = new AnalogChannel(Constants.LEFT_POT);
-		right = new AnalogChannel(Constants.RIGHT_POT);
+		mid = new LengthSensor(Constants.MID_POT,1,1,1);
+		left = new LengthSensor(Constants.LEFT_POT,-.6296,-12.2,74.12);
+		right = new LengthSensor(Constants.RIGHT_POT,1,1,1);
 	
-		qTop = new Quad(1,1,1);
-		qLeft = new Quad(1,1,1);
-		qRight = new Quad(1,1,1);
-		
 		gyro = new Gyro(Constants.GYRO);
 	}
 	
-	public double getTopLength(){
-		return qTop.result(top.getVoltage());
+	public LengthSensor getMid(){
+		return this.mid;
 	}
 	
-	public double getLeftLength(){
-		return qLeft.result(left.getVoltage());
+	public LengthSensor getLeft(){
+		return this.left;
 	}
 	
-	public double getRightLength(){
-		return qRight.result(right.getVoltage());
+	public LengthSensor getRight(){
+		return this.right;
 	}
-	
 	public double getAngle(){
 		return gyro.getAngle();
 	}

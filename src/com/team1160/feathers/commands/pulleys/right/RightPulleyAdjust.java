@@ -5,7 +5,7 @@ import com.team1160.feathers.commands.CommandBase;
 public class RightPulleyAdjust extends CommandBase {
 
 	protected void initialize() {
-		requires(leftPulley);
+		requires(rightPulley);
 	}
 
 	protected void execute() {

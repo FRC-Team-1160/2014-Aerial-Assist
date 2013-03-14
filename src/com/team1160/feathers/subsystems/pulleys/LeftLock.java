@@ -1,4 +1,4 @@
-package com.team1160.feathers.subsystems;
+package com.team1160.feathers.subsystems.pulleys;
 
 import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyLock;
@@ -6,7 +6,7 @@ import com.team1160.feathers.commands.pulleys.left.LeftPulleyLock;
 import edu.wpi.first.wpilibj.Servo;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
-public class LeftLock extends Subsystem {
+public class LeftLock extends Subsystem implements lock {
 
     protected static LeftLock instance;
     protected Servo lock;
@@ -36,7 +36,7 @@ public class LeftLock extends Subsystem {
         }
     }
     
-    public boolean getLockStatus(){
+    public boolean getLockState(){
     	return l;
     }
 }

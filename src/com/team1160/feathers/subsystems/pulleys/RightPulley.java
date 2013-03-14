@@ -1,4 +1,4 @@
-package com.team1160.feathers.subsystems;
+package com.team1160.feathers.subsystems.pulleys;
 
 import com.team1160.feathers.OI;
 import com.team1160.feathers.api.Constants;

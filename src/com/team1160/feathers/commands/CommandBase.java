@@ -1,10 +1,15 @@
 package com.team1160.feathers.commands;
 
 import com.team1160.feathers.OI;
-import com.team1160.feathers.subsystems.Drivetrain;
 import com.team1160.feathers.subsystems.*;
+import com.team1160.feathers.subsystems.pulleys.LeftLock;
+import com.team1160.feathers.subsystems.pulleys.LeftPulley;
+import com.team1160.feathers.subsystems.pulleys.MiddlePulley;
+import com.team1160.feathers.subsystems.pulleys.RightLock;
+import com.team1160.feathers.subsystems.pulleys.RightPulley;
 
 import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.command.Subsystem;
 
 public abstract class CommandBase extends Command {
 
