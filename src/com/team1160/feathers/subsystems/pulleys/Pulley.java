@@ -9,6 +9,15 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 public abstract class Pulley extends Subsystem{
+
+	/*
+	 * -----------------------------------------------------------------------*
+	 *                    TO ALL YE WHO ENTER, BE WARNED!                     *
+	 *                                                                        *
+	 * This class is large... no I mean it this class is pretty damn big. Now *
+	 *------------------------------------------------------------------------*	 
+	 */
+	
 	
 	protected DigitalServo angle;
 	protected Jaguar am;
@@ -25,7 +34,12 @@ public abstract class Pulley extends Subsystem{
 	protected double pulleyErrorMax;
 	protected double pulleyErrorMin;
 	
+	protected double servoMaxVelocity;
+	protected double servoMaxError;
+	
 	protected double lastSet;
+	
+	protected long lastSetTime;
 	
 	public void setAngle(double set){
 		set = Math.min(Math.max(set, angleMin), angleMax);  //Fun little line to figure out if set is in bounds and to fix it if not
@@ -62,7 +76,7 @@ public abstract class Pulley extends Subsystem{
 		if(stick == null){
 			stick = OI.getInstance().getLeftStick();
 		}
-		setAngle((stick.getY()+1)/2);
+		setAngle((direction*stick.getY()+1)/2);
 	}
 	
 	// Used for fine tuning the rod angle
@@ -81,5 +95,26 @@ public abstract class Pulley extends Subsystem{
 		setVelocity(-stick.getY());
 	}
 	
+	/*
+	 * Sets velocityof the servo, the input is a number -1 -> 1 as a
+	 * percentage of max velocity we want to set
+	 */
+    public void setServoVelocity(double velocity) {
+    	velocity = Math.max(Math.min(1, velocity), 0);  // If velocity is greater then one make one if less then 0 make 0
+    	velocity = velocity*servoMaxVelocity;
+    	setDeltaAngle(velocity);
+    }
+    
+    public void setServoPos(double servoPosition){
+    	if(Math.abs(servoPosition - angle.get()) < servoMaxError){
+    		setAngle(servoPosition);
+    	}else if((servoPosition - angle.get()) > servoMaxError){
+    		setServoVelocity(.25);
+    	}else{
+    		setServoVelocity(-.25);
+    	}
+    }
+
 	abstract void getJoystick();
+	
 }

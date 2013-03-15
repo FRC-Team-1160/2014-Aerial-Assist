@@ -8,7 +8,6 @@ import com.team1160.feathers.commands.pulleys.left.LeftPulleyAdjust;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyAngle;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyExtend;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyLock;
-import com.team1160.feathers.commands.pulleys.left.VelocityTest;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyAdjust;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyAngle;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyExtend;
@@ -81,9 +80,7 @@ public class OI {
 		lLock = new JoystickButton(leftStick, 4);
 		lULock = new JoystickButton(leftStick, 5);
 		lAdjust = new JoystickButton(leftStick, 6);
-		
-		test = new JoystickButton(leftStick, 10);
-		
+			
 		//Assign the buttons to their commands
 		tieButtons();
 	}
@@ -108,7 +105,6 @@ public class OI {
 		lULock.whenPressed(new LeftPulleyLock(false));
 		lAdjust.whenPressed(new LeftPulleyAdjust());
 	
-		test.whenPressed(new VelocityTest());
 	}
 
 	public Joystick getDriveStick(){
