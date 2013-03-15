@@ -2,6 +2,7 @@ package com.team1160.feathers.subsystems.pulleys;
 
 import com.team1160.feathers.OI;
 import com.team1160.feathers.api.DigitalServo;
+import com.team1160.feathers.api.FrameMath;
 import com.team1160.feathers.sensors.LengthSensor;
 
 import edu.wpi.first.wpilibj.Jaguar;
@@ -25,6 +26,8 @@ public abstract class Pulley extends Subsystem{
 	protected Joystick stick;
 	protected LengthSensor lengthSensor;
 	protected lock l;
+	
+	protected FrameMath meth;
 	
 	protected int direction;
 	protected double angleMin;
