@@ -1,5 +1,6 @@
 package com.team1160.feathers.subsystems.pulleys;
 
+import com.team1160.feathers.SI;
 import com.team1160.feathers.api.DigitalServo;
 import com.team1160.feathers.api.FrameMath;
 import com.team1160.feathers.sensors.LengthSensor;
@@ -127,8 +128,20 @@ public abstract class Pulley extends Subsystem{
 		SmartDashboard.putNumber(name+": Jag", am.get());
 	}
 	
-	public double getRawDistance(){
-		return this.lengthSensor.getRaw();
-	}
-	
+    public void setRodAngleFree(double serVeloc, double dTaAn) {
+        //need current frameangle and tapelength for next calculations
+        double dFrameAngle = Math.toDegrees(SI.getInstance().getAngle());
+        // calculates servo value to achieve target angle at current tape length
+        double dServVal = meth.calcServoFromAngle(true, dTaAn, lengthSensor.getLength(), dFrameAngle);
+        setServoPos(dServVal);
+    }
+
+    public void adjustAngleClimbing(boolean flr) {
+        double dTpAn = meth.getClimbTapeAngle(flr, lengthSensor.getLength(), SI.getInstance().getAngle());
+        double dServVal = meth.calcServoFromAngle(false, dTpAn, lengthSensor.getLength(), SI.getInstance().getAngle());
+        // Sets the servo by position given the current tape length
+        this.setAngle(dServVal);
+    }
+
+    
 }
