@@ -15,7 +15,7 @@ public abstract class Pulley extends Subsystem{
 	 * -----------------------------------------------------------------------*
 	 *                    TO ALL YE WHO ENTER, BE WARNED!                     *
 	 *                                                                        *
-	 * This class is large... no I mean it this class is pretty damn big. Now *
+	 * This class is large... no I mean it this class is pretty damn big.     *
 	 *------------------------------------------------------------------------*	 
 	 */
 	
