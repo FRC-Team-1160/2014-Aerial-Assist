@@ -20,8 +20,10 @@ public class LengthSensor {
 	}
 	
 	public double getLength(){
-		//return quad.result(pot.getVoltage());
-		return 2; // BULLSHIT CODE TODO FIX THIS BS
+		return quad.result(pot.getVoltage());
 	}
 	
+	public double getRaw(){
+		return pot.getVoltage();
+	}
 }

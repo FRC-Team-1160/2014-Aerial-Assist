@@ -10,6 +10,7 @@ import com.team1160.feathers.subsystems.pulleys.RightPulley;
 
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 public abstract class CommandBase extends Command {
 
@@ -27,6 +28,12 @@ public abstract class CommandBase extends Command {
 		leftPulley = LeftPulley.getInstance();
 		rightPulley = RightPulley.getInstance();
 		middlePulley = MiddlePulley.getInstance();
+//		SmartDashboard.putData(leftLock);
+//		SmartDashboard.putData(rightLock);
+//		SmartDashboard.putData(drivetrain);
+//		SmartDashboard.putData(leftPulley);
+//		SmartDashboard.putData(rightPulley);
+//		SmartDashboard.putData(middlePulley);
 		OI.getInstance();
 	}
 }

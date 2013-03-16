@@ -51,10 +51,10 @@ public abstract class Pulley extends Subsystem{
 	}
 	
 	public void setVelocity(double set){
-		if((lengthSensor.getLength() >= tapeLenMax || l.getLockState()  ) && set > 0){
+		if((/*lengthSensor.getLength() >= tapeLenMax ||*/ l.getLockState()  ) && set > 0){
 			this.am.set(0);
-		}else if(lengthSensor.getLength() <= tapeLenMin && set < 0){
-			this.am.set(0);
+		//}else if(/*lengthSensor.getLength() <= tapeLenMin && */set < 0){
+		//	this.am.set(0);
 		}else{
 			this.am.set(set*direction);
 		}
@@ -119,5 +119,9 @@ public abstract class Pulley extends Subsystem{
     }
 
 	abstract void getJoystick();
+	
+	public double getRawDistance(){
+		return this.lengthSensor.getRaw();
+	}
 	
 }

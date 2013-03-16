@@ -3,6 +3,7 @@ package com.team1160.feathers.subsystems;
 import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.tables.ITable;
 
 import com.team1160.feathers.OI;
 import com.team1160.feathers.api.Constants;
@@ -12,6 +13,8 @@ public class Drivetrain extends Subsystem {
 
 	protected Jaguar right, left;
 	protected Joystick drive;
+	protected ITable table;
+	
 	
 	private static Drivetrain instance = null;
 	
@@ -57,5 +60,5 @@ public class Drivetrain extends Subsystem {
 	public void setLeft(double set){
 		left.set(set);
 	}
-
+	
 }

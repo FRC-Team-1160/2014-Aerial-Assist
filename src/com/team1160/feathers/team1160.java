@@ -10,13 +10,15 @@ public class team1160 extends IterativeRobot{
 	String version;
 	
 	public void robotInit(){
-		version = "X.1.0";
+		version = "X.1.0.2";
 		System.out.println("In Dev Robot Init, if you see this and are at comp STOP this is an experimental build. Version: " + version );
 		CommandBase.init();		
+		SDReporter.initReporter();
 	}	
 	
 	public void teleopPeriodic(){
 		Scheduler.getInstance().run();
+		SDReporter.report();
 	}
 	
 }
