@@ -5,7 +5,7 @@ import com.team1160.feathers.SI;
 import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.api.DigitalServo;
 import com.team1160.feathers.commands.pulleys.middle.MiddleNothing;
-
+	
 import edu.wpi.first.wpilibj.Jaguar;
 
 public class MiddlePulley extends Pulley {

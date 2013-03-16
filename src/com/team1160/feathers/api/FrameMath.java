@@ -175,5 +175,65 @@ public class FrameMath {
             return dTapeAngle;
         }
     }
+    public double calcServoFromAngle(boolean droop, double rTaAng, double T, double frameAngle) {
+        /**
+         * Adjustment for hanging free or freestanding When tape is hanging
+         * constrained, the goal is to set the servo to put the tape so it
+         * imposes no torque on the Servo. When setting the free standing tape
+         * to an angle, it will droop so we have to aim it an a higher angle.
+         * This droop is related to the square of the cosine of the angle of
+         * tape relative to horizontal and cube of the length of the tape.
+         *
+         * @param angTapHoriz angle of the Tape relative to horizontal
+         * @param adjTargetAnglefactor of Tape angle to account for tape droop
+         * It will be a fraction between 0 and 1
+         * @param droop if true make the adjustment to target tape angle
+         */
+        // inititialize angTapHoriz
+        double angTapHoriz;
+        angTapHoriz = 0;
+        if (droop) {
+            angTapHoriz = rTaAng + frameAngle;
+        }
+        /**
+         * @param adjTargetAnglefactor will be between 0 and 1. It is normalized
+         * relative to an expected deflection of
+         * @param dMaxDeflec degrees at 45 inches
+         *
+         */
+        double adjTargetAnglefactor = (T * T * T * Math.cos(angTapHoriz)
+                * Math.cos(angTapHoriz)) / (45 * 45 * 45);
+        //
+        //Add the adjustment to the target angle
+        //
+        rTaAng = rTaAng + Math.toRadians(adjTargetAnglefactor * dMaxDeflec);
 
+        /**
+         * Trig calculation which relates the distance between the rod ends to:
+         * T is tapelength, rTaAng the angle of the tape to the frame, The
+         * position of the servo relative to the bottom of the pulley
+         *
+         * @param servoDistanceAbovePulleyBottom servoDistanceBehindPulleyBottom
+         * Apply Pythagorean theorem.
+         */
+        j2 = Math.sin(rTaAng) * T - servoDistanceAbovePulleyBottom;
+        j3 = Math.cos(rTaAng) * T + servoDistanceBehindPulleyBottom;
+        j4 = Math.sqrt((j2 * j2) + (j3 * j3));
+        //
+        // A linear equation, empirically derived, of the relation between
+        // distance between the rod ends and the angle formed by the rod end,
+        // at the servo, to the axis connecting the rod ends.
+        //
+        j5 = 134 - 2.046 * j4;
+        j6 = Math.toDegrees(MathUtils.atan(j2 / j3));
+        j7 = j5 + j6;
+        // The empirically derived linear relationship between servo input value
+        // and servo angle relative to the frame
+        // Particular to a pulley
+        double sVal = -.0248 + .0033 * j7;
+        //servo.set(sVal);
+        return sVal;
+    }
+
+    
 }
