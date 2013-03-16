@@ -9,10 +9,10 @@ public class FrameMath {
      */
     protected final double k2 = 30.75;
     /**
-     * @param k1 is the height of the bottom of the side pulleys above frame
-     * TODO ask myoung
+     * @param k1 is the height of the bottom of the pulley above frame bottome
+     * 
      */
-    protected final double k1 = 1.125;
+    protected double k1 = 1.125;
     /**
      * @param k3 is horizontal distance between rungs
      */
@@ -117,7 +117,7 @@ public class FrameMath {
      * @param dMaxDeflec maximum deflection of tape at 0 angle and full
      * extension
      */
-    protected double dMaxDeflec = 10;
+    protected final double dMaxDeflec = 10;
     /**
      * @param servoDistanceAbovePulleyBottom in inches for side servo
      */
@@ -125,10 +125,14 @@ public class FrameMath {
     /**
      * @param servoDistanceBehindPulleyBottom in inches for side servos
      */
-    protected double servoDistanceBehindPulleyBottom = 2.5; // Based on the following
+    protected double servoDistanceBehindPulleyBottom; // Based on the following
 
-    public FrameMath(){
-    	
+    public FrameMath(boolean middle){
+    	if(middle){
+    		servoDistanceBehindPulleyBottom = 0;
+    	}else{
+    		servoDistanceBehindPulleyBottom = 2.5;
+    	}
     }
     
     public double getClimbTapeAngle(boolean floor, double tapeLength, double frameAngle) {
