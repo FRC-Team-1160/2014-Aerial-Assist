@@ -20,6 +20,7 @@ public abstract class CommandBase extends Command {
 	protected static LeftPulley leftPulley;
 	protected static RightPulley rightPulley;
 	protected static MiddlePulley middlePulley;
+        protected static Arm arm;
 	
 	public static void init(){
 		leftLock = LeftLock.getInstance();
@@ -28,6 +29,7 @@ public abstract class CommandBase extends Command {
 		leftPulley = LeftPulley.getInstance();
 		rightPulley = RightPulley.getInstance();
 		middlePulley = MiddlePulley.getInstance();
+                arm = arm.getInstance();
 //		SmartDashboard.putData(leftLock);
 //		SmartDashboard.putData(rightLock);
 //		SmartDashboard.putData(drivetrain);
