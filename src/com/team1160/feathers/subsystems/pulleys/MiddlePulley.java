@@ -41,12 +41,12 @@ public class MiddlePulley extends Pulley {
     }
 
     public void setVelocity(double set) {
-        if ((lengthSensor.getLength() >= tapeLenMax) && set > 0) {
-            this.am.set(0);
-        } else if (lengthSensor.getLength() <= tapeLenMin && set < 0) {
-            this.am.set(0);
-        } else {
+//        if ((lengthSensor.getLength() >= tapeLenMax) && set > 0) {
+//            this.am.set(0);
+//        } else if (lengthSensor.getLength() <= tapeLenMin && set < 0) {
+//        //    this.am.set(0);
+        //} else {
             this.am.set(set * direction);
-        }
+        //}
     }
 }

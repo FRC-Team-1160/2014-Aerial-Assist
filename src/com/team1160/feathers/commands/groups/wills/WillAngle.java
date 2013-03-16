@@ -7,6 +7,7 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 
 public class WillAngle extends CommandGroup {
 	public WillAngle(){
+		System.out.println("Switched to angle");
 		addParallel(new Halt());
 		addParallel(new MiddlePulleyAngle());
 	}

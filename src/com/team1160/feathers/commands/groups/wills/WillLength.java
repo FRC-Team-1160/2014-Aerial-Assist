@@ -6,8 +6,15 @@ import com.team1160.feathers.commands.pulleys.middle.MiddlePulleyExtend;
 import edu.wpi.first.wpilibj.command.CommandGroup;
 
 public class WillLength extends CommandGroup {
+	
+	
 	public WillLength(){
 		addParallel(new Halt());
 		addParallel(new MiddlePulleyExtend());
 	}
+	
+	public void initialize(){
+		System.out.println("switched to length");
+	}
+	
 }
