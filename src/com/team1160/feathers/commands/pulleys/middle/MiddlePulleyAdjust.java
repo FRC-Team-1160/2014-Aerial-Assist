@@ -4,8 +4,12 @@ import com.team1160.feathers.commands.CommandBase;
 
 public class MiddlePulleyAdjust extends CommandBase {
 
-    protected void initialize() {
+    public MiddlePulleyAdjust(){
         requires(middlePulley);
+    }
+    
+    protected void initialize() {
+        
     }
 
     protected void execute() {
