@@ -19,7 +19,8 @@ public class MiddlePulley extends Pulley {
     }
 
     protected MiddlePulley() {
-        am = new Jaguar(Constants.P_TOP_JAG_CAR, Constants.P_TOP_JAG_CHAN);
+        name = "Middle";
+    	am = new Jaguar(Constants.P_TOP_JAG_CAR, Constants.P_TOP_JAG_CHAN);
         angle = new DigitalServo(Constants.P_TOP_SERVO_CAR, Constants.P_TOP_SERVO_CHAN);
         //l = LeftLock.getInstance();
         lengthSensor = SI.getInstance().getMid();
@@ -41,12 +42,12 @@ public class MiddlePulley extends Pulley {
     }
 
     public void setVelocity(double set) {
-//        if ((lengthSensor.getLength() >= tapeLenMax) && set > 0) {
-//            this.am.set(0);
-//        } else if (lengthSensor.getLength() <= tapeLenMin && set < 0) {
-//        //    this.am.set(0);
-        //} else {
+        if ((lengthSensor.getLength() >= tapeLenMax) && set > 0) {
+            this.am.set(0);
+        } else if (lengthSensor.getLength() <= tapeLenMin && set < 0) {
+            this.am.set(0);
+        } else {
             this.am.set(set * direction);
-        //}
+        }
     }
 }

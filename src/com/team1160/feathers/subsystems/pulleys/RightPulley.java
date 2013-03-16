@@ -19,7 +19,8 @@ public class RightPulley extends Pulley {
     }
 
     protected RightPulley() {
-        am = new Jaguar(Constants.P_RIGHT_JAG_CAR, Constants.P_RIGHT_JAG_CHAN);
+        name = "Right";
+    	am = new Jaguar(Constants.P_RIGHT_JAG_CAR, Constants.P_RIGHT_JAG_CHAN);
         angle = new DigitalServo(Constants.P_RIGHT_SERVO_CAR, Constants.P_RIGHT_SERVO_CHAN);
         l = RightLock.getInstance();
         lengthSensor = SI.getInstance().getRight();

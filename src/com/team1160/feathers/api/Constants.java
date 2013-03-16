@@ -61,8 +61,8 @@ public interface Constants {
 	int RightStick = 3;
 	//Robot Input
 	int GYRO = 1;
-	int LEFT_POT = 2;
-	int RIGHT_POT = 3;
+	int LEFT_POT = 3;
+	int RIGHT_POT = 2;
 	int MID_POT = 4;
 	
 	//Values

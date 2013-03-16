@@ -22,6 +22,7 @@ public class LeftPulley extends Pulley{
 	}
 	
 	protected LeftPulley(){
+		name = "Left";
 		am = new Jaguar(Constants.P_LEFT_JAG_CAR, Constants.P_LEFT_JAG_CHAN);
 		angle = new DigitalServo(Constants.P_LEFT_SERVO_CAR, Constants.P_LEFT_SERVO_CHAN);
 		l = LeftLock.getInstance();

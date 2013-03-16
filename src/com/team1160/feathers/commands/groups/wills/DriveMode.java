@@ -7,7 +7,6 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 
 public class DriveMode extends CommandGroup {
 	public DriveMode(){
-		System.out.println("Switched to drive mode");
 		addParallel(new ManualDrive());
 		addParallel(new MiddleNothing());
 	}

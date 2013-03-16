@@ -8,6 +8,7 @@ import com.team1160.feathers.sensors.LengthSensor;
 import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 public abstract class Pulley extends Subsystem{
 
@@ -41,7 +42,7 @@ public abstract class Pulley extends Subsystem{
 	protected double servoMaxError;
 	
 	protected double lastSet;
-	
+	protected String name;
 	protected long lastSetTime;
 	
 	public void setAngle(double set){
@@ -77,7 +78,7 @@ public abstract class Pulley extends Subsystem{
 	
 	public void joyAngle(){
 		if(stick == null){
-			stick = OI.getInstance().getLeftStick();
+			getJoystick();
 		}
 		setAngle((direction*stick.getY()+1)/2);
 	}
@@ -119,6 +120,13 @@ public abstract class Pulley extends Subsystem{
     }
 
 	abstract void getJoystick();
+	
+	public void report(){
+		SmartDashboard.putNumber(name+": Servo value:", angle.get());
+		SmartDashboard.putNumber(name+": Tape Length", lengthSensor.getLength());
+		SmartDashboard.putNumber(name+": Raw tape", lengthSensor.getRaw());
+		SmartDashboard.putNumber(name+": Jag", am.get());
+	}
 	
 	public double getRawDistance(){
 		return this.lengthSensor.getRaw();
