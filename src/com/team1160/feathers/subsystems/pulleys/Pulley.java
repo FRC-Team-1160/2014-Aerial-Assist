@@ -1,6 +1,5 @@
 package com.team1160.feathers.subsystems.pulleys;
 
-import com.team1160.feathers.OI;
 import com.team1160.feathers.api.DigitalServo;
 import com.team1160.feathers.api.FrameMath;
 import com.team1160.feathers.sensors.LengthSensor;
