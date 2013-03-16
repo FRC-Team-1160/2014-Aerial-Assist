@@ -31,7 +31,7 @@ public class MiddlePulley extends Pulley {
         pulleyErrorMax = 1;
         pulleyErrorMin = .1;
     }
-
+    
     protected void initDefaultCommand() {
         setDefaultCommand(new MiddlePulleyAngle());
     }
