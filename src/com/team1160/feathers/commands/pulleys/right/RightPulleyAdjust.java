@@ -9,7 +9,7 @@ public class RightPulleyAdjust extends CommandBase {
 	}
 
 	protected void execute() {
-		leftPulley.joyAdjust();
+		rightPulley.joyAdjust();
 	}
 
 	protected void interrupted() {
