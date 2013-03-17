@@ -1,7 +1,9 @@
 package com.team1160.feathers.subsystems;
 
 import com.team1160.feathers.OI;
+import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.api.DigitalServo;
+import com.team1160.feathers.commands.arm.ArmNothing;
 import edu.wpi.first.wpilibj.Joystick;
 
 import edu.wpi.first.wpilibj.Victor;
@@ -31,7 +33,7 @@ public class Arm extends Subsystem {
     }
 
     protected void initDefaultCommand() {
-        
+        setDefaultCommand(new ArmNothing());
     }
     
     protected void armGoPvoom(){
@@ -47,5 +49,14 @@ public class Arm extends Subsystem {
             stick = OI.getInstance().getDriveStick();
         }
         motor.set(-stick.getAxis(Joystick.AxisType.kY));
+    }
+    
+    public void setGrip(boolean ehansBitch){
+        if(ehansBitch){
+            grip.set(Constants.G_SERVO_GRIP);
+        }
+        else if(!ehansBitch){
+            grip.set(Constants.G_SERVO_OPEN);
+        }
     }
 }

@@ -47,7 +47,7 @@ public interface Constants {
 	// Arm
 		int A_MOTOR_CHAN = 8;   
 		int A_MOTOR_CAR =2;                       
-	// Griper
+	// Gripper
 		int G_SERVO_CHAN = 9;
 		int G_SERVO_CAR = 1;
 		double G_SERVO_GRIP = .9;	
