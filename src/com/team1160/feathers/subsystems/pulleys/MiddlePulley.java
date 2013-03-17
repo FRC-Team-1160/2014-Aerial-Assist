@@ -25,7 +25,7 @@ public class MiddlePulley extends Pulley {
         angle = new DigitalServo(Constants.P_TOP_SERVO_CAR, Constants.P_TOP_SERVO_CHAN);
         //l = LeftLock.getInstance();
         lengthSensor = SI.getInstance().getMid();
-        direction = 1;
+        direction = -1;
         tapeLenMax = 42;
         tapeLenMin = .5;
         angleMax = 0.78;
