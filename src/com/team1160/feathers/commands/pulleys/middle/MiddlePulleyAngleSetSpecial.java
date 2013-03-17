@@ -18,6 +18,7 @@ public class MiddlePulleyAngleSetSpecial extends CommandBase{
 
     protected void execute() {
         middlePulley.setAngle(middlePulley.meth.calcServoFromAngle(true, 45, si.getMidl(), gyro.getAngle()));
+        middlePulley.joyVelocity();
     }
 
     protected boolean isFinished() {
