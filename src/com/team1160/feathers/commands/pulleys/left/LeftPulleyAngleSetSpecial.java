@@ -6,10 +6,13 @@ import edu.wpi.first.wpilibj.Gyro;
 
 public class LeftPulleyAngleSetSpecial extends CommandBase{
     
-        Gyro gyro;
+	Gyro gyro;
     SI si;
     
     public LeftPulleyAngleSetSpecial(){
+    	if(si == null){
+    		si = SI.getInstance();
+    	}
         requires(rightPulley);
     }
 
@@ -19,7 +22,7 @@ public class LeftPulleyAngleSetSpecial extends CommandBase{
 
 
     protected void execute() {
-        leftPulley.setAngle(leftPulley.meth.calcServoFromAngle(true, 45, si.getLeftl(), gyro.getAngle()));
+        leftPulley.setAngle(leftPulley.meth.calcServoFromAngle(true, Math.toRadians(45), si.getLeftl(), si.getAngleDegrees()));
         leftPulley.joyVelocity();
     }
 
@@ -35,6 +38,6 @@ public class LeftPulleyAngleSetSpecial extends CommandBase{
 
 
     protected void interrupted() {
-
+    
     }
 }

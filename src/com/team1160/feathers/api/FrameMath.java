@@ -2,6 +2,8 @@ package com.team1160.feathers.api;
 
 import com.sun.squawk.util.MathUtils;
 
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
 public class FrameMath{
 	/**
      * @param k2 s the height of the first pyramid rung above floor and the
@@ -133,8 +135,10 @@ public class FrameMath{
     protected double servoSlope;
     protected double servoIntercept;
     
-    public FrameMath(boolean middle, double servoSlope, double servoIntercept){
- 
+    String name;
+    
+    public FrameMath(boolean middle, double servoSlope, double servoIntercept, String name){
+    	this.name = name;
     	if(middle){
     		servoDistanceBehindPulleyBottom = 0;
     		k1 = 10;
@@ -143,8 +147,8 @@ public class FrameMath{
     	}else{
     		servoDistanceBehindPulleyBottom = 2.5;
     		k1 = 1.125;
-    		this.one = 134;
-    		this.two = 2.046;
+    		this.one = 190;
+    		this.two = 3.28;
     	}
     	this.servoSlope = servoSlope;
     	this.servoIntercept = servoIntercept;
@@ -231,6 +235,12 @@ public class FrameMath{
          * @param servoDistanceAbovePulleyBottom servoDistanceBehindPulleyBottom
          * Apply Pythagorean theorem.
          */
+        
+        SmartDashboard.putNumber(name + " rTaAng:",rTaAng);
+        SmartDashboard.putNumber(name + " Tape Length: ", T);
+        SmartDashboard.putNumber(name + " Horizon: ",angTapHoriz);
+    
+        
         j2 = Math.sin(rTaAng) * T - servoDistanceAbovePulleyBottom;
         j3 = Math.cos(rTaAng) * T + servoDistanceBehindPulleyBottom;
         j4 = Math.sqrt((j2 * j2) + (j3 * j3));
@@ -242,6 +252,10 @@ public class FrameMath{
         j5 = one - two * j4;
         j6 = Math.toDegrees(MathUtils.atan(j2 / j3));
         j7 = j5 + j6;
+        
+        SmartDashboard.putNumber(name + " j4:", j4);
+        SmartDashboard.putNumber(name + " j5:", j5);
+        SmartDashboard.putNumber(name + " j7:", j7);
         // The empirically derived linear relationship between servo input value
         // and servo angle relative to the frame
         // Particular to a pulley

@@ -52,10 +52,10 @@ public abstract class Pulley extends Subsystem{
 	}
 	
 	public void setVelocity(double set){
-		if((/*lengthSensor.getLength() >= tapeLenMax ||*/ l.getLockState()  ) && set > 0){
+		if((lengthSensor.getLength() >= tapeLenMax || l.getLockState()  ) && set > 0){
 			this.am.set(0);
-		//}else if(/*lengthSensor.getLength() <= tapeLenMin && */set < 0){
-		//	this.am.set(0);
+		}else if(lengthSensor.getLength() <= tapeLenMin && set < 0){
+			this.am.set(0);
 		}else{
 			this.am.set(set*direction);
 		}
@@ -107,7 +107,7 @@ public abstract class Pulley extends Subsystem{
     	velocity = Math.max(Math.min(1, velocity), 0);  // If velocity is greater then one make one if less then 0 make 0
     	velocity = velocity*servoMaxVelocity;
     	setDeltaAngle(velocity);
-    }
+    }	
     
     public void setServoPos(double servoPosition){
     	if(Math.abs(servoPosition - angle.get()) < servoMaxError){

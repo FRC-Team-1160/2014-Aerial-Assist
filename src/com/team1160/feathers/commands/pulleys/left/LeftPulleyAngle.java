@@ -11,6 +11,7 @@ public class LeftPulleyAngle extends CommandBase {
     
     protected void execute(){
         leftPulley.joyAngle();
+        leftPulley.setVelocity(0);
     }
     
     protected boolean isFinished(){

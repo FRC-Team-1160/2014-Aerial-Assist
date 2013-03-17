@@ -10,6 +10,9 @@ public class MiddlePulleyAngleSetSpecial extends CommandBase{
     SI si;
 
     public MiddlePulleyAngleSetSpecial() {
+    	if(si == null){
+    		si = SI.getInstance();
+    	}
         requires(middlePulley);
     }
 
@@ -17,7 +20,7 @@ public class MiddlePulleyAngleSetSpecial extends CommandBase{
     }
 
     protected void execute() {
-        middlePulley.setAngle(middlePulley.meth.calcServoFromAngle(true, 45, si.getMidl(), gyro.getAngle()));
+        middlePulley.setAngle(middlePulley.meth.calcServoFromAngle(true, 45, si.getMidl(), si.getAngleDegrees()));
         middlePulley.joyVelocity();
     }
 

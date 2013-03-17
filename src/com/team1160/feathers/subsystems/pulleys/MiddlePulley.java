@@ -33,7 +33,7 @@ public class MiddlePulley extends Pulley {
         angleMin = 0.1;
         pulleyErrorMax = 1;
         pulleyErrorMin = .1;
-        meth = new FrameMath(true, -.0036,.774);
+        meth = new FrameMath(true, -.0036,.774, "middle pulley");
     }
     
     protected void initDefaultCommand() {

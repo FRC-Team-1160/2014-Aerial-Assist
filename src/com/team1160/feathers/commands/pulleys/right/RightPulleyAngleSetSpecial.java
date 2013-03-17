@@ -2,14 +2,15 @@ package com.team1160.feathers.commands.pulleys.right;
 
 import com.team1160.feathers.SI;
 import com.team1160.feathers.commands.CommandBase;
-import edu.wpi.first.wpilibj.Gyro;
 
 public class RightPulleyAngleSetSpecial extends CommandBase{
     
-    Gyro gyro;
     SI si;
     
     public RightPulleyAngleSetSpecial(){
+    	if(si == null){
+    		si = SI.getInstance();
+    	}
         requires(rightPulley);
     }
 
@@ -19,7 +20,8 @@ public class RightPulleyAngleSetSpecial extends CommandBase{
 
 
     protected void execute() {
-        rightPulley.setAngle(rightPulley.meth.calcServoFromAngle(true, 45, si.getRightl(), gyro.getAngle()));
+        rightPulley.setAngle(rightPulley.meth.calcServoFromAngle(true, 45, si.getRightl(), si.getAngleDegrees()));
+        System.out.println("degrees: " + si.getAngleDegrees());
         rightPulley.joyVelocity();
     }
 
