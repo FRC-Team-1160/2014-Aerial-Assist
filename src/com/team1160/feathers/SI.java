@@ -39,8 +39,22 @@ public class SI {
     public LengthSensor getRight() {
         return this.right;
     }
-    // Returns the angle of the frame in radians, because thats what we need them in most the time
+    
+    
+    public double getMidl() {
+        return this.mid.getLength();
+    }
 
+    public double getLeftl() {
+        return this.left.getLength();
+    }
+
+    public double getRightl() {
+        return this.right.getLength();
+    }
+    
+    // Returns the angle of the frame in radians, because thats what we need them in most the time
+    
     public double getAngle() {
         return Math.toRadians(gyro.getAngle());
     }
