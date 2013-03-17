@@ -117,7 +117,7 @@ public class FrameMath{
      * @param dMaxDeflec maximum deflection of tape at 0 angle and full
      * extension
      */
-    protected final double dMaxDeflec = 10;
+    protected final double dMaxDeflec = 4;
     /**
      * @param servoDistanceAbovePulleyBottom in inches for side servo
      */

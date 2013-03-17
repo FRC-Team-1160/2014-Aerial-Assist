@@ -5,6 +5,12 @@ import com.team1160.feathers.sensors.LengthSensor;
 
 import edu.wpi.first.wpilibj.Gyro;
 
+/*
+ * Sensor interface, similar to the opertaor
+ * interface is one place for all objects to 
+ * get sensor data.
+ */
+
 public class SI {
 
     protected LengthSensor mid;
@@ -21,9 +27,9 @@ public class SI {
     }
 
     protected SI() {
-        mid = new LengthSensor(Constants.MID_POT, 1, 1, 1);
-        left = new LengthSensor(Constants.LEFT_POT, -.6296, -12.2, 74.12);
-        right = new LengthSensor(Constants.RIGHT_POT, 1, 1, 1);
+        mid = new LengthSensor(Constants.MID_POT, 0, 16.1, 8.12);
+        left = new LengthSensor(Constants.LEFT_POT, 0, -16.1, 66.72);
+        right = new LengthSensor(Constants.RIGHT_POT, 0, 16.92, -.187);
 
         gyro = new Gyro(Constants.GYRO);
     }
