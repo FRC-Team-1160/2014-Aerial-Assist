@@ -28,8 +28,8 @@ public class MiddlePulley extends Pulley {
         direction = 1;
         tapeLenMax = 42;
         tapeLenMin = .5;
-        angleMax = 1;
-        angleMin = 0;
+        angleMax = 0.78;
+        angleMin = 0.1;
         pulleyErrorMax = 1;
         pulleyErrorMin = .1;
     }

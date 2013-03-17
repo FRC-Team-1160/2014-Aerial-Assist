@@ -30,7 +30,7 @@ public class LeftPulley extends Pulley{
 		direction = 1;
 		tapeLenMax = 42;
 		tapeLenMin = .5;
-		angleMax = 1;
+		angleMax = 0.453;
 		angleMin = 0;
 		pulleyErrorMax = 1;
 		pulleyErrorMin = .1;		

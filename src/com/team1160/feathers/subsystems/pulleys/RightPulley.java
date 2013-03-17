@@ -27,8 +27,8 @@ public class RightPulley extends Pulley {
         direction = 1;
         tapeLenMax = 42;
         tapeLenMin = .5;
-        angleMax = 1;
-        angleMin = 0;
+        angleMax = 0.744;
+        angleMin = 0.385;
         pulleyErrorMax = 1;
         pulleyErrorMin = .1;
     }
