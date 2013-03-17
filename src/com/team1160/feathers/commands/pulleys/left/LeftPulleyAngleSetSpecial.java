@@ -13,7 +13,7 @@ public class LeftPulleyAngleSetSpecial extends CommandBase{
     	if(si == null){
     		si = SI.getInstance();
     	}
-        requires(rightPulley);
+        requires(leftPulley);
     }
 
     protected void initialize() {

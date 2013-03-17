@@ -20,7 +20,7 @@ public class RightPulleyAngleSetSpecial extends CommandBase{
 
 
     protected void execute() {
-        rightPulley.setAngle(rightPulley.meth.calcServoFromAngle(true, 45, si.getRightl(), si.getAngleDegrees()));
+        rightPulley.setAngle(rightPulley.meth.calcServoFromAngle(true, Math.toRadians(45), si.getRightl(), si.getAngleDegrees()));
         System.out.println("degrees: " + si.getAngleDegrees());
         rightPulley.joyVelocity();
     }
