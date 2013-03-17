@@ -4,6 +4,7 @@ import com.team1160.feathers.OI;
 import com.team1160.feathers.SI;
 import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.api.DigitalServo;
+import com.team1160.feathers.api.FrameMath;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyAngle;
 
 import edu.wpi.first.wpilibj.Jaguar;
@@ -34,6 +35,7 @@ public class LeftPulley extends Pulley{
 		angleMin = 0;
 		pulleyErrorMax = 1;
 		pulleyErrorMin = .1;		
+		meth = new FrameMath(false, .0032, -1.47);
 	}
 	
 	void getJoystick() {

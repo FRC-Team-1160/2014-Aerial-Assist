@@ -17,7 +17,7 @@ public class MiddlePulleyAngle extends CommandBase{
     }
     
     protected void execute(){
-        middlePulley.setAngle(meth.calcServoFromAngle(true, 45, 10, si.getAngle()));
+        middlePulley.setAngle(middlePulley.meth.calcServoFromAngle(true, 45, 10, si.getAngle()));
     }
     
     protected boolean isFinished(){

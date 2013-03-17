@@ -28,7 +28,7 @@ public abstract class Pulley extends Subsystem{
 	protected LengthSensor lengthSensor;
 	protected lock l;
 	
-	protected FrameMath meth;
+	public FrameMath meth;
 	
 	protected int direction;
 	protected double angleMin;

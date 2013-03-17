@@ -4,6 +4,7 @@ import com.team1160.feathers.OI;
 import com.team1160.feathers.SI;
 import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.api.DigitalServo;
+import com.team1160.feathers.api.FrameMath;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyAngle;
 import edu.wpi.first.wpilibj.Jaguar;
 
@@ -31,6 +32,7 @@ public class RightPulley extends Pulley {
         angleMin = 0.385;
         pulleyErrorMax = 1;
         pulleyErrorMin = .1;
+        meth = new FrameMath(false, -.0036, .949);
     }
 
     void getJoystick() {

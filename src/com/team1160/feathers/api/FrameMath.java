@@ -2,7 +2,7 @@ package com.team1160.feathers.api;
 
 import com.sun.squawk.util.MathUtils;
 
-public class FrameMath {
+public class FrameMath{
 	/**
      * @param k2 s the height of the first pyramid rung above floor and the
      * higher pyramid rungs above the middle of the next lower rung
@@ -12,7 +12,7 @@ public class FrameMath {
      * @param k1 is the height of the bottom of the pulley above frame bottome
      * 
      */
-    protected double k1 = 1.125;
+    protected double k1 ;
     /**
      * @param k3 is horizontal distance between rungs
      */
@@ -127,12 +127,27 @@ public class FrameMath {
      */
     protected double servoDistanceBehindPulleyBottom; // Based on the following
 
-    public FrameMath(boolean middle){
+    protected double one; // Erm not really sure but they get used so fuck it
+    protected double two; 
+    
+    protected double servoSlope;
+    protected double servoIntercept;
+    
+    public FrameMath(boolean middle, double servoSlope, double servoIntercept){
+ 
     	if(middle){
     		servoDistanceBehindPulleyBottom = 0;
+    		k1 = 10;
+    		this.one = 140;
+    		this.two = 1.88;
     	}else{
     		servoDistanceBehindPulleyBottom = 2.5;
+    		k1 = 1.125;
+    		this.one = 134;
+    		this.two = 2.046;
     	}
+    	this.servoSlope = servoSlope;
+    	this.servoIntercept = servoIntercept;
     }
     
     public double getClimbTapeAngle(boolean floor, double tapeLength, double frameAngle) {
@@ -224,16 +239,15 @@ public class FrameMath {
         // distance between the rod ends and the angle formed by the rod end,
         // at the servo, to the axis connecting the rod ends.
         //
-        j5 = 134 - 2.046 * j4;
+        j5 = one - two * j4;
         j6 = Math.toDegrees(MathUtils.atan(j2 / j3));
         j7 = j5 + j6;
         // The empirically derived linear relationship between servo input value
         // and servo angle relative to the frame
         // Particular to a pulley
-        double sVal = -.0248 + .0033 * j7;
+        double sVal = servoIntercept + servoSlope * j7;
         //servo.set(sVal);
         return sVal;
     }
-
     
 }
