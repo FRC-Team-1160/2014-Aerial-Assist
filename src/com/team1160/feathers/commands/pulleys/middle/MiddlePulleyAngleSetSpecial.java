@@ -4,23 +4,24 @@ import com.team1160.feathers.SI;
 import com.team1160.feathers.commands.CommandBase;
 import edu.wpi.first.wpilibj.Gyro;
 
-public class MiddlePulleyAngleSetSpecial extends CommandBase{
+public class MiddlePulleyAngleSetSpecial extends CommandBase {
 
-    Gyro gyro;
+    protected boolean b;
     SI si;
 
-    public MiddlePulleyAngleSetSpecial() {
-    	if(si == null){
-    		si = SI.getInstance();
-    	}
+    public MiddlePulleyAngleSetSpecial(boolean b) {
+        if (si == null) {
+            si = SI.getInstance();
+        }
         requires(middlePulley);
+        this.b = b;
     }
 
     protected void initialize() {
     }
 
     protected void execute() {
-        middlePulley.setAngle(middlePulley.meth.calcServoFromAngle(true, 45, si.getMidl(), si.getAngleDegrees()));
+        middlePulley.adjustAngleClimbing(b);
         middlePulley.joyVelocity();
     }
 

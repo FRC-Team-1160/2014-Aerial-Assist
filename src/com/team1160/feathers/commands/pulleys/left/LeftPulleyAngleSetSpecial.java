@@ -4,40 +4,35 @@ import com.team1160.feathers.SI;
 import com.team1160.feathers.commands.CommandBase;
 import edu.wpi.first.wpilibj.Gyro;
 
-public class LeftPulleyAngleSetSpecial extends CommandBase{
-    
-	Gyro gyro;
+public class LeftPulleyAngleSetSpecial extends CommandBase {
+
+    Gyro gyro;
     SI si;
-    
-    public LeftPulleyAngleSetSpecial(){
-    	if(si == null){
-    		si = SI.getInstance();
-    	}
+    protected boolean b;
+
+    public LeftPulleyAngleSetSpecial(boolean b) {
+        if (si == null) {
+            si = SI.getInstance();
+        }
         requires(leftPulley);
+        this.b = b;
     }
 
     protected void initialize() {
-        
     }
-
 
     protected void execute() {
-        leftPulley.setAngle(leftPulley.meth.calcServoFromAngle(true, Math.toRadians(45), si.getLeftl(), si.getAngleDegrees()));
+        leftPulley.adjustAngleClimbing(b);
         leftPulley.joyVelocity();
     }
-
 
     protected boolean isFinished() {
         return false;
     }
 
-
     protected void end() {
-
     }
 
-
     protected void interrupted() {
-    
     }
 }
