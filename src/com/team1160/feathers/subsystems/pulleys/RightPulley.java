@@ -24,7 +24,7 @@ public class RightPulley extends Pulley {
         angle = new DigitalServo(Constants.P_RIGHT_SERVO_CAR, Constants.P_RIGHT_SERVO_CHAN);
         l = RightLock.getInstance();
         lengthSensor = SI.getInstance().getRight();
-        direction = 1;
+        direction = -1;
         tapeLenMax = 42;
         tapeLenMin = .5;
         angleMax = 0.744;
