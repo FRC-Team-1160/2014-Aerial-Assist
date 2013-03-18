@@ -26,9 +26,9 @@ public abstract class Pulley extends Subsystem{
 	
 	protected Joystick stick;
 	protected LengthSensor lengthSensor;
-	protected lock l;
+	protected Lock l;
 	
-	public FrameMath meth;
+	public static FrameMath meth;
 	
 	protected int direction;
 	protected double angleMin;
@@ -143,6 +143,10 @@ public abstract class Pulley extends Subsystem{
         this.setAngle(dServVal);
     }
     
+    public double lastSet(){
+        return lastSet;
+    }
+
     public boolean isAt(double length, double error){
     	return (Math.abs(length - lengthSensor.getLength()) < error);
     }

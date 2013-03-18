@@ -1,17 +1,24 @@
 package com.team1160.feathers.commands.groups.prepare;
 
+import com.team1160.feathers.commands.pulleyAngleLength;
+import com.team1160.feathers.subsystems.pulleys.LeftPulley;
+import com.team1160.feathers.subsystems.pulleys.MiddlePulley;
+import com.team1160.feathers.subsystems.pulleys.Pulley;
+import com.team1160.feathers.subsystems.pulleys.RightPulley;
+
 import edu.wpi.first.wpilibj.command.CommandGroup;
-import com.team1160.feathers.commands.CommandBase;
-import com.team1160.feathers.commands.pulleys.left.LeftPulleyLength;
-import com.team1160.feathers.commands.pulleys.middle.MiddlePulleyLength;
-import com.team1160.feathers.commands.pulleys.right.RightPulleyLength;
 
 public class PrepareDrive extends CommandGroup{
     
+	Pulley left,right,middle;
+	
     public PrepareDrive(){
-        addParallel(new LeftPulleyLength(1.5, 0.5));
-        addParallel(new MiddlePulleyLength(1.5, 0.5));
-        addParallel(new RightPulleyLength(1.5, 0.5));
+    	left = LeftPulley.getInstance();
+    	right = RightPulley.getInstance();
+    	middle = MiddlePulley.getInstance();
+    	addParallel(new pulleyAngleLength(left, 180, 5));
+        addParallel(new pulleyAngleLength(right, 180, 5));
+        addParallel(new pulleyAngleLength(middle, 90, 9.5));
     }
     
 }

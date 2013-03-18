@@ -4,13 +4,10 @@ import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyLock;
 
 import edu.wpi.first.wpilibj.Servo;
-import edu.wpi.first.wpilibj.command.Subsystem;
 
-public class LeftLock extends Subsystem implements lock {
+public class LeftLock extends Lock {
 
     protected static LeftLock instance;
-    protected Servo lock;
-    protected boolean l;
     
     public static LeftLock getInstance() {
         if (instance == null) {
@@ -20,23 +17,12 @@ public class LeftLock extends Subsystem implements lock {
     }
 
     protected LeftLock() {
-        lock = new Servo(Constants.P_LEFT_LOCK_CAR, Constants.P_LEFT_LOCK_CHAN);
+        servo = new Servo(Constants.P_LEFT_LOCK_CAR, Constants.P_LEFT_LOCK_CHAN);
+        locked = Constants.P_LEFT_LOCK_LOCKED;
+        unlocked = Constants.P_LEFT_LOCK_OPEN;
     }
 
     protected void initDefaultCommand() {
         setDefaultCommand(new LeftPulleyLock(false));
-    }
-
-    public void lock(boolean lock) {
-        this.l = lock;
-    	if(lock) {
-            this.lock.set(Constants.P_LEFT_LOCK_LOCKED);
-        } else {
-            this.lock.set(Constants.P_LEFT_LOCK_OPEN);
-        }
-    }
-    
-    public boolean getLockState(){
-    	return l;
     }
 }

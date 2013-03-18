@@ -1,18 +1,16 @@
 package com.team1160.feathers;
 
 import com.team1160.feathers.api.Constants;
+import com.team1160.feathers.commands.groups.prepare.PrepareClimb;
 import com.team1160.feathers.commands.groups.wills.DriveMode;
 import com.team1160.feathers.commands.groups.wills.WillAngle;
 import com.team1160.feathers.commands.groups.wills.WillLength;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyAdjust;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyAngle;
-import com.team1160.feathers.commands.pulleys.left.LeftPulleyAngleSetSpecial;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyExtend;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyLock;
-import com.team1160.feathers.commands.pulleys.middle.MiddlePulleyAngleSetSpecial;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyAdjust;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyAngle;
-import com.team1160.feathers.commands.pulleys.right.RightPulleyAngleSetSpecial;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyExtend;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyLock;
 
@@ -31,7 +29,7 @@ public class OI {
 	protected Button driveMode;
 	protected Button wAngle;
 	protected Button wLength;
-        protected Button wFourtyFive;
+	protected Button wFourtyFive;
 	
 	// Left Buttons
 	protected Button lAngle;
@@ -40,7 +38,7 @@ public class OI {
 	protected Button lULock;
 	protected Button lAdjust;
 	protected Button test;
-        protected Button lFourtyFive;
+	protected Button lFourtyFive;
 	
 	//Right Buttons
 	protected Button rAngle;
@@ -48,7 +46,7 @@ public class OI {
 	protected Button rLock;
     protected Button rULock;
 	protected Button rAdjust;
-        protected Button rFourtyFive;
+	protected Button rFourtyFive;
 	
 	
 	protected static OI instance;
@@ -70,14 +68,14 @@ public class OI {
 	private void initButtons() {
 		// Wills buttons
 		driveMode = new JoystickButton(driveStick, 1);
-                wFourtyFive = new JoystickButton(driveStick, 3);
+		wFourtyFive = new JoystickButton(driveStick, 3);
 		wAngle = new JoystickButton(driveStick, 4);
 		wLength = new JoystickButton(driveStick, 5);
 		
 		//Right Buttons
 		rAngle = new JoystickButton(rightStick, 1);
 		rLength = new JoystickButton(rightStick, 2);
-                rFourtyFive = new JoystickButton(rightStick, 3);
+		rFourtyFive = new JoystickButton(rightStick, 3);
 		rLock = new JoystickButton(rightStick, 4);
 		rULock = new JoystickButton(rightStick, 5);
 		rAdjust = new JoystickButton(rightStick, 6);
@@ -85,7 +83,7 @@ public class OI {
 		//Left Buttons
 		lAngle = new JoystickButton(leftStick, 1);
 		lLength = new JoystickButton(leftStick,2);
-                lFourtyFive = new JoystickButton(leftStick, 3);
+		lFourtyFive = new JoystickButton(leftStick, 3);
 		lLock = new JoystickButton(leftStick, 4);
 		lULock = new JoystickButton(leftStick, 5);
 		lAdjust = new JoystickButton(leftStick, 6);
@@ -99,7 +97,7 @@ public class OI {
 		driveMode.whenPressed(new DriveMode());
 		wAngle.whenPressed(new WillAngle());
 		wLength.whenPressed(new WillLength());
-                wFourtyFive.whenPressed(new MiddlePulleyAngleSetSpecial(true));
+		wFourtyFive.whenPressed(new PrepareClimb());
 		
 		//Right buttons
 		rAngle.whenPressed(new RightPulleyAngle());
@@ -107,7 +105,6 @@ public class OI {
 		rLock.whenPressed(new RightPulleyLock(true));
 		rULock.whenPressed(new RightPulleyLock(false));
 		rAdjust.whenPressed(new RightPulleyAdjust());
-                rFourtyFive.whenPressed(new RightPulleyAngleSetSpecial(true));
 		
 		//Left buttons
 		lAngle.whenPressed(new LeftPulleyAngle());
@@ -115,7 +112,6 @@ public class OI {
 		lLock.whenPressed(new LeftPulleyLock(true));
 		lULock.whenPressed(new LeftPulleyLock(false));
 		lAdjust.whenPressed(new LeftPulleyAdjust());
-                lFourtyFive.whenPressed(new LeftPulleyAngleSetSpecial(true));
 	
 	}
 

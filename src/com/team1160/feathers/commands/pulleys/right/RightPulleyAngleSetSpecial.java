@@ -7,13 +7,15 @@ public class RightPulleyAngleSetSpecial extends CommandBase {
 
     SI si;
     protected boolean b;
+    protected double tapeGoal;
 
-    public RightPulleyAngleSetSpecial(boolean b) {
+    public RightPulleyAngleSetSpecial(boolean b, double tapeGoal) {
         if (si == null) {
             si = SI.getInstance();
         }
         requires(rightPulley);
         this.b = b;
+        this.tapeGoal = tapeGoal;
     }
 
     protected void initialize() {
@@ -21,11 +23,11 @@ public class RightPulleyAngleSetSpecial extends CommandBase {
 
     protected void execute() {
         rightPulley.adjustAngleClimbing(b);
-        rightPulley.joyVelocity();
     }
 
     protected boolean isFinished() {
-        return false;
+        double t1 = si.getRightl();
+        return Math.abs(t1 - tapeGoal) < 0.5;
     }
 
     protected void end() {

@@ -4,12 +4,9 @@ import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyLock;
 
 import edu.wpi.first.wpilibj.Servo;
-import edu.wpi.first.wpilibj.command.Subsystem;
 
-public class RightLock extends Subsystem implements lock{
+public class RightLock extends Lock{
     
-    protected Servo lock;
-    protected boolean l;
     
     
     protected static RightLock instance;
@@ -22,25 +19,15 @@ public class RightLock extends Subsystem implements lock{
     }
     
     private RightLock(){
-        this.lock = new Servo(Constants.P_RIGHT_LOCK_CAR, Constants.P_RIGHT_LOCK_CHAN);       
+        this.servo = new Servo(Constants.P_RIGHT_LOCK_CAR, Constants.P_RIGHT_LOCK_CHAN);       
+        this.locked = Constants.P_RIGHT_LOCK_LOCKED;
+        this.unlocked = Constants.P_RIGHT_LOCK_OPEN;
     }
     
 
-    public void lock(boolean lock) {
-        this.l = lock;
-    	if (lock) {
-            this.lock.set(Constants.P_RIGHT_LOCK_LOCKED);
-        } else {
-            this.lock.set(Constants.P_RIGHT_LOCK_OPEN);
-        }
-    
-    }
     
     protected void initDefaultCommand() {
         setDefaultCommand(new RightPulleyLock(false));
     }
 
-    public boolean getLockState() {
-        return l;
-    }
 }

@@ -22,7 +22,7 @@ public class RightPulleyAngleSet extends CommandBase{
 
     protected boolean isFinished() {
         //change
-        return false;
+        return true;
     }
     
     protected void end() {
