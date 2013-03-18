@@ -128,12 +128,12 @@ public abstract class Pulley extends Subsystem{
 		SmartDashboard.putNumber(name+": Jag", am.get());
 	}
 	
-    public void setRodAngleFree(double serVeloc, double dTaAn) {
+    public void setRodAngleFree(double dTaAn) {
         //need current frameangle and tapelength for next calculations
         double dFrameAngle = Math.toDegrees(SI.getInstance().getAngle());
         // calculates servo value to achieve target angle at current tape length
         double dServVal = meth.calcServoFromAngle(true, dTaAn, lengthSensor.getLength(), dFrameAngle);
-        setServoPos(dServVal);
+        this.setAngle(dServVal);
     }
 
     public void adjustAngleClimbing(boolean flr) {
@@ -142,6 +142,9 @@ public abstract class Pulley extends Subsystem{
         // Sets the servo by position given the current tape length
         this.setAngle(dServVal);
     }
-
     
+    public boolean isAt(double length, double error){
+    	return (Math.abs(length - lengthSensor.getLength()) < error);
+    }
+
 }

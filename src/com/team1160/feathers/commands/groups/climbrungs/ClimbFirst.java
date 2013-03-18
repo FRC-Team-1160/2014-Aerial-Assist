@@ -35,8 +35,8 @@ public class ClimbFirst extends CommandGroup {
         addParallel(new LeftPulleyAngleSet(rAngle));
         addParallel(new RightPulleyAngleSet(rAngle));
 
-        addParallel(new LeftPulleyLength(35, 0.25));
-        addParallel(new RightPulleyLength(35, 0.25));
+        addParallel(new LeftPulleyLength(6, 0.25));
+        addParallel(new RightPulleyLength(6, 0.25));
 
 
     }

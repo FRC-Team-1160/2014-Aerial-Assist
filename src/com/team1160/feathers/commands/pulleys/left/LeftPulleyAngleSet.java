@@ -8,7 +8,7 @@ public class LeftPulleyAngleSet extends CommandBase{
     
     public LeftPulleyAngleSet(double g){
         this.goal = g;
-        requires(leftPulley);
+        requires(leftPulley); 
     }
 
     

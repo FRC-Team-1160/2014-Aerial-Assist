@@ -13,6 +13,7 @@ import edu.wpi.first.wpilibj.Gyro;
 
 public class SI {
 
+	public boolean middleFinish;
     protected LengthSensor mid;
     protected LengthSensor left;
     protected LengthSensor right;
@@ -32,6 +33,8 @@ public class SI {
         right = new LengthSensor(Constants.RIGHT_POT, 0, 16.92, -.187);
 
         gyro = new Gyro(Constants.GYRO);
+    
+        middleFinish = false;
     }
 
     public LengthSensor getMid() {
