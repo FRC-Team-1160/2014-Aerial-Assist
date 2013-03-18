@@ -20,7 +20,7 @@ public class PrepareClimb extends CommandGroup{
     	right = RightPulley.getInstance();
     	middle = MiddlePulley.getInstance();
     	
-        abc = MathUtils.asin(35/30.75);
+        abc = Math.toDegrees(MathUtils.asin(35/30.75));
     	addParallel(new pulleyAngleLength(left , abc, 35));
         addParallel(new pulleyAngleLength(right, abc, 35));
         addParallel(new pulleyAngleLength(middle, 90, 20));   

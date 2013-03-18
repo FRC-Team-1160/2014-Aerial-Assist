@@ -35,7 +35,7 @@ public class LeftPulley extends Pulley{
 		angleMin = .43;
 		pulleyErrorMax = 1;
 		pulleyErrorMin = .1;		
-		meth = new FrameMath(false, .0033, .263, "left pulley");
+		meth = new FrameMath(false, .0032, -.276, "left pulley");
 	}
 	
 	void getJoystick() {

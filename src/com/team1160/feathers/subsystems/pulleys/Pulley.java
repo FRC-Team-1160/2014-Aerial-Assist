@@ -65,9 +65,9 @@ public abstract class Pulley extends Subsystem{
 	public void setTapeLength(double goalLength, double error){
 		error = Math.max(Math.min(error, pulleyErrorMax), pulleyErrorMin);
 		if((goalLength - lengthSensor.getLength()) > error){
-			setVelocity(.5);
+			setVelocity(.25);
 		}else if((lengthSensor.getLength() - goalLength) > error){
-			setVelocity(-.5);
+			setVelocity(-.25);
 		}else{
 			setVelocity(0);
 		}
@@ -131,6 +131,7 @@ public abstract class Pulley extends Subsystem{
     public void setRodAngleFree(double dTaAn) {
         //need current frameangle and tapelength for next calculations
         double dFrameAngle = Math.toDegrees(SI.getInstance().getAngle());
+        dTaAn = Math.toRadians(dTaAn);
         // calculates servo value to achieve target angle at current tape length
         double dServVal = meth.calcServoFromAngle(true, dTaAn, lengthSensor.getLength(), dFrameAngle);
         this.setAngle(dServVal);
