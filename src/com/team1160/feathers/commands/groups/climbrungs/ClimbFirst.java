@@ -1,15 +1,10 @@
 package com.team1160.feathers.commands.groups.climbrungs;
 
-import com.sun.squawk.util.MathUtils;
 import com.team1160.feathers.SI;
 import com.team1160.feathers.api.FrameMath;
-import com.team1160.feathers.commands.pulleys.left.LeftPulleyAngleSet;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyAngleSetSpecial;
-import com.team1160.feathers.commands.pulleys.left.LeftPulleyLength;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyLock;
-import com.team1160.feathers.commands.pulleys.right.RightPulleyAngleSet;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyAngleSetSpecial;
-import com.team1160.feathers.commands.pulleys.right.RightPulleyLength;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyLock;
 import edu.wpi.first.wpilibj.command.CommandGroup;
 

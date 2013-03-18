@@ -20,6 +20,8 @@ public class PrepareClimb extends CommandGroup{
             si = SI.getInstance();
         }
         
+        si.reset();
+        
         frameAngle = si.getAngleDegrees();
         
         abc = MathUtils.asin(35/30.75);
