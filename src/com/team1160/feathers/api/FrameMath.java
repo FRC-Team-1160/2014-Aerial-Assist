@@ -191,6 +191,7 @@ public class FrameMath{
                 x2 = (-b - Math.sqrt(((b * b) - (4 * a * c)))) / (2 * a);
             }
             dTapeAngle = Math.toDegrees(m2) - dFrAng;
+            SmartDashboard.putNumber(name + " dTapeAngle: ", dTapeAngle);
             return dTapeAngle;
         }
     }
@@ -261,6 +262,7 @@ public class FrameMath{
         // Particular to a pulley
         double sVal = servoIntercept + servoSlope * j7;
         //servo.set(sVal);
+        SmartDashboard.putNumber(name + " servo set:", sVal);
         return sVal;
     }
     

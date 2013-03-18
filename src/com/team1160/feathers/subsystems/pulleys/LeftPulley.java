@@ -30,12 +30,12 @@ public class LeftPulley extends Pulley{
 		lengthSensor = SI.getInstance().getLeft();
 		direction = 1;
 		tapeLenMax = 42;
-		tapeLenMin = .5;
-		angleMax = 0.453;
-		angleMin = 0;
+		tapeLenMin = 5;
+		angleMax = .863;
+		angleMin = .43;
 		pulleyErrorMax = 1;
 		pulleyErrorMin = .1;		
-		meth = new FrameMath(false, .0032, -.147, "left pulley");
+		meth = new FrameMath(false, .0033, .263, "left pulley");
 	}
 	
 	void getJoystick() {

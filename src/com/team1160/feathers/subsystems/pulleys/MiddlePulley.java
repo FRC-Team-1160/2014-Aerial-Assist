@@ -28,7 +28,7 @@ public class MiddlePulley extends Pulley {
         lengthSensor = SI.getInstance().getMid();
         direction = -1;
         tapeLenMax = 42;
-        tapeLenMin = .5;
+        tapeLenMin = 5;
         angleMax = 0.78;
         angleMin = 0.1;
         pulleyErrorMax = 1;
