@@ -142,6 +142,9 @@ public abstract class Pulley extends Subsystem{
         // Sets the servo by position given the current tape length
         this.setAngle(dServVal);
     }
-
+    
+    public double lastSet(){
+        return lastSet;
+    }
     
 }

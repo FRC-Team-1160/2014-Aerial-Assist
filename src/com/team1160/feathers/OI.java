@@ -99,7 +99,6 @@ public class OI {
 		driveMode.whenPressed(new DriveMode());
 		wAngle.whenPressed(new WillAngle());
 		wLength.whenPressed(new WillLength());
-                wFourtyFive.whenPressed(new MiddlePulleyAngleSetSpecial(true));
 		
 		//Right buttons
 		rAngle.whenPressed(new RightPulleyAngle());
@@ -107,7 +106,6 @@ public class OI {
 		rLock.whenPressed(new RightPulleyLock(true));
 		rULock.whenPressed(new RightPulleyLock(false));
 		rAdjust.whenPressed(new RightPulleyAdjust());
-                rFourtyFive.whenPressed(new RightPulleyAngleSetSpecial(true));
 		
 		//Left buttons
 		lAngle.whenPressed(new LeftPulleyAngle());
@@ -115,7 +113,6 @@ public class OI {
 		lLock.whenPressed(new LeftPulleyLock(true));
 		lULock.whenPressed(new LeftPulleyLock(false));
 		lAdjust.whenPressed(new LeftPulleyAdjust());
-                lFourtyFive.whenPressed(new LeftPulleyAngleSetSpecial(true));
 	
 	}
 
