@@ -25,11 +25,11 @@ public class ClimbSecond extends CommandGroup {
             si = SI.getInstance();
         }
         //set to 45 below frame
-        addParallel(new MiddlePulleyAngleSet(MiddlePulley.meth.calcServoFromAngle(false, Math.toRadians(-45), si.getMidl(), si.getAngleDegrees())));
+        //addParallel(new MiddlePulleyAngleSet(MiddlePulley.meth.calcServoFromAngle(false, Math.toRadians(-45), si.getMidl(), si.getAngleDegrees())));
         //set to 43 inches
         addSequential(new MiddlePulleyLength(43, 0.1));
         //swing to latch rung
-        addSequential(new MiddlePulleyAngleSet(MiddlePulley.meth.calcServoFromAngle(false, Math.toRadians(-60), si.getMidl(), si.getAngleDegrees())));
+        //addSequential(new MiddlePulleyAngleSet(MiddlePulley.meth.calcServoFromAngle(false, Math.toRadians(-60), si.getMidl(), si.getAngleDegrees())));
         //Will middlepulley keep at 30?
         addSequential(new MiddlePulleyLength(30, 0.1));
         //disengage locks
@@ -43,9 +43,9 @@ public class ClimbSecond extends CommandGroup {
         addParallel(new LeftPulleyLength(35, 0.1));
         addParallel(new RightPulleyLength(35, 0.1));
         //set left pulley to 85 - frameangle
-        addParallel(new LeftPulleyAngleSet(LeftPulley.meth.calcServoFromAngle(false, Math.toRadians(85 - angle), si.getLeftl(), angle)));
+        //addParallel(new LeftPulleyAngleSet(LeftPulley.meth.calcServoFromAngle(false, Math.toRadians(85 - angle), si.getLeftl(), angle)));
         //set right pulley to 80(??) - frameangle.. why are these values different..?
-        addParallel(new RightPulleyAngleSet(RightPulley.meth.calcServoFromAngle(false, Math.toRadians(80 - angle), si.getRightl(), angle)));
+        //addParallel(new RightPulleyAngleSet(RightPulley.meth.calcServoFromAngle(false, Math.toRadians(80 - angle), si.getRightl(), angle)));
 
         /*TO ADD:
          * 

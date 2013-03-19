@@ -29,6 +29,7 @@ public class pulleyAngleLength extends CommandBase{
 
 	protected void end() {
 		pulley.setVelocity(0);
+		this.pulley.setRodAngleFree(angle);
 	}
 
 	protected void interrupted() {

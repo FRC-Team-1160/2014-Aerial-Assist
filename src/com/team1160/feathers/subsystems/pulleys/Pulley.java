@@ -28,7 +28,7 @@ public abstract class Pulley extends Subsystem{
 	protected LengthSensor lengthSensor;
 	protected Lock l;
 	
-	public static FrameMath meth;
+	protected FrameMath meth;
 	
 	protected int direction;
 	protected double angleMin;
@@ -46,7 +46,7 @@ public abstract class Pulley extends Subsystem{
 	protected long lastSetTime;
 	
 	public void setAngle(double set){
-		set = Math.min(Math.max(set, angleMin), angleMax);  //Fun little line to figure out if set is in bounds and to fix it if not
+		// set = Math.min(Math.max(set, angleMin), angleMax);  //Fun little line to figure out if set is in bounds and to fix it if not
 		this.angle.set(set);
 		SmartDashboard.putNumber(name+": Servo value:", angle.get());
 		this.lastSet = set;
@@ -132,8 +132,8 @@ public abstract class Pulley extends Subsystem{
         //need current frameangle and tapelength for next calculations
         double rFrameAngle = SI.getInstance().getAngle();
         // calculates servo value to achieve target angle at current tape length
-        double dServVal = meth.calcServoFromAngle(true, Math.toRadians(dTaAn), lengthSensor.getLength(), rFrameAngle);
-        this.setAngle(dServVal);
+        double ServVal = meth.calcServoFromAngle(true, Math.toRadians(dTaAn), lengthSensor.getLength(), rFrameAngle);
+        this.setAngle(ServVal);
     }
 
     public void adjustAngleClimbing(boolean flr) {
