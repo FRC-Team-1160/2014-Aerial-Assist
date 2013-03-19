@@ -130,10 +130,9 @@ public abstract class Pulley extends Subsystem{
 	
     public void setRodAngleFree(double dTaAn) {
         //need current frameangle and tapelength for next calculations
-        double dFrameAngle = Math.toDegrees(SI.getInstance().getAngle());
-        dTaAn = Math.toRadians(dTaAn);
+        double rFrameAngle = SI.getInstance().getAngle();
         // calculates servo value to achieve target angle at current tape length
-        double dServVal = meth.calcServoFromAngle(true, dTaAn, lengthSensor.getLength(), dFrameAngle);
+        double dServVal = meth.calcServoFromAngle(true, Math.toRadians(dTaAn), lengthSensor.getLength(), rFrameAngle);
         this.setAngle(dServVal);
     }
 

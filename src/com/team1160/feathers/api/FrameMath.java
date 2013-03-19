@@ -195,8 +195,10 @@ public class FrameMath{
             return dTapeAngle;
         }
     }
-    public double calcServoFromAngle(boolean droop, double rTaAng, double T, double frameAngle) {
-        /**
+    public double calcServoFromAngle(boolean droop, double rTaAng, double T, double rFrameAngle) {
+        System.out.println(name + " hit the code");
+    	
+    	/**
          * Adjustment for hanging free or freestanding When tape is hanging
          * constrained, the goal is to set the servo to put the tape so it
          * imposes no torque on the Servo. When setting the free standing tape
@@ -213,7 +215,7 @@ public class FrameMath{
         double angTapHoriz;
         angTapHoriz = 0;
         if (droop) {
-            angTapHoriz = rTaAng + frameAngle;
+            angTapHoriz = rTaAng + rFrameAngle;
         }
         /**
          * @param adjTargetAnglefactor will be between 0 and 1. It is normalized
@@ -237,9 +239,9 @@ public class FrameMath{
          * Apply Pythagorean theorem.
          */
         
-        SmartDashboard.putNumber(name + " rTaAng:",rTaAng);
+        SmartDashboard.putNumber(name + " rTaAng: target angle radians",rTaAng);
         SmartDashboard.putNumber(name + " Tape Length: ", T);
-        SmartDashboard.putNumber(name + " Horizon: ",angTapHoriz);
+        SmartDashboard.putNumber(name + " Tape angle to horizon (in radians): ",angTapHoriz);
     
         
         j2 = Math.sin(rTaAng) * T - servoDistanceAbovePulleyBottom;
@@ -251,18 +253,23 @@ public class FrameMath{
         // at the servo, to the axis connecting the rod ends.
         //
         j5 = one - two * j4;
-        j6 = Math.toDegrees(MathUtils.atan(j2 / j3));
+        if(j3 == 0){
+        	j6 = 0;
+        }else{
+        	j6 = Math.toDegrees(MathUtils.atan(j2 / j3));  // Angle of the rod end to the tape angle (in degrees)
+        }
         j7 = j5 + j6;
         
-        SmartDashboard.putNumber(name + " j4:", j4);
-        SmartDashboard.putNumber(name + " j5:", j5);
-        SmartDashboard.putNumber(name + " j7:", j7);
+        SmartDashboard.putNumber(name + " j4 (distanc of rod ends inch):", j4);
+        SmartDashboard.putNumber(name + " j5 (angle of rod end to tape axis in degrees):", j5);
+        SmartDashboard.putNumber(name + "j6 (angle of the rod end to the tape angle in degrees): ", j6);
+        SmartDashboard.putNumber(name + " j7: (servo angle to frame degrees)", j7);
         // The empirically derived linear relationship between servo input value
         // and servo angle relative to the frame
         // Particular to a pulley
         double sVal = servoIntercept + servoSlope * j7;
         //servo.set(sVal);
-        SmartDashboard.putNumber(name + " servo set:", sVal);
+        SmartDashboard.putNumber(name + " servo set (0-1 translation of j7):", sVal);
         return sVal;
     }
     
