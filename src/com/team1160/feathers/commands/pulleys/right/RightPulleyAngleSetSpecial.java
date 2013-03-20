@@ -23,11 +23,12 @@ public class RightPulleyAngleSetSpecial extends CommandBase {
 
     protected void execute() {
         rightPulley.adjustAngleClimbing(b);
+        rightPulley.setTapeLength(6, .1);
     }
 
     protected boolean isFinished() {
         double t1 = si.getRightl();
-        return Math.abs(t1 - tapeGoal) < 0.5;
+        return Math.abs(t1 - tapeGoal) < 0.1;
     }
 
     protected void end() {

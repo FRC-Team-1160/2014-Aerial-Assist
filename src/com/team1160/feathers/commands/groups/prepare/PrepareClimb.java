@@ -1,29 +1,25 @@
 package com.team1160.feathers.commands.groups.prepare;
 
-import com.sun.squawk.util.MathUtils;
+import com.team1160.feathers.commands.CommandGroupBase;
+import com.team1160.feathers.commands.UnlockPulley;
 import com.team1160.feathers.commands.pulleyAngleLength;
-import com.team1160.feathers.subsystems.pulleys.LeftPulley;
-import com.team1160.feathers.subsystems.pulleys.MiddlePulley;
-import com.team1160.feathers.subsystems.pulleys.Pulley;
-import com.team1160.feathers.subsystems.pulleys.RightPulley;
 
-import edu.wpi.first.wpilibj.command.CommandGroup;
+import edu.wpi.first.wpilibj.command.WaitForChildren;
 
-public class PrepareClimb extends CommandGroup{
+public class PrepareClimb extends CommandGroupBase{
 
 	double abc;
-	Pulley left, right, middle;
-	
+
     public PrepareClimb(){
-       
-    	left = LeftPulley.getInstance();
-    	right = RightPulley.getInstance();
-    	middle = MiddlePulley.getInstance();
     	
-        abc  = 45;
-    	addParallel(new pulleyAngleLength(right, abc, 35));
-        addParallel(new pulleyAngleLength(middle, 80, 20));   
-        addParallel(new pulleyAngleLength(left , abc, 35));
-    }	
-    
+        abc  = 75;
+        addParallel(new UnlockPulley(leftLock, leftPulley));
+        addParallel(new UnlockPulley(rightLock, rightPulley));
+        addSequential(new WaitForChildren());
+        addParallel(new pulleyAngleLength(leftPulley , abc, 35));
+        addParallel(new pulleyAngleLength(rightPulley, abc, 35));
+        addParallel(new pulleyAngleLength(middlePulley, 80, 20));   
+    }
+
+	    
 }

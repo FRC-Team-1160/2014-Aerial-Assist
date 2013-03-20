@@ -1,6 +1,8 @@
 package com.team1160.feathers;
 
 import com.team1160.feathers.api.Constants;
+import com.team1160.feathers.commands.UnlockPulley;
+import com.team1160.feathers.commands.groups.climbrungs.ClimbFirst;
 import com.team1160.feathers.commands.groups.prepare.PrepareClimb;
 import com.team1160.feathers.commands.groups.wills.DriveMode;
 import com.team1160.feathers.commands.groups.wills.WillAngle;
@@ -13,6 +15,8 @@ import com.team1160.feathers.commands.pulleys.right.RightPulleyAdjust;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyAngle;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyExtend;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyLock;
+import com.team1160.feathers.subsystems.pulleys.LeftLock;
+import com.team1160.feathers.subsystems.pulleys.LeftPulley;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
@@ -30,6 +34,7 @@ public class OI {
 	protected Button wAngle;
 	protected Button wLength;
 	protected Button wFourtyFive;
+	protected Button wEleven;
 	
 	// Left Buttons
 	protected Button lAngle;
@@ -71,6 +76,7 @@ public class OI {
 		wFourtyFive = new JoystickButton(driveStick, 3);
 		wAngle = new JoystickButton(driveStick, 4);
 		wLength = new JoystickButton(driveStick, 5);
+		wEleven = new JoystickButton(driveStick, 11);
 		
 		//Right Buttons
 		rAngle = new JoystickButton(rightStick, 1);
@@ -98,6 +104,7 @@ public class OI {
 		wAngle.whenPressed(new WillAngle());
 		wLength.whenPressed(new WillLength());
 		wFourtyFive.whenPressed(new PrepareClimb());
+		wEleven.whenPressed(new ClimbFirst());
 		
 		//Right buttons
 		rAngle.whenPressed(new RightPulleyAngle());
@@ -110,7 +117,7 @@ public class OI {
 		lAngle.whenPressed(new LeftPulleyAngle());
 		lLength.whenPressed(new LeftPulleyExtend());
 		lLock.whenPressed(new LeftPulleyLock(true));
-		lULock.whenPressed(new LeftPulleyLock(false));
+		lULock.whenPressed(new UnlockPulley(LeftLock.getInstance(), LeftPulley.getInstance()));
 		lAdjust.whenPressed(new LeftPulleyAdjust());
 	
 	}

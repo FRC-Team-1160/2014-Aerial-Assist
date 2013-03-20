@@ -151,4 +151,8 @@ public abstract class Pulley extends Subsystem{
     	return (Math.abs(length - lengthSensor.getLength()) < error);
     }
 
+	public double getLength() {
+		return this.lengthSensor.getLength();
+	}
+
 }

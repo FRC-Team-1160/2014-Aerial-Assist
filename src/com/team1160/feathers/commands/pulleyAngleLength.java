@@ -20,11 +20,11 @@ public class pulleyAngleLength extends CommandBase{
 
 	protected void execute() {
 		this.pulley.setRodAngleFree(angle);
-		this.pulley.setTapeLength(length, .5);
+		this.pulley.setTapeLength(length, .1);
 	}
 
 	protected boolean isFinished() {
-		return pulley.isAt(length, .5);
+		return pulley.isAt(length, .1);
 	}
 
 	protected void end() {

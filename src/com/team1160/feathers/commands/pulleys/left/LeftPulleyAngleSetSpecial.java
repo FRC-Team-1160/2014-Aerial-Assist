@@ -24,14 +24,15 @@ public class LeftPulleyAngleSetSpecial extends CommandBase {
 
     protected void execute() {
         leftPulley.adjustAngleClimbing(b);
+        leftPulley.setTapeLength(6, .1);
     }
 
     protected boolean isFinished() {
-        double t1 = si.getLeftl();
-        return Math.abs(t1 - goal) < 0.5;
+    	return leftPulley.isAt(6, .1);
     }
 
     protected void end() {
+    
     }
 
     protected void interrupted() {
