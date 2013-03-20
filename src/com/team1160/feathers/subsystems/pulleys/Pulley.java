@@ -62,12 +62,12 @@ public abstract class Pulley extends Subsystem{
 		}
 	}
 	
-	public void setTapeLength(double goalLength, double error){
+	public void setTapeLength(double goalLength, double error, double velocity){
 		error = Math.max(Math.min(error, pulleyErrorMax), pulleyErrorMin);
 		if((goalLength - lengthSensor.getLength()) > error){
-			setVelocity(.25);
+			setVelocity(velocity);
 		}else if((lengthSensor.getLength() - goalLength) > error){
-			setVelocity(-.25);
+			setVelocity(-velocity);
 		}else{
 			setVelocity(0);
 		}

@@ -8,25 +8,30 @@ public class DefensiveClimb extends CommandBase {
 	
 	Lock lock;
 	Pulley pulley;
-	double length;
+	double length, velocity;
 	boolean flr;
 	
-	public DefensiveClimb(Pulley pulley, Lock lock, double length, boolean flr){
+	public DefensiveClimb(Pulley pulley, Lock lock, double length, boolean flr, double velocity){
 		this.pulley = pulley;
 		this.lock = lock;
 		requires(pulley);
-		requires(lock);
+		if(lock != null){
+			requires(lock);
+		}
 		this.length = length;		
 		this.flr = flr;
+		this.velocity = velocity;
 	}
 
 	
 	protected void initialize() {
-		lock.lock(true);
+		if(lock != null){
+			lock.lock(true);
+		}
 	}
 
 	protected void execute() {
-		pulley.setTapeLength(length, .2);
+		pulley.setTapeLength(length, .2, velocity);
 		pulley.adjustAngleClimbing(flr);
 	}
 

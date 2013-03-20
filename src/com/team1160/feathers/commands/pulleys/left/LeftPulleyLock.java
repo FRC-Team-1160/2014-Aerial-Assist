@@ -14,11 +14,11 @@ public class LeftPulleyLock extends CommandBase {
     }
 
     protected void execute() {
-        fin = true;
+        leftLock.lock(b);
     }
 
     protected boolean isFinished() {
-        return fin;
+        return false;
     }
 
     protected void end() {

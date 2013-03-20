@@ -1,31 +1,19 @@
 package com.team1160.feathers.commands.groups.climbrungs;
 
 import com.team1160.feathers.SI;
-import com.team1160.feathers.api.FrameMath;
-import com.team1160.feathers.commands.pulleys.left.LeftPulleyAngleSetSpecial;
-import com.team1160.feathers.commands.pulleys.left.LeftPulleyLock;
-import com.team1160.feathers.commands.pulleys.right.RightPulleyAngleSetSpecial;
-import com.team1160.feathers.commands.pulleys.right.RightPulleyLock;
-import edu.wpi.first.wpilibj.command.CommandGroup;
+import com.team1160.feathers.commands.CommandGroupBase;
+import com.team1160.feathers.commands.DefensiveClimb;
 
-public class ClimbFirst extends CommandGroup {
+public class ClimbFirst extends CommandGroupBase {
     
-    protected double frameAngle;
-    protected double rAngle;
-    protected double lAngle;
-    protected FrameMath meth;
-    protected double abc;
 
     protected SI si;
 
     public ClimbFirst() {
         
         
-        addSequential(new LeftPulleyLock(true));
-        addSequential(new RightPulleyLock(true));
-        addParallel(new RightPulleyAngleSetSpecial(true, 6));
-        addParallel(new LeftPulleyAngleSetSpecial(true, 6));
-        
+    	addParallel(new DefensiveClimb(rightPulley, rightLock, 6, true, .8));
+    	addParallel(new DefensiveClimb(leftPulley, leftLock, 6, true, .66));
         
 //        addParallel(new LeftPulleyAngleSet(rAngle));
 //        addParallel(new RightPulleyAngleSet(rAngle));

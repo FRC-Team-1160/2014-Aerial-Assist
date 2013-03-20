@@ -14,7 +14,7 @@ public class UnlockPulley extends CommandGroup{
 		this.lock = lock;
 		this.pulley = pulley;
 		addSequential(new CommandLock(lock, false));
-		addSequential(new DeltaPulley(pulley, -.2));
+		addSequential(new DeltaPulley(pulley, -1));
 	}
 	
 	

@@ -20,7 +20,7 @@ public class DeltaPulley extends Command {
 	}
 
 	protected void execute() {
-		pulley.setTapeLength(set, .2);
+		pulley.setTapeLength(set, .2, .25);
 	}
 
 	protected boolean isFinished() {

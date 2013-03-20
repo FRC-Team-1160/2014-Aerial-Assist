@@ -17,6 +17,8 @@ import com.team1160.feathers.commands.pulleys.right.RightPulleyExtend;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyLock;
 import com.team1160.feathers.subsystems.pulleys.LeftLock;
 import com.team1160.feathers.subsystems.pulleys.LeftPulley;
+import com.team1160.feathers.subsystems.pulleys.RightLock;
+import com.team1160.feathers.subsystems.pulleys.RightPulley;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
@@ -110,7 +112,7 @@ public class OI {
 		rAngle.whenPressed(new RightPulleyAngle());
 		rLength.whenPressed(new RightPulleyExtend());
 		rLock.whenPressed(new RightPulleyLock(true));
-		rULock.whenPressed(new RightPulleyLock(false));
+		rULock.whenPressed(new UnlockPulley(RightLock.getInstance(), RightPulley.getInstance()));
 		rAdjust.whenPressed(new RightPulleyAdjust());
 		
 		//Left buttons

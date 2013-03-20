@@ -1,24 +1,30 @@
 package com.team1160.feathers;
 
+import com.team1160.feathers.api.DigitalServo;
 import com.team1160.feathers.commands.CommandBase;
+import com.team1160.feathers.subsystems.pulleys.LeftLock;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Scheduler;
 
 public class team1160 extends IterativeRobot{
 
+	LeftLock ll;
 	String version;
-	
+	DigitalServo ds;
+	Joystick js;
 	public void robotInit(){
-		version = "X.1.1.2";
+		version = "X.1..2";
 		System.out.println("In Dev Robot Init, if you see this and are at comp STOP this is an experimental build. Version: " + version );
 		CommandBase.init();		
 		SDReporter.initReporter();
+		
 	}	
 	
 	public void teleopPeriodic(){
 		Scheduler.getInstance().run();
-		SDReporter.report();
+		SDReporter.report();	
 	}
 	
 }

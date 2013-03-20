@@ -29,8 +29,8 @@ public class SI {
 
     protected SI() {
         mid = new LengthSensor(Constants.MID_POT, 0, 16.1, 8.12);
-        left = new LengthSensor(Constants.LEFT_POT, 0, -16.1, 66.72);
-        right = new LengthSensor(Constants.RIGHT_POT, 0, 16.92, -.187);
+        left = new LengthSensor(Constants.LEFT_POT, 0, -15.2, 62.6);
+        right = new LengthSensor(Constants.RIGHT_POT, 0, 15.15, 3.25);
 
         gyro = new Gyro(Constants.GYRO);
     
