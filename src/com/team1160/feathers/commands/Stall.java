@@ -2,9 +2,9 @@ package com.team1160.feathers.commands;
 
 import com.team1160.feathers.SI;
 
-public class StallAt30 extends CommandBase {
+public class Stall extends CommandBase {
 
-	public StallAt30(){
+	public Stall(){
 		requires(middlePulley);
 	}
 	
@@ -14,7 +14,7 @@ public class StallAt30 extends CommandBase {
 	}
 
 	protected void execute() {
-		middlePulley.setTapeLength(30, .1, .7);
+		middlePulley.setVelocity(-.2);
 	}
 
 	protected boolean isFinished() {
@@ -29,5 +29,5 @@ public class StallAt30 extends CommandBase {
 	protected void interrupted() {
 		this.end();
 	}
-
+ 
 }

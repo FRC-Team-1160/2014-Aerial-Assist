@@ -3,6 +3,7 @@ package com.team1160.feathers;
 import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.commands.UnlockPulley;
 import com.team1160.feathers.commands.groups.climbrungs.ClimbFirst;
+import com.team1160.feathers.commands.groups.climbrungs.ClimbSecond;
 import com.team1160.feathers.commands.groups.prepare.PrepareClimb;
 import com.team1160.feathers.commands.groups.wills.DriveMode;
 import com.team1160.feathers.commands.groups.wills.WillAngle;
@@ -37,6 +38,7 @@ public class OI {
 	protected Button wLength;
 	protected Button wFourtyFive;
 	protected Button wEleven;
+	protected Button wEight;
 	
 	// Left Buttons
 	protected Button lAngle;
@@ -79,6 +81,7 @@ public class OI {
 		wAngle = new JoystickButton(driveStick, 4);
 		wLength = new JoystickButton(driveStick, 5);
 		wEleven = new JoystickButton(driveStick, 11);
+		wEight = new JoystickButton(driveStick, 8);
 		
 		//Right Buttons
 		rAngle = new JoystickButton(rightStick, 1);
@@ -107,6 +110,7 @@ public class OI {
 		wLength.whenPressed(new WillLength());
 		wFourtyFive.whenPressed(new PrepareClimb());
 		wEleven.whenPressed(new ClimbFirst());
+		wEight.whenPressed(new ClimbSecond());
 		
 		//Right buttons
 		rAngle.whenPressed(new RightPulleyAngle());
