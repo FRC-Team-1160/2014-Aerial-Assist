@@ -1,33 +1,25 @@
 package com.team1160.feathers.commands.pulleys.left;
 
-import com.team1160.feathers.SI;
 import com.team1160.feathers.commands.CommandBase;
 
-public class LeftPulleyAngleSet extends CommandBase{
+public class LeftPulleyLockNothing extends CommandBase{
     
-    protected double goal;
-    protected SI si;
-    
-    public LeftPulleyAngleSet(double g){
-        this.goal = g;
-        requires(leftPulley); 
-    }
-    
-    
-    protected void initialize() {
-        leftPulley.setRodAngleFree(goal);
+    public LeftPulleyLockNothing(){
+        requires(leftLock);
     }
 
+    protected void initialize() {
+        
+    }
 
     protected void execute() {
-
+        leftLock.lock(leftLock.getLockState());
     }
-
 
     protected boolean isFinished() {
-        return true;
+        return false;
     }
-    
+
     protected void end() {
         
     }
@@ -35,4 +27,5 @@ public class LeftPulleyAngleSet extends CommandBase{
     protected void interrupted() {
         
     }
+    
 }

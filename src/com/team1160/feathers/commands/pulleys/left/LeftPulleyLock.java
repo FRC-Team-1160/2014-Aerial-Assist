@@ -14,7 +14,6 @@ public class LeftPulleyLock extends CommandBase {
     }
 
     protected void execute() {
-        leftLock.lock(b);
         fin = true;
     }
 
@@ -23,7 +22,7 @@ public class LeftPulleyLock extends CommandBase {
     }
 
     protected void end() {
-        // TODO Auto-generated method stub
+        leftLock.lock(b);
     }
 
     protected void initialize() {

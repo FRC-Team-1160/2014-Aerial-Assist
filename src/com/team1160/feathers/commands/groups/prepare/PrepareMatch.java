@@ -9,5 +9,11 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
  * what numbers are "in bounds"
  */
 public class PrepareMatch extends CommandGroup {
+    
+    public PrepareMatch(){
+        
+        addSequential(new PrepareDrive());
+        
+    }
 
 }

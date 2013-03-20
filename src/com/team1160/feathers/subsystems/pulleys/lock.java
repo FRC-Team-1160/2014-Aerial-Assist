@@ -17,7 +17,7 @@ public abstract class Lock extends Subsystem {
 			servo.set(unlocked);
 		}
 	}
-	
+        
 	public boolean getLockState(){
 		return lock;
 	}
