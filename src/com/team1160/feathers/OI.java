@@ -1,6 +1,7 @@
 package com.team1160.feathers;
 
 import com.team1160.feathers.api.Constants;
+import com.team1160.feathers.commands.MiddleFinish;
 import com.team1160.feathers.commands.UnlockPulley;
 import com.team1160.feathers.commands.groups.climbrungs.ClimbFirst;
 import com.team1160.feathers.commands.groups.climbrungs.ClimbSecond;
@@ -39,6 +40,7 @@ public class OI {
 	protected Button wFourtyFive;
 	protected Button wEleven;
 	protected Button wEight;
+        protected Button wMFinish;
 	
 	// Left Buttons
 	protected Button lAngle;
@@ -53,7 +55,7 @@ public class OI {
 	protected Button rAngle;
 	protected Button rLength;
 	protected Button rLock;
-    protected Button rULock;
+        protected Button rULock;
 	protected Button rAdjust;
 	protected Button rFourtyFive;
 	
@@ -80,6 +82,7 @@ public class OI {
 		wFourtyFive = new JoystickButton(driveStick, 3);
 		wAngle = new JoystickButton(driveStick, 4);
 		wLength = new JoystickButton(driveStick, 5);
+                wMFinish = new JoystickButton(driveStick, 6);
 		wEleven = new JoystickButton(driveStick, 11);
 		wEight = new JoystickButton(driveStick, 8);
 		
@@ -111,6 +114,7 @@ public class OI {
 		wFourtyFive.whenPressed(new PrepareClimb());
 		wEleven.whenPressed(new ClimbFirst());
 		wEight.whenPressed(new ClimbSecond());
+                wMFinish.whenPressed(new MiddleFinish());
 		
 		//Right buttons
 		rAngle.whenPressed(new RightPulleyAngle());

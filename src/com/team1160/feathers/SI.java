@@ -13,7 +13,7 @@ import edu.wpi.first.wpilibj.Gyro;
 
 public class SI {
 
-	public boolean middleFinish;
+	public static boolean middleFinish;
     protected LengthSensor mid;
     protected LengthSensor left;
     protected LengthSensor right;
