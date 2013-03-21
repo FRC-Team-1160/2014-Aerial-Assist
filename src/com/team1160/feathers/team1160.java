@@ -15,8 +15,8 @@ public class team1160 extends IterativeRobot{
 	DigitalServo ds;
 	Joystick js;
 	public void robotInit(){
-		version = "X.1..2";
-		System.out.println("In Dev Robot Init, if you see this and are at comp STOP this is an experimental build. Version: " + version );
+		version = "X.1.2.2";
+		System.out.println("In Dev Robot Init, good deploy, if you see this and are at comp STOP this is an experimental build. Version: " + version );
 		CommandBase.init();		
 		SDReporter.initReporter();
 		

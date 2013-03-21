@@ -4,7 +4,7 @@ import com.team1160.feathers.SI;
 
 public class MiddleFinish extends CommandBase{
     
-    Boolean b;
+    boolean b;
     public MiddleFinish(boolean b){
     	this.b = b;
     }

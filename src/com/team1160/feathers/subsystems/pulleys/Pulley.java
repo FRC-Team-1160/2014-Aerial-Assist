@@ -155,9 +155,7 @@ public abstract class Pulley extends Subsystem {
     }
     
     public void setRelativeGround(double dAngle){
-        
         double anglex = dAngle - SI.getInstance().getAngleDegrees();
-        setAngle(anglex);
-        
+        setRodAngleFree(anglex);
     }
 }
