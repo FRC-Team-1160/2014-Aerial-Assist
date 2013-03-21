@@ -2,7 +2,6 @@ package com.team1160.feathers.commands.groups.climbrungs;
 
 import com.team1160.feathers.SI;
 import com.team1160.feathers.commands.CommandGroupBase;
-import com.team1160.feathers.commands.DefensiveClimb;
 import com.team1160.feathers.commands.TwoStep;
 
 public class ClimbFirst extends CommandGroupBase {
