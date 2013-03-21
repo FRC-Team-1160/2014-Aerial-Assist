@@ -15,7 +15,7 @@ import edu.wpi.first.wpilibj.command.WaitForChildren;
 public class ClimbSecond extends CommandGroupBase{
 	public ClimbSecond(){
 		addSequential(new MiddleFinish(false));
-		addSequential(new pulleyAngleLength(middlePulley, .8, 46, true));
+		addSequential(new pulleyAngleLength(middlePulley, .7, 46, true));
 		addSequential(new pulleyAngleLength(middlePulley, .9, 46, true));
 		addSequential(new WaitCommand(3));
 		addSequential(new pulleyAngleLength(middlePulley, .88, 43, true));

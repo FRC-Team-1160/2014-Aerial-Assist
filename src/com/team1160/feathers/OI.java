@@ -82,7 +82,7 @@ public class OI {
 		wFourtyFive = new JoystickButton(driveStick, 3);
 		wAngle = new JoystickButton(driveStick, 4);
 		wLength = new JoystickButton(driveStick, 5);
-                wMFinish = new JoystickButton(driveStick, 6);
+		wMFinish = new JoystickButton(driveStick, 6);
 		wEleven = new JoystickButton(driveStick, 11);
 		wEight = new JoystickButton(driveStick, 8);
 		

@@ -19,6 +19,7 @@ public class SI {
     protected LengthSensor right;
     protected Gyro gyro;
     protected static SI instance;
+	public static boolean nextCommand;
 
     public static SI getInstance() {
         if (instance == null) {
@@ -62,7 +63,7 @@ public class SI {
         return this.right.getLength();
     }
     
-    // Returns the angle of the frame in radians, because thats what we need them in most the time
+   // Returns the angle of the frame in radians, because thats what we need them in most the time
     
     public double getAngle() {
         return Math.toRadians(gyro.getAngle());
