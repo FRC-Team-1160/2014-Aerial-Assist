@@ -12,8 +12,8 @@ public class ClimbFirst extends CommandGroupBase {
     public ClimbFirst() {
         
         
-    	addParallel(new DefensiveClimb(rightPulley, rightLock, 6, true, .8));
-    	addParallel(new DefensiveClimb(leftPulley, leftLock, 6, true, .66));
+    	addParallel(new DefensiveClimb(rightPulley, rightLock, 7.5, true, .8));
+    	addParallel(new DefensiveClimb(leftPulley, leftLock, 6.8, true, .66));
         
 //        addParallel(new LeftPulleyAngleSet(rAngle));
 //        addParallel(new RightPulleyAngleSet(rAngle));

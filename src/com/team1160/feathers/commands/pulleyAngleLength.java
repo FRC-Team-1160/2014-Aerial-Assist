@@ -6,12 +6,14 @@ public class pulleyAngleLength extends CommandBase{
 
 	Pulley pulley;
 	double length, angle;
+	boolean raw;
 	
-	public pulleyAngleLength(Pulley pulley, double dAngle, double length){
+	public pulleyAngleLength(Pulley pulley, double dAngle, double length, boolean raw){
 		requires(pulley);
 		this.pulley = pulley;
 		this.length = length;
 		this.angle = dAngle;
+		this.raw = raw;
 	}
 	
 	protected void initialize() {
@@ -19,7 +21,11 @@ public class pulleyAngleLength extends CommandBase{
 	}
 
 	protected void execute() {
-		this.pulley.setRodAngleFree(angle);
+		if(!raw){
+			this.pulley.setRodAngleFree(angle);
+		}else{
+			this.pulley.setAngle(this.angle);
+		}
 		this.pulley.setTapeLength(length, .1, .5);
 	}
 
@@ -29,11 +35,15 @@ public class pulleyAngleLength extends CommandBase{
 
 	protected void end() {
 		pulley.setVelocity(0);
-		this.pulley.setRodAngleFree(angle);
+		if(!raw){
+			this.pulley.setRodAngleFree(angle);
+		}else{
+			this.pulley.setAngle(angle);
+		}
 	}
 
 	protected void interrupted() {
-		pulley.setVelocity(0);
+		this.end();
 	}
 
 }

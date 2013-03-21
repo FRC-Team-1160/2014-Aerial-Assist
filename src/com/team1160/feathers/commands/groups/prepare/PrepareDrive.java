@@ -16,9 +16,9 @@ public class PrepareDrive extends CommandGroup{
     	left = LeftPulley.getInstance();
     	right = RightPulley.getInstance();
     	middle = MiddlePulley.getInstance();
-    	addParallel(new pulleyAngleLength(left, 180, 5));
-        addParallel(new pulleyAngleLength(right, 180, 5));
-        addParallel(new pulleyAngleLength(middle, 90, 9.5));
+    	addParallel(new pulleyAngleLength(left, 180, 5, false));
+        addParallel(new pulleyAngleLength(right, 180, 5, false));
+        addParallel(new pulleyAngleLength(middle, 90, 9.5, false));
     }
     
 }
