@@ -1,7 +1,6 @@
 package com.team1160.feathers.subsystems.pulleys;
 
 import com.team1160.feathers.api.Constants;
-import com.team1160.feathers.commands.pulleys.right.RightPulleyLock;
 import com.team1160.feathers.commands.pulleys.right.RightPulleyLockNothing;
 
 import edu.wpi.first.wpilibj.Servo;

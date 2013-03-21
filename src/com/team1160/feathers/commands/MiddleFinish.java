@@ -4,16 +4,13 @@ import com.team1160.feathers.SI;
 
 public class MiddleFinish extends CommandBase{
     
-    protected SI si;
-    
-    public MiddleFinish(){
-        if(si == null){
-            si = SI.getInstance();
-        }
+    Boolean b;
+    public MiddleFinish(boolean b){
+    	this.b = b;
     }
 
     protected void initialize() {
-        si.middleFinish = true;
+        SI.middleFinish = b;
     }
 
     protected void execute() {
@@ -27,15 +24,14 @@ public class MiddleFinish extends CommandBase{
 
 
     protected void end() {
-        if(!si.middleFinish){
-            si.middleFinish = true;
+        if(!SI.middleFinish){
+            SI.middleFinish = b;
         }
     }
 
 
     protected void interrupted() {
-        if(!si.middleFinish)
-            si.middleFinish = true;
+    	this.end();
     }
 
 }

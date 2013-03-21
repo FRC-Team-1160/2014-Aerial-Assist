@@ -6,7 +6,6 @@ import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.api.DigitalServo;
 import com.team1160.feathers.api.FrameMath;
 import com.team1160.feathers.commands.pulleys.left.LeftDoNothing;
-import com.team1160.feathers.commands.pulleys.left.LeftPulleyAngle;
 
 import edu.wpi.first.wpilibj.Jaguar;
 

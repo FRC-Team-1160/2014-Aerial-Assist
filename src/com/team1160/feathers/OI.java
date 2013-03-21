@@ -114,7 +114,7 @@ public class OI {
 		wFourtyFive.whenPressed(new PrepareClimb());
 		wEleven.whenPressed(new ClimbFirst());
 		wEight.whenPressed(new ClimbSecond());
-                wMFinish.whenPressed(new MiddleFinish());
+		wMFinish.whenPressed(new MiddleFinish(true));
 		
 		//Right buttons
 		rAngle.whenPressed(new RightPulleyAngle());

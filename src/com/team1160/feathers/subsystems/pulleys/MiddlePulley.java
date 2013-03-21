@@ -24,10 +24,9 @@ public class MiddlePulley extends Pulley {
         name = "Middle";
     	am = new Jaguar(Constants.P_TOP_JAG_CAR, Constants.P_TOP_JAG_CHAN);
         angle = new DigitalServo(Constants.P_TOP_SERVO_CAR, Constants.P_TOP_SERVO_CHAN);
-        //l = LeftLock.getInstance();
         lengthSensor = SI.getInstance().getMid();
         direction = -1;
-        tapeLenMax = 42;
+        tapeLenMax = 50;
         tapeLenMin = 5;
         angleMax = 0.78;
         angleMin = 0.1;

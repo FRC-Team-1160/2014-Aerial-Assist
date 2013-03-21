@@ -6,7 +6,7 @@ import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.api.DigitalServo;
 import com.team1160.feathers.api.FrameMath;
 import com.team1160.feathers.commands.pulleys.right.RightDoNothing;
-import com.team1160.feathers.commands.pulleys.right.RightPulleyAngle;
+
 import edu.wpi.first.wpilibj.Jaguar;
 
 public class RightPulley extends Pulley {

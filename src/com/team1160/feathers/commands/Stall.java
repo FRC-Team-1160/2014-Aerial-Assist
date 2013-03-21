@@ -9,16 +9,15 @@ public class Stall extends CommandBase {
 	}
 	
 	protected void initialize() {
-		// TODO Auto-generated method stub
 		
 	}
 
 	protected void execute() {
-		middlePulley.setVelocity(-.2);
+		middlePulley.setVelocity(-.1);
 	}
 
 	protected boolean isFinished() {
-		return SI.getInstance().middleFinish;
+		return SI.middleFinish;
 	}
 
 	

@@ -145,10 +145,9 @@ public abstract class Pulley extends Subsystem {
             return (lengthSensor.getLength() <= tapeLenMin + 0.5);
         } else if (length >= tapeLenMax) {
             return (lengthSensor.getLength() >= tapeLenMax - 0.5);
-        } else if (length >= tapeLenMin && length <= tapeLenMax) {
-            return (Math.abs(length - lengthSensor.getLength()) < error);
+        } else{ 
+        	return (Math.abs(length - lengthSensor.getLength()) < error);
         }
-        return false;
     }
 
     public double getLength() {
