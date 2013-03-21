@@ -154,4 +154,11 @@ public abstract class Pulley extends Subsystem {
     public double getLength() {
         return this.lengthSensor.getLength();
     }
+    
+    public void setRelativeGround(double dAngle){
+        
+        double anglex = dAngle - SI.getInstance().getAngleDegrees();
+        setAngle(anglex);
+        
+    }
 }
