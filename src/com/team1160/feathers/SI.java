@@ -17,7 +17,7 @@ public class SI {
     protected LengthSensor mid;
     protected LengthSensor left;
     protected LengthSensor right;
-    protected Gyro gyro;
+    protected static Gyro gyro;
     protected static SI instance;
 	public static boolean nextCommand;
 
@@ -74,7 +74,7 @@ public class SI {
 
     }
 
-    public void reset() {
+    public static void reset() {
         gyro.reset();
     }
 }

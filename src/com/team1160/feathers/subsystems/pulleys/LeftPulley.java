@@ -29,7 +29,7 @@ public class LeftPulley extends Pulley{
 		l = LeftLock.getInstance();
 		lengthSensor = SI.getInstance().getLeft();
 		direction = 1;
-		tapeLenMax = 42;
+		tapeLenMax = 34.5;
 		tapeLenMin = 5;
 		angleMax = .863;
 		angleMin = .43;

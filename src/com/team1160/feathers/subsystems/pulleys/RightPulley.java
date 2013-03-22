@@ -27,7 +27,7 @@ public class RightPulley extends Pulley {
         l = RightLock.getInstance();
         lengthSensor = SI.getInstance().getRight();
         direction = -1;
-        tapeLenMax = 42;
+        tapeLenMax = 34.5;
         tapeLenMin = 5;
         angleMax = 0.744;
         angleMin = 0.385;

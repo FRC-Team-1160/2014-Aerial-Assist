@@ -4,15 +4,10 @@ import com.team1160.feathers.SI;
 
 import edu.wpi.first.wpilibj.command.Command;
 
-public class waitForNext extends Command{
-
-	public waitForNext(){
-		
-	}
+public class NextCommand extends Command {
 
 	protected void initialize() {
-		// TODO Auto-generated method stub
-		
+		SI.nextCommand = true;
 	}
 
 	protected void execute() {
@@ -21,7 +16,7 @@ public class waitForNext extends Command{
 	}
 
 	protected boolean isFinished() {
-		return SI.nextCommand;
+		return true;
 	}
 
 	protected void end() {
@@ -33,5 +28,5 @@ public class waitForNext extends Command{
 		// TODO Auto-generated method stub
 		
 	}
-
+	
 }

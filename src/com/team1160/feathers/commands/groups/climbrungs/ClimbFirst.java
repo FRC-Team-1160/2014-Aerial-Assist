@@ -6,11 +6,10 @@ import com.team1160.feathers.commands.TwoStep;
 
 public class ClimbFirst extends CommandGroupBase {
 
-    protected SI si;
 
     public ClimbFirst() {
 
-
+    	SI.reset();
         addSequential(new TwoStep());
 
 //        addParallel(new LeftPulleyAngleSet(rAngle));
