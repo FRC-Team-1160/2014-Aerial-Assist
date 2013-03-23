@@ -3,8 +3,14 @@
 /nbproject/private/
 /nbbuild/
 
+
 *~
+
 *.lock
+
 *.DS_Store
+
 *.swp
+
 *.out
+build
