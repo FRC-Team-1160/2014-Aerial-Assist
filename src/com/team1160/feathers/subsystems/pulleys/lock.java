@@ -22,4 +22,8 @@ public abstract class Lock extends Subsystem {
 		return lock;
 	}
 	
+	public double getServoVal(){
+		return this.servo.get();
+	}
+	
 }

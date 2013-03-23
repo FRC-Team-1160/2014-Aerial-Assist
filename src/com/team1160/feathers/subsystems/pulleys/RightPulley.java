@@ -29,11 +29,11 @@ public class RightPulley extends Pulley {
         direction = -1;
         tapeLenMax = 34.5;
         tapeLenMin = 5;
-        angleMax = 0.744;
-        angleMin = 0.385;
+        angleMax = 0.65;
+        angleMin = 0.24;
         pulleyErrorMax = 1;
         pulleyErrorMin = .1;
-        meth = new FrameMath(false, -.0036, .949, "right pulley");
+        meth = new FrameMath(false, -.00369, .969, "right pulley");
     }
 
     void getJoystick() {

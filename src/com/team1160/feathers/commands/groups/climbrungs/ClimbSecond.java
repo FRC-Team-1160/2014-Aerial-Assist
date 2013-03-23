@@ -1,20 +1,16 @@
 package com.team1160.feathers.commands.groups.climbrungs;
 
 import com.team1160.feathers.commands.CommandGroupBase;
-import com.team1160.feathers.commands.DefensiveClimb;
-import com.team1160.feathers.commands.MiddleFinish;
-import com.team1160.feathers.commands.RelativeExtendDrop;
-import com.team1160.feathers.commands.RelativeGroundAngle;
-import com.team1160.feathers.commands.Stall;
-import com.team1160.feathers.commands.UnlockExtend;
-import com.team1160.feathers.commands.pulleyAngleLength;
 import com.team1160.feathers.commands.waitForNext;
 import com.team1160.feathers.commands.groups.climbrungs.second.CliimbTheShit;
 import com.team1160.feathers.commands.groups.climbrungs.second.PrepareMiddle;
 import com.team1160.feathers.commands.groups.climbrungs.second.PrepareRightLeft;
 
-import edu.wpi.first.wpilibj.command.WaitCommand;
-import edu.wpi.first.wpilibj.command.WaitForChildren;
+/*
+ * Another class that does what it implies,
+ * this function is responsible for the 
+ * second and third rung climbs.
+ */
 
 public class ClimbSecond extends CommandGroupBase{
 	public ClimbSecond(){

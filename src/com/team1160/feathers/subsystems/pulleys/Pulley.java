@@ -9,17 +9,20 @@ import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+/*
+ * -----------------------------------------------------------------------*
+ *                    TO ALL YE WHO ENTER, BE WARNED!                     *
+ *                                                                        *
+ * This class is essentially our robot, and it deserves more comments then*
+ * what we have given it. Sorry about that we were a bit rushed at time of*
+ * writing. I promise to come back and comment it but not now.            *
+ *------------------------------------------------------------------------*	 
+ */
+
 
 public abstract class Pulley extends Subsystem {
 
-    /*
-     * -----------------------------------------------------------------------*
-     *                    TO ALL YE WHO ENTER, BE WARNED!                     *
-     *                                                                        *
-     * This class is large... no I mean it this class is pretty damn big.     *
-     *------------------------------------------------------------------------*	 
-     */
-    protected DigitalServo angle;
+	protected DigitalServo angle;
     protected Jaguar am;
     protected Joystick stick;
     protected LengthSensor lengthSensor;
@@ -39,7 +42,7 @@ public abstract class Pulley extends Subsystem {
     protected long lastSetTime;
 
     public void setAngle(double set) {
-        // set = Math.min(Math.max(set, angleMin), angleMax);  //Fun little line to figure out if set is in bounds and to fix it if not
+        set = Math.min(Math.max(set, angleMin), angleMax);  //figures out if set is in bounds and to fix it if not
         this.angle.set(set);
         SmartDashboard.putNumber(name + ": Servo value:", angle.get());
         this.lastSet = set;
@@ -147,6 +150,10 @@ public abstract class Pulley extends Subsystem {
 
     public double getLength() {
         return this.lengthSensor.getLength();
+    }
+    
+    public double getRaw(){
+    	return this.lengthSensor.getRaw();
     }
     
     public void setRelativeGround(double dAngle){

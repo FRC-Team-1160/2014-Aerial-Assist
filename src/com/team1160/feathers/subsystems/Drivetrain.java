@@ -60,5 +60,14 @@ public class Drivetrain extends Subsystem {
 	public void setLeft(double set){
 		left.set(set);
 	}
+
+
+	public double getLeft() {
+		return left.get();
+	}
+	
+	public double getRight(){
+		return right.get();
+	}
 	
 }

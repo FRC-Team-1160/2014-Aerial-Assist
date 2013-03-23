@@ -13,12 +13,12 @@ public class PrepareClimb extends CommandGroupBase{
     public PrepareClimb(){
     	
         abc  = 75;
-        addParallel(new UnlockPulley(leftLock, leftPulley));
-        addParallel(new UnlockPulley(rightLock, rightPulley));
-        addSequential(new WaitForChildren());
+        //addParallel(new UnlockPulley(leftLock, leftPulley));
+        //addParallel(new UnlockPulley(rightLock, rightPulley));
+        //addSequential(new WaitForChildren());
         addParallel(new pulleyAngleLength(leftPulley , abc, 28, false));
-        addParallel(new pulleyAngleLength(rightPulley, abc, 28.5, false));
-        addParallel(new pulleyAngleLength(middlePulley, 80, 27, false));   
+        addParallel(new pulleyAngleLength(rightPulley, abc, 28, false));
+        //addParallel(new pulleyAngleLength(middlePulley, 80, 27, false));   
     }
 
 	    
