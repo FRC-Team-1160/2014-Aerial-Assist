@@ -10,6 +10,8 @@ import com.team1160.feathers.commands.groups.prepare.PrepareClimb;
 import com.team1160.feathers.commands.groups.wills.DriveMode;
 import com.team1160.feathers.commands.groups.wills.WillAngle;
 import com.team1160.feathers.commands.groups.wills.WillLength;
+import com.team1160.feathers.commands.lock.LockCommand;
+import com.team1160.feathers.commands.pulley.ManualVelocity;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyAdjust;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyAngle;
 import com.team1160.feathers.commands.pulleys.left.LeftPulleyExtend;
@@ -122,15 +124,15 @@ public class OI {
 		
 		//Right buttons
 		rAngle.whenPressed(new RightPulleyAngle());
-		rLength.whenPressed(new RightPulleyExtend());
-		rLock.whenPressed(new RightPulleyLock(true));
+		rLength.whenPressed(new ManualVelocity(RightPulley.getInstance()));
+		rLock.whenPressed(new LockCommand(RightLock.getInstance(), true));
 		rULock.whenPressed(new UnlockPulley(RightLock.getInstance(), RightPulley.getInstance()));
 		rAdjust.whenPressed(new RightPulleyAdjust());
 		
 		//Left buttons
 		lAngle.whenPressed(new LeftPulleyAngle());
-		lLength.whenPressed(new LeftPulleyExtend());
-		lLock.whenPressed(new LeftPulleyLock(true));
+		lLength.whenPressed(new ManualVelocity(LeftPulley.getInstance());
+		lLock.whenPressed(new LockCommand(RightLock.getInstance(), true));
 		lULock.whenPressed(new UnlockPulley(LeftLock.getInstance(), LeftPulley.getInstance()));
 		lAdjust.whenPressed(new LeftPulleyAdjust());
 	
