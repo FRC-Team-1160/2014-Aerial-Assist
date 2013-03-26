@@ -1,0 +1,21 @@
+<config>
+	
+	<configVersion> 0.1 </configVersion>
+	
+	<match>
+		<field type="numerical" input="menu">
+			<name> Climb </name>
+			<bottom> 0 </bottom>
+			<top> 30 </top>
+			<step> 10 </step>
+		</field>
+		
+		<field type="numerical" input="box">
+			<name> Auto Score </name>
+		</field>
+	</match>
+
+	<pit>
+	
+	</pit>
+</config>
