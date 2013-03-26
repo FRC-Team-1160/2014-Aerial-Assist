@@ -92,8 +92,8 @@ public class XmlParser {
 		MatchTable matchTable = new MatchTable();
 		NodeList nlist = matchConfig.getElementsByTagName("field");
 		for(int i = 0; i < nlist.getLength(); i++){
-			if(nlist.item(0).getNodeType() == Node.ELEMENT_NODE){
-				Element element = (Element) nlist.item(0);
+			if(nlist.item(i).getNodeType() == Node.ELEMENT_NODE){
+				Element element = (Element) nlist.item(i);
 				if(element.getAttribute("type").equals("numerical")){      
 					if(element.getAttribute("input").equals("menu")){
 						String field = "";

@@ -13,6 +13,9 @@
 		<field type="numerical" input="box">
 			<name> Auto Score </name>
 		</field>
+		
+		<field type="numerical" input="circle">
+		</field>
 	</match>
 
 	<pit>
