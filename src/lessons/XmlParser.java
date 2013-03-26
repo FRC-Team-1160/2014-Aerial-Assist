@@ -12,9 +12,8 @@ import org.xml.sax.SAXException;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
-import lessons.tables.MatchTable;
- 
 
 /**
  * The xml parser is where the code reads the config file
@@ -87,9 +86,9 @@ public class XmlParser {
 	 * 
 	 * @return   gives you a match table based on the specifications of the config file
 	 */
-	public MatchTable getMatchTable(){
+	public String[] getMatchTable(){
+		ArrayList<String> result = new ArrayList<String>();
 		Element matchConfig = getMatch();
-		MatchTable matchTable = new MatchTable();
 		NodeList nlist = matchConfig.getElementsByTagName("field");
 		for(int i = 0; i < nlist.getLength(); i++){
 			if(nlist.item(i).getNodeType() == Node.ELEMENT_NODE){
@@ -102,20 +101,22 @@ public class XmlParser {
 						field += "Max of: " + element.getElementsByTagName("top").item(0).getTextContent() + "\n";
 						field += "Min of: " + element.getElementsByTagName("bottom").item(0).getTextContent() + "\n";
 						field += "Increment of: " + element.getElementsByTagName("step").item(0).getTextContent() + "\n";
-						matchTable.addField(field);
+						result.add(field);
 					}else if(element.getAttribute("input").equals("box")){
 						String field = "";
 						field += "Field name: " + element.getElementsByTagName("name").item(0).getTextContent() + "\n";
 						field += "Type: box\n";
-						matchTable.addField(field);
+						result.add(field);	
 					}else{
-						matchTable.addField("Field of unknown type found\n");
+						result.add("Field of unknown type found\n");
 					}
+				}else{
+					result.add("Field of unknown type found\n");
 				}
 				
 			}
 		}
-		return matchTable;
+		return  result.toArray(new String[result.size()]);
 	}
-	
+
 }	

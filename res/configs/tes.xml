@@ -14,10 +14,17 @@
 			<name> Auto Score </name>
 		</field>
 		
-		<field type="numerical" input="circle">
+		<field type="string" input="menu">
+			<name>Overall Strategy</name>
+			<choice>shoot like hell</choice>
+			<choice>shoot + hang</choice>
+			<choice>climb</choice>
+			<choice>defense</choice>
 		</field>
-	</match>
 
+		</match>
+
+	
 	<pit>
 	
 	</pit>
