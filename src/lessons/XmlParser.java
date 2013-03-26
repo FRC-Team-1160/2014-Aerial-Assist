@@ -14,6 +14,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import lessons.tables.fields.NumericBox;
+import lessons.tables.fields.NumericMenu;
+
 
 /**
  * The xml parser is where the code reads the config file
@@ -85,38 +88,32 @@ public class XmlParser {
 	/**
 	 * 
 	 * @return   gives you a match table based on the specifications of the config file
+	 * @throws Exception 
 	 */
-	public String[] getMatchTable(){
+	public String[] getMatchTable() throws Exception{
 		ArrayList<String> result = new ArrayList<String>();
 		Element matchConfig = getMatch();
 		NodeList nlist = matchConfig.getElementsByTagName("field");
 		for(int i = 0; i < nlist.getLength(); i++){
 			if(nlist.item(i).getNodeType() == Node.ELEMENT_NODE){
 				Element element = (Element) nlist.item(i);
-				if(element.getAttribute("type").equals("numerical")){      
-					if(element.getAttribute("input").equals("menu")){
-						String field = "";
-						field += "Field name: " + element.getElementsByTagName("name").item(0).getTextContent() + "\n";
-						field += "Type: menu\n";
-						field += "Max of: " + element.getElementsByTagName("top").item(0).getTextContent() + "\n";
-						field += "Min of: " + element.getElementsByTagName("bottom").item(0).getTextContent() + "\n";
-						field += "Increment of: " + element.getElementsByTagName("step").item(0).getTextContent() + "\n";
-						result.add(field);
-					}else if(element.getAttribute("input").equals("box")){
-						String field = "";
-						field += "Field name: " + element.getElementsByTagName("name").item(0).getTextContent() + "\n";
-						field += "Type: box\n";
-						result.add(field);	
-					}else{
-						result.add("Field of unknown type found\n");
-					}
-				}else{
-					result.add("Field of unknown type found\n");
-				}
-				
+				result.add(resolveField(element));
 			}
 		}
 		return  result.toArray(new String[result.size()]);
-	}
-
-}	
+	}	
+	
+	public String resolveField(Element element) throws Exception{
+		String result = "";
+		if(element.getAttribute("type").equals("numerical")){      
+			if(element.getAttribute("input").equals("menu")){
+				result = new NumericMenu(element).toString();	
+			}else if(element.getAttribute("input").equals("box")){
+				result = new NumericBox(element).toString();
+			}else{
+				result = "Field of unknown type found\n";
+			}
+		}
+		return result;
+	}	
+}
