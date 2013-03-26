@@ -64,7 +64,7 @@ public class MatchTable {
 		}else{
 			for(int i = 0; i < fields.length; i++){
 				result += "Field #" + i + ":\n";
-				result += fields[i];
+				result += fields[i] + "\n";
 			}
 		}
 		return result;
