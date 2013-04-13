@@ -1,7 +1,7 @@
 package com.team1160.feathers.subsystems.pulleys;
 
 import com.team1160.feathers.api.Constants;
-import com.team1160.feathers.commands.pulleys.left.LeftPulleyLock;
+import com.team1160.feathers.commands.lock.LockCommand;
 
 import edu.wpi.first.wpilibj.Servo;
 
@@ -23,6 +23,6 @@ public class LeftLock extends Lock {
     }
 
     protected void initDefaultCommand() {
-        setDefaultCommand(new LeftPulleyLock(false));
+        setDefaultCommand(new LockCommand(LeftLock.getInstance(), null));
     }
 }

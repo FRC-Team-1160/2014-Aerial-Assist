@@ -19,6 +19,12 @@ public class LockCommand extends CommandBase {
 		this.status = status;
 	}
 	
+	public LockCommand(Lock lock, boolean status){
+		Boolean newStatus = new Boolean(status);
+		this.status = newStatus;
+		this.lock = lock;
+	}
+	
 	public LockCommand(Lock lock){
 		this.lock = lock;
 		this.status = !this.lock.getLockState();
@@ -29,10 +35,13 @@ public class LockCommand extends CommandBase {
 	}
 
 	protected void execute() {
-		this.lock.lock(status);
+		if(this.status != null){
+			this.lock.lock(status);
+		}
 	}
 
 	protected boolean isFinished() {
+		if(this.status == null) return false;
 		return this.lock.getLockState() == this.status;
 	}
 

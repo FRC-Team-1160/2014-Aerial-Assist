@@ -1,4 +1,4 @@
-package com.team1160.feathers.commands.groups.climbrungs;
+package com.team1160.feathers.commands.groups.climbrungs.first;
 
 import com.team1160.feathers.Reporter;
 import com.team1160.feathers.SI;

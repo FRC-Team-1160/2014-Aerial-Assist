@@ -1,4 +1,4 @@
-package com.team1160.feathers.commands.groups.climbrungs;
+package com.team1160.feathers.commands.groups.climbrungs.second;
 
 import com.team1160.feathers.commands.CommandGroupBase;
 import com.team1160.feathers.commands.waitForNext;

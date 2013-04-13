@@ -1,7 +1,7 @@
 package com.team1160.feathers.commands;
 
-import com.team1160.feathers.commands.groups.climbrungs.ClimbFirst;
-import com.team1160.feathers.commands.groups.climbrungs.ClimbSecond;
+import com.team1160.feathers.commands.groups.climbrungs.first.ClimbFirst;
+import com.team1160.feathers.commands.groups.climbrungs.second.ClimbSecond;
 import com.team1160.feathers.commands.groups.prepare.PrepareClimb;
 
 import edu.wpi.first.wpilibj.command.CommandGroup;
