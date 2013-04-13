@@ -5,7 +5,7 @@ import com.team1160.feathers.SI;
 import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.api.DigitalServo;
 import com.team1160.feathers.api.FrameMath;
-import com.team1160.feathers.commands.pulleys.middle.MiddleNothing;
+import com.team1160.feathers.commands.pulley.Nothing;
 
 import edu.wpi.first.wpilibj.Jaguar;
 
@@ -36,7 +36,7 @@ public class MiddlePulley extends Pulley {
     }
     
     protected void initDefaultCommand() {
-        setDefaultCommand(new MiddleNothing());
+        setDefaultCommand(new Nothing(getInstance()));
     }
 
     void getJoystick() {

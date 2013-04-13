@@ -4,6 +4,10 @@ package com.team1160.feathers.commands;
 import com.team1160.feathers.subsystems.pulleys.Lock;
 import com.team1160.feathers.subsystems.pulleys.Pulley;
 
+/**
+ *
+ * @author Zach
+ */
 public class DefensiveClimb extends CommandBase {
 	
 	Lock lock;

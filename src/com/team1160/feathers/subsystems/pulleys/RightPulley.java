@@ -5,7 +5,7 @@ import com.team1160.feathers.SI;
 import com.team1160.feathers.api.Constants;
 import com.team1160.feathers.api.DigitalServo;
 import com.team1160.feathers.api.FrameMath;
-import com.team1160.feathers.commands.pulleys.right.RightDoNothing;
+import com.team1160.feathers.commands.pulley.Nothing;
 
 import edu.wpi.first.wpilibj.Jaguar;
 
@@ -41,6 +41,6 @@ public class RightPulley extends Pulley {
     }
 
     protected void initDefaultCommand() {
-        setDefaultCommand(new RightDoNothing());
+        setDefaultCommand(new Nothing(getInstance()));
     }
 }

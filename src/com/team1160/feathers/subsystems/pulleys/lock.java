@@ -3,6 +3,10 @@ package com.team1160.feathers.subsystems.pulleys;
 import edu.wpi.first.wpilibj.Servo;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
+/**
+ *
+ * @author Zach
+ */
 public abstract class Lock extends Subsystem {
 
 	protected boolean lock;
