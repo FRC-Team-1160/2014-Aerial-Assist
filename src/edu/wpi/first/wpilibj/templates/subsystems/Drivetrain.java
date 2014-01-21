@@ -26,7 +26,9 @@ public class Drivetrain extends Subsystem{
         return instance;
     }
     
+    //CONSTRUCTOR - IS CALLED ONCE, ONLY BY GETINSTANCE
     private Drivetrain(){
+        //JAGUAR INITIALIZATION
         rightJ = new Jaguar(RobotMap.leftJagMotorSlot, RobotMap.leftJagMotorChannel);
         leftJ = new Jaguar(RobotMap.rightJagMotorSlot, RobotMap.rightJagMotorChannel);
     }

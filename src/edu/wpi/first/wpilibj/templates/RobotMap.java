@@ -34,4 +34,11 @@ public class RobotMap {
     public static final int addTension = 0;
     public static final int releaseTension = 0;
     
+    //---JOYSTICK BUTTONS---
+    public static final int extendPistonBut = 4;
+    public static final int retractPistonBut = 5;
+    public static final int releaseTensionBut = 6;
+    public static final int addTensionBut = 7;
+    public static final int letGoBut = 8;
+    
 }

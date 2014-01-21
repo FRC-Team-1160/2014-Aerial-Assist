@@ -1,13 +1,13 @@
 package edu.wpi.first.wpilibj.templates;
 
-import edu.wpi.first.wpilibj.Compressor;
-import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.Joystick;
-import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import edu.wpi.first.wpilibj.templates.commands.Pistons.extendPiston;
 import edu.wpi.first.wpilibj.templates.commands.Pistons.retractPiston;
+import edu.wpi.first.wpilibj.templates.commands.Shooter.tensionAdd;
+import edu.wpi.first.wpilibj.templates.commands.Shooter.tensionLetGo;
+import edu.wpi.first.wpilibj.templates.commands.Shooter.tensionRelease;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -18,18 +18,12 @@ public class OI {
     //JOYSTICK
     private Joystick stick;
     
-    //MOTOR
-    private Jaguar jagl;
-    private Jaguar jagr;
-    
-    //PNEUMATICS
-    private Solenoid solOne;
-    private Solenoid solTwo;
-    private Compressor comp;
-    
     //BUTTONS
     private Button extendPiston;
     private Button retractPiston;
+    private Button addTension;
+    private Button releaseTension;
+    private Button letGo;
     
     private static OI instance;
     
@@ -50,6 +44,9 @@ public class OI {
         
         extendPiston = new JoystickButton(stick, 4);
         retractPiston = new JoystickButton(stick, 5);
+        addTension = new JoystickButton(stick, 7);
+        releaseTension = new JoystickButton(stick, 8);
+        letGo = new JoystickButton(stick, 6);
         tieButtons();
     }
     
@@ -57,6 +54,9 @@ public class OI {
         
         extendPiston.whenPressed(new extendPiston());
         retractPiston.whenPressed(new retractPiston());
+        addTension.whenPressed(new tensionAdd());
+        releaseTension.whenPressed(new tensionRelease());
+        letGo.whenPressed(new tensionLetGo());
         
     }
     
