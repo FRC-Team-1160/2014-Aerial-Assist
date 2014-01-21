@@ -30,8 +30,8 @@ public class Drivetrain extends Subsystem{
     //CONSTRUCTOR - IS CALLED ONCE, ONLY BY GETINSTANCE
     private Drivetrain(){
         //JAGUAR INITIALIZATION
-        rightJ = new Jaguar(RobotMap.leftJagMotorSlot, RobotMap.leftJagMotorChannel);
-        leftJ = new Jaguar(RobotMap.rightJagMotorSlot, RobotMap.rightJagMotorChannel);
+        rightJ = new Jaguar(RobotMap.LEFT_JAG_MOTOR_SLOT, RobotMap.LEFT_JAG_MOTOR_CHAN);
+        leftJ = new Jaguar(RobotMap.RIGHT_JAG_MOTOR_SLOT, RobotMap.LEFT_JAG_MOTOR_CHAN);
     }
     
     protected void initDefaultCommand() {

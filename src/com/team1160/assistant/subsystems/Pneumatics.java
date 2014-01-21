@@ -1,10 +1,10 @@
 package com.team1160.assistant.subsystems;
 
+import com.team1160.assistant.RobotMap;
+import com.team1160.assistant.commands.Pistons.retractPiston;
 import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.command.Subsystem;
-import com.team1160.assistant.RobotMap;
-import com.team1160.assistant.commands.Pistons.retractPiston;
 
 public class Pneumatics extends Subsystem{
     
@@ -21,9 +21,9 @@ public class Pneumatics extends Subsystem{
     }
     
     private Pneumatics(){
-        compress = new Compressor(RobotMap.compressorSwitchChannel, RobotMap.compressorRelayChannel);
-        solenOne = new Solenoid(RobotMap.solonoidOneChannel);
-        solenTwo = new Solenoid(RobotMap.solonoidTwoChannel);
+        compress = new Compressor(RobotMap.COMPRESSOR_SWITCH_CHAN, RobotMap.COMPRESSOR_SWITCH_CHAN);
+        solenOne = new Solenoid(RobotMap.SOLENOID_ONE);
+        solenTwo = new Solenoid(RobotMap.SOLENOID_TWO);
     }
     
     protected void initDefaultCommand() {

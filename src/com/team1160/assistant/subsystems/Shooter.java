@@ -1,9 +1,9 @@
 package com.team1160.assistant.subsystems;
 
-import edu.wpi.first.wpilibj.Jaguar;
-import edu.wpi.first.wpilibj.command.Subsystem;
 import com.team1160.assistant.RobotMap;
 import com.team1160.assistant.commands.Shooter.neutral;
+import edu.wpi.first.wpilibj.Jaguar;
+import edu.wpi.first.wpilibj.command.Subsystem;
 
 
 public class Shooter extends Subsystem{
@@ -21,7 +21,7 @@ public class Shooter extends Subsystem{
     }
     
     private Shooter(){
-        jagM = new Jaguar(RobotMap.shootMotorSlot, RobotMap.shootMotorChannel);
+        jagM = new Jaguar(RobotMap.SHOOT_MOTOR_SLOT, RobotMap.SHOOT_MOTOR_CHAN);
     }
     
     protected void initDefaultCommand() {
@@ -33,15 +33,15 @@ public class Shooter extends Subsystem{
     }
     
     public void addTension(){
-        jagM.set(RobotMap.addTension);
+        jagM.set(RobotMap.ADD_TENSION);
     }
     
     public void releaseTension(){
-        jagM.set(RobotMap.releaseTension);
+        jagM.set(RobotMap.RELEASE_TENSION);
     }
     
     public void letGo(){
-        jagM.set(RobotMap.letGo);
+        jagM.set(RobotMap.LET_GO);
     }
     
 }
