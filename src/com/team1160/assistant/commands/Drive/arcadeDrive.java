@@ -1,11 +1,11 @@
-package edu.wpi.first.wpilibj.templates.commands.Shooter;
+package com.team1160.assistant.commands.Drive;
 
-import edu.wpi.first.wpilibj.templates.commands.CommandBase;
+import com.team1160.assistant.commands.CommandBase;
 
-public class neutral extends CommandBase{
+public class arcadeDrive extends CommandBase{
     
-    public neutral(){
-        requires(shoot);
+    public arcadeDrive(){
+        requires(drivetrain);
     }
     
     protected void initialize() {
@@ -13,7 +13,7 @@ public class neutral extends CommandBase{
     }
 
     protected void execute() {
-        shoot.neutrals();
+        drivetrain.arcadeDrive();
     }
 
     protected boolean isFinished() {
@@ -21,7 +21,6 @@ public class neutral extends CommandBase{
     }
 
     protected void end() {
-        
     }
 
     protected void interrupted() {

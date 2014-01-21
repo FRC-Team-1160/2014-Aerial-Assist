@@ -1,18 +1,19 @@
-package edu.wpi.first.wpilibj.templates.commands.Shooter;
+package com.team1160.assistant.commands.Shooter;
 
-import edu.wpi.first.wpilibj.templates.commands.CommandBase;
+import com.team1160.assistant.commands.CommandBase;
 
-public class tensionAdd extends CommandBase{
-
-    public tensionAdd(){
+public class tensionLetGo extends CommandBase{
+    
+    
+    public tensionLetGo(){
         requires(shoot);
     }
-    
+
     protected void initialize() {
     }
 
     protected void execute() {
-        shoot.addTension();
+        shoot.letGo();
     }
 
     protected boolean isFinished() {

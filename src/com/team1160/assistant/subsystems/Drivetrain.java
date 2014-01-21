@@ -1,10 +1,11 @@
-package edu.wpi.first.wpilibj.templates.subsystems;
+package com.team1160.assistant.subsystems;
 
+import com.team1160.assistant.OI;
+import com.team1160.assistant.RobotMap;
+import com.team1160.assistant.commands.Drive.arcadeDrive;
 import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj.templates.*;
-import edu.wpi.first.wpilibj.templates.commands.Drive.arcadeDrive;
 
 
 public class Drivetrain extends Subsystem{

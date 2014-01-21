@@ -1,10 +1,10 @@
-package edu.wpi.first.wpilibj.templates.subsystems;
+package com.team1160.assistant.subsystems;
 
 import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj.templates.RobotMap;
-import edu.wpi.first.wpilibj.templates.commands.Pistons.retractPiston;
+import com.team1160.assistant.RobotMap;
+import com.team1160.assistant.commands.Pistons.retractPiston;
 
 public class Pneumatics extends Subsystem{
     

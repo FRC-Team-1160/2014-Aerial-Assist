@@ -1,13 +1,13 @@
-package edu.wpi.first.wpilibj.templates;
+package com.team1160.assistant;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
-import edu.wpi.first.wpilibj.templates.commands.Pistons.extendPiston;
-import edu.wpi.first.wpilibj.templates.commands.Pistons.retractPiston;
-import edu.wpi.first.wpilibj.templates.commands.Shooter.tensionAdd;
-import edu.wpi.first.wpilibj.templates.commands.Shooter.tensionLetGo;
-import edu.wpi.first.wpilibj.templates.commands.Shooter.tensionRelease;
+import com.team1160.assistant.commands.Pistons.extendPiston;
+import com.team1160.assistant.commands.Pistons.retractPiston;
+import com.team1160.assistant.commands.Shooter.tensionAdd;
+import com.team1160.assistant.commands.Shooter.tensionLetGo;
+import com.team1160.assistant.commands.Shooter.tensionRelease;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -42,11 +42,11 @@ public class OI {
     
     private void initButtons(){
         
-        extendPiston = new JoystickButton(stick, 4);
-        retractPiston = new JoystickButton(stick, 5);
-        addTension = new JoystickButton(stick, 7);
-        releaseTension = new JoystickButton(stick, 8);
-        letGo = new JoystickButton(stick, 6);
+        extendPiston = new JoystickButton(stick, RobotMap.extendPistonBut);
+        retractPiston = new JoystickButton(stick, RobotMap.retractPistonBut);
+        addTension = new JoystickButton(stick, RobotMap.addTensionBut);
+        releaseTension = new JoystickButton(stick, RobotMap.releaseTensionBut);
+        letGo = new JoystickButton(stick, RobotMap.letGoBut);
         tieButtons();
     }
     

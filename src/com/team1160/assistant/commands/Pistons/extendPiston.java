@@ -1,6 +1,6 @@
-package edu.wpi.first.wpilibj.templates.commands.Pistons;
+package com.team1160.assistant.commands.Pistons;
 
-import edu.wpi.first.wpilibj.templates.commands.CommandBase;
+import com.team1160.assistant.commands.CommandBase;
 
 public class extendPiston extends CommandBase{
     

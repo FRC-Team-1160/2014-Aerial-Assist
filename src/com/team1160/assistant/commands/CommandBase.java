@@ -1,8 +1,8 @@
-package edu.wpi.first.wpilibj.templates.commands;
+package com.team1160.assistant.commands;
 
+import com.team1160.assistant.OI;
+import com.team1160.assistant.subsystems.*;
 import edu.wpi.first.wpilibj.command.Command;
-import edu.wpi.first.wpilibj.templates.OI;
-import edu.wpi.first.wpilibj.templates.subsystems.*;
 
 /**
  * The base for all commands. All atomic commands should subclass CommandBase.

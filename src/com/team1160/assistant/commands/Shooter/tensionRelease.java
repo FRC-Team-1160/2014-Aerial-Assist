@@ -1,6 +1,6 @@
-package edu.wpi.first.wpilibj.templates.commands.Shooter;
+package com.team1160.assistant.commands.Shooter;
 
-import edu.wpi.first.wpilibj.templates.commands.CommandBase;
+import com.team1160.assistant.commands.CommandBase;
 
 public class tensionRelease extends CommandBase{
     

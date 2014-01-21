@@ -1,19 +1,19 @@
-package edu.wpi.first.wpilibj.templates.commands.Shooter;
+package com.team1160.assistant.commands.Shooter;
 
-import edu.wpi.first.wpilibj.templates.commands.CommandBase;
+import com.team1160.assistant.commands.CommandBase;
 
-public class tensionLetGo extends CommandBase{
+public class neutral extends CommandBase{
     
-    
-    public tensionLetGo(){
+    public neutral(){
         requires(shoot);
     }
-
+    
     protected void initialize() {
+        
     }
 
     protected void execute() {
-        shoot.letGo();
+        shoot.neutrals();
     }
 
     protected boolean isFinished() {
@@ -21,9 +21,11 @@ public class tensionLetGo extends CommandBase{
     }
 
     protected void end() {
+        
     }
 
     protected void interrupted() {
+        
     }
 
 }

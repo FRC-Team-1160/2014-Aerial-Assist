@@ -1,9 +1,9 @@
-package edu.wpi.first.wpilibj.templates.subsystems;
+package com.team1160.assistant.subsystems;
 
 import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj.templates.RobotMap;
-import edu.wpi.first.wpilibj.templates.commands.Shooter.neutral;
+import com.team1160.assistant.RobotMap;
+import com.team1160.assistant.commands.Shooter.neutral;
 
 
 public class Shooter extends Subsystem{
