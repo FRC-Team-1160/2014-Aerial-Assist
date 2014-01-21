@@ -4,7 +4,7 @@ import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.templates.*;
-import edu.wpi.first.wpilibj.templates.commands.arcadeDrive;
+import edu.wpi.first.wpilibj.templates.commands.Drive.arcadeDrive;
 
 
 public class Drivetrain extends Subsystem{
@@ -24,6 +24,11 @@ public class Drivetrain extends Subsystem{
         }
         //RETURN THE CREATED INSTANCE TO COMMANDBASE
         return instance;
+    }
+    
+    private Drivetrain(){
+        rightJ = new Jaguar(RobotMap.leftJagMotorSlot, RobotMap.leftJagMotorChannel);
+        leftJ = new Jaguar(RobotMap.rightJagMotorSlot, RobotMap.rightJagMotorChannel);
     }
     
     protected void initDefaultCommand() {

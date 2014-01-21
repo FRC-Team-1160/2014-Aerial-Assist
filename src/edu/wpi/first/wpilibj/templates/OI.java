@@ -6,8 +6,8 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
-import edu.wpi.first.wpilibj.templates.commands.extendPiston;
-import edu.wpi.first.wpilibj.templates.commands.retractPiston;
+import edu.wpi.first.wpilibj.templates.commands.Pistons.extendPiston;
+import edu.wpi.first.wpilibj.templates.commands.Pistons.retractPiston;
 
 /**
  * This class is the glue that binds the controls on the physical operator

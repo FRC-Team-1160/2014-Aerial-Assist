@@ -3,7 +3,8 @@ package edu.wpi.first.wpilibj.templates.subsystems;
 import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj.templates.commands.retractPiston;
+import edu.wpi.first.wpilibj.templates.RobotMap;
+import edu.wpi.first.wpilibj.templates.commands.Pistons.retractPiston;
 
 public class Pneumatics extends Subsystem{
     
@@ -17,6 +18,12 @@ public class Pneumatics extends Subsystem{
             instance = new Pneumatics();
         }
         return instance;
+    }
+    
+    private Pneumatics(){
+        compress = new Compressor(RobotMap.compressorSwitchChannel, RobotMap.compressorRelayChannel);
+        solenOne = new Solenoid(RobotMap.solonoidOneChannel);
+        solenTwo = new Solenoid(RobotMap.solonoidTwoChannel);
     }
     
     protected void initDefaultCommand() {

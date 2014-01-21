@@ -14,11 +14,13 @@ public abstract class CommandBase extends Command {
 
     protected static Drivetrain drivetrain;
     protected static Pneumatics airsystem;
+    protected static Shooter shoot;
 
     public static void init() {
         
         drivetrain = Drivetrain.getInstance();
         airsystem = Pneumatics.getInstance();
+        shoot = Shooter.getInstance();
         OI.getInstance();
     }
 }
