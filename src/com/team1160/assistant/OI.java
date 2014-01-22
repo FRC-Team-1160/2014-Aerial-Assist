@@ -5,6 +5,8 @@ import com.team1160.assistant.commands.Pistons.retractPiston;
 import com.team1160.assistant.commands.Shooter.tensionAdd;
 import com.team1160.assistant.commands.Shooter.tensionLetGo;
 import com.team1160.assistant.commands.Shooter.tensionRelease;
+import com.team1160.assistant.commands.vision.visionCommand;
+import com.team1160.assistant.commands.vision.visionDoNothing;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
@@ -24,6 +26,8 @@ public class OI {
     private Button addTension;
     private Button releaseTension;
     private Button letGo;
+    private Button track;
+    private Button stopTrack;
     
     private static OI instance;
     
@@ -47,6 +51,8 @@ public class OI {
         addTension = new JoystickButton(stick, RobotMap.ADD_TENSION_BUT);
         releaseTension = new JoystickButton(stick, RobotMap.RELEASE_TENSION_BUT);
         letGo = new JoystickButton(stick, RobotMap.LET_GO_BUT);
+        track = new JoystickButton(stick, RobotMap.VISION_TRACK_BUT);
+        stopTrack = new JoystickButton(stick, RobotMap.STOP_VISION_TRACK_BUT);
         tieButtons();
     }
     
@@ -57,6 +63,8 @@ public class OI {
         addTension.whenPressed(new tensionAdd());
         releaseTension.whenPressed(new tensionRelease());
         letGo.whenPressed(new tensionLetGo());
+        track.whenPressed(new visionCommand());
+        stopTrack.whenPressed(new visionDoNothing());
         
     }
     

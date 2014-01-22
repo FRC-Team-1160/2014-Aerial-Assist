@@ -35,6 +35,8 @@ public class RobotMap {
     public static final int RELEASE_TENSION = 0;
     
     //---JOYSTICK BUTTONS---
+    public static final int VISION_TRACK_BUT = 1;
+    public static final int STOP_VISION_TRACK_BUT = 2;
     public static final int EXTEND_PISTON_BUT = 4;
     public static final int RETRACT_PISTON_BUT = 5;
     public static final int RELEASE_TENSION_BUT = 6;
