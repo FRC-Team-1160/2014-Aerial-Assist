@@ -1,7 +1,7 @@
 package com.team1160.assistant.subsystems;
 
 import com.team1160.assistant.RobotMap;
-import com.team1160.assistant.commands.Pistons.retractPiston;
+import com.team1160.assistant.commands.Pistons.startCompressor;
 import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -27,7 +27,7 @@ public class Pneumatics extends Subsystem{
     }
     
     protected void initDefaultCommand() {
-        this.setDefaultCommand(new retractPiston());
+        this.setDefaultCommand(new startCompressor());
     }
     
     public void extendPiston(){
@@ -38,6 +38,10 @@ public class Pneumatics extends Subsystem{
     public void retractPiston(){
         solenOne.set(false);
         solenTwo.set(true);
+    }
+    
+    public void start(){
+        compress.start();
     }
     
     

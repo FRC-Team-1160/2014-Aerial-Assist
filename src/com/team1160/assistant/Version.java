@@ -6,8 +6,17 @@ public class Version {
 
     public String s1;
     final double version = 0.1;
-
-    public Version() {
+    
+    public static Version instance = null;
+    
+    public static Version getInstance(){
+        if(instance == null){
+            instance = new Version();
+        }
+        return instance;
+    }
+    
+    private Version() {
 
         Random rand = new Random();
         int a = rand.nextInt(3);

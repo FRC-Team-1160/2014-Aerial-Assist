@@ -4,19 +4,14 @@ import com.team1160.assistant.commands.CommandBase;
 import com.team1160.assistant.vision.Vision;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
-import java.util.Random;
 
 public class team1160 extends IterativeRobot {
     
     Vision vision;
-    final double version = 0.1;
-    String s1;
     
-    public void robotInit(){
-        Random rand = new Random();
-        int a = rand.nextInt(3);
-        System.out.println("Successful deploy. Currently: v" + version + "Random message: " + s1);
+    public void robotInit(){        
         vision = new Vision();
+        Version.getInstance();
         CommandBase.init();
     }
     
@@ -26,6 +21,7 @@ public class team1160 extends IterativeRobot {
     }
     
     public void teleopPeriodic(){
+        vision.autonomous = false;
         Scheduler.getInstance().run();
     }
     
