@@ -11,21 +11,21 @@ public class RobotMap {
     //---MOTORS---
     
     //-DRIVE-
-    public static final int LEFT_JAG_MOTOR_SLOT = 0;
-    public static final int LEFT_JAG_MOTOR_CHAN = 0;
-    public static final int RIGHT_JAG_MOTOR_SLOT = 0;
-    public static final int RIGHT_JAG_MOTOR_CHAN = 0;
+    public static final int LEFT_JAG_MOTOR_SLOT = 1;
+    public static final int LEFT_JAG_MOTOR_CHAN = 1;
+    public static final int RIGHT_JAG_MOTOR_SLOT = 2;
+    public static final int RIGHT_JAG_MOTOR_CHAN = 1;
     
     //-SHOOT-
-    public static final int SHOOT_MOTOR_SLOT = 0;
-    public static final int SHOOT_MOTOR_CHAN = 0;
+    public static final int SHOOT_MOTOR_SLOT = 3;
+    public static final int SHOOT_MOTOR_CHAN = 1;
     
     //---JOYSTICKS---
     public static final int JOY_PORT = 1;
     
     //---PNEUMATICS---
-    public static final int SOLENOID_ONE = 1;
-    public static final int SOLENOID_TWO = 2;
+    public static final int SOLENOID_ONE = 4;
+    public static final int SOLENOID_TWO = 5;
     public static final int COMPRESSOR_SWITCH_CHAN = 1;
     public static final int COMPRESSOR_RELAY_CHAN = 1;
     
@@ -35,13 +35,13 @@ public class RobotMap {
     public static final int RELEASE_TENSION = 0;
     
     //---JOYSTICK BUTTONS---
-    public static final int VISION_TRACK_BUT = 1;
-    public static final int STOP_VISION_TRACK_BUT = 2;
+    public static final int VISION_TRACK_BUT = 2;
+    public static final int STOP_VISION_TRACK_BUT = 3;
     public static final int EXTEND_PISTON_BUT = 4;
     public static final int RETRACT_PISTON_BUT = 5;
-    public static final int RELEASE_TENSION_BUT = 6;
-    public static final int ADD_TENSION_BUT = 7;
-    public static final int LET_GO_BUT = 8;
+    public static final int RELEASE_TENSION_BUT = 8;
+    public static final int ADD_TENSION_BUT = 9;
+    public static final int LET_GO_BUT = 1;
     
     
     

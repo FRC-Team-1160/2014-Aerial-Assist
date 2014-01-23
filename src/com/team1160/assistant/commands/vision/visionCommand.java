@@ -13,7 +13,7 @@ public class visionCommand extends CommandBase{
     }
 
     protected void execute() {
-        vision.visionTel(true);
+        vision.vision(true);
     }
 
     protected boolean isFinished() {
