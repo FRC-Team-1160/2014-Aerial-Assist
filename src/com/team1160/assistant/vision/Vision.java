@@ -235,22 +235,21 @@ public class Vision extends Subsystem {
 					for (int j = 0; j < horizontalTargetCount; j++) {
 						ParticleAnalysisReport horizontalReport = filteredImage
 								.getParticleAnalysisReport(horizontalTargets[j]);
-						double horizWidth, horizHeight, vertWidth, leftScore, rightScore, tapeWidthScore, verticalScore, total;
 						// Measure equivalent rectangle sides for use
 						// in score calculation
-						horizWidth = NIVision
+						double horizWidth = NIVision
 								.MeasureParticle(
 										filteredImage.image,
 										horizontalTargets[j],
 										false,
 										NIVision.MeasurementType.IMAQ_MT_EQUIVALENT_RECT_LONG_SIDE);
-						vertWidth = NIVision
+						double vertWidth = NIVision
 								.MeasureParticle(
 										filteredImage.image,
 										verticalTargets[i],
 										false,
 										NIVision.MeasurementType.IMAQ_MT_EQUIVALENT_RECT_SHORT_SIDE);
-						horizHeight = NIVision
+						double horizHeight = NIVision
 								.MeasureParticle(
 										filteredImage.image,
 										horizontalTargets[j],
@@ -259,26 +258,26 @@ public class Vision extends Subsystem {
 						// Determine if the horizontal target is in
 						// the expected location to the left of the
 						// vertical target
-						leftScore = ratioToScore(1.2
+						double leftScore = ratioToScore(1.2
 								* (verticalReport.boundingRectLeft - horizontalReport.center_mass_x)
 								/ horizWidth);
 						// Determine if the horizontal target is in
 						// the expected location to the right of the
 						// vertical target
-						rightScore = ratioToScore(1.2
+						double rightScore = ratioToScore(1.2
 								* (horizontalReport.center_mass_x
 										- verticalReport.boundingRectLeft - verticalReport.boundingRectWidth)
 								/ horizWidth);
 						// Determine if the width of the tape on the
 						// two targets appears to be the same
-						tapeWidthScore = ratioToScore(vertWidth
+						double tapeWidthScore = ratioToScore(vertWidth
 								/ horizHeight);
 						// Determine if the vertical location of the
 						// horizontal target appears to be correct
-						verticalScore = ratioToScore(1
+						double verticalScore = ratioToScore(1
 								- (verticalReport.boundingRectTop - horizontalReport.center_mass_y)
 								/ (4 * horizHeight));
-						total = leftScore > rightScore ? leftScore
+						double total = leftScore > rightScore ? leftScore
 								: rightScore;
 						total += tapeWidthScore + verticalScore;
 						// If the target is the best detected so far
