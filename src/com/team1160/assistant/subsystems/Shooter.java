@@ -2,6 +2,7 @@ package com.team1160.assistant.subsystems;
 
 import com.team1160.assistant.RobotMap;
 import com.team1160.assistant.commands.Shooter.neutral;
+import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
@@ -12,6 +13,7 @@ public class Shooter extends Subsystem{
     protected static Shooter instance;
     
     protected Jaguar jagM;
+    protected Encoder encoder;
     
     public static Shooter getInstance(){
         if(instance == null){
@@ -22,6 +24,8 @@ public class Shooter extends Subsystem{
     
     private Shooter(){
         jagM = new Jaguar(RobotMap.SHOOT_MOTOR_SLOT, RobotMap.SHOOT_MOTOR_CHAN);
+        encoder = new Encoder(RobotMap.ENC_SHOOT_A, RobotMap.ENC_SHOOT_B, true);
+        encoder.start();
     }
     
     protected void initDefaultCommand() {
