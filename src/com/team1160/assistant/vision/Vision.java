@@ -27,7 +27,7 @@ public class Vision extends Subsystem{
     protected static Vision instance = null;
 
     protected void initDefaultCommand() {
-        this.setDefaultCommand(new visionDoNothing());
+        this.setDefaultCommand(null);
     }
 
     public class Scores {
@@ -173,6 +173,7 @@ public class Vision extends Subsystem{
     }
 
     public void vision(boolean auto) {
+        System.out.println("Vision code STARTED! Good Luck!");
         TargetReport target = new TargetReport();
         int verticalTargets[] = new int[RobotMap.MAX_PARTICLES];
         int horizontalTargets[] = new int[RobotMap.MAX_PARTICLES];
@@ -266,10 +267,10 @@ public class Vision extends Subsystem{
                         double distance = computeDistance(filteredImage, distanceReport, target.verticalIndex);
                         if (target.Hot) {
                             System.out.println("Hot target located");
-                            System.out.println("Distance: " + distance);
+                            System.out.println("Distance: " + distance + "in");
                         } else {
                             System.out.println("No hot target present");
-                            System.out.println("Distance: " + distance);
+                            System.out.println("Distance: " + distance + "in");
                         }
                     }
                 }
@@ -291,4 +292,9 @@ public class Vision extends Subsystem{
             }
         }
     }
+    
+    public void stahp(){
+        System.out.println("Camera proccessing complete.");
+    }
+    
 }

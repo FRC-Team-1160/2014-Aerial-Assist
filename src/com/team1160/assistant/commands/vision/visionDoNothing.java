@@ -10,13 +10,14 @@ public class visionDoNothing extends CommandBase{
     }
     
     protected void initialize() {
+        vision.stahp();
     }
 
     protected void execute() {
     }
 
     protected boolean isFinished() {
-        return false;
+        return true;
     }
 
     protected void end() {

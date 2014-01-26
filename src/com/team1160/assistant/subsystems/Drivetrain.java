@@ -3,6 +3,7 @@ package com.team1160.assistant.subsystems;
 import com.team1160.assistant.OI;
 import com.team1160.assistant.RobotMap;
 import com.team1160.assistant.commands.Drive.arcadeDrive;
+import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -15,6 +16,8 @@ public class Drivetrain extends Subsystem{
     protected Jaguar rightJ, leftJ; //JAGUAR
     protected Joystick stick; //JOYSTICK
     protected static Drivetrain instance = null; //INSTANCE OF DRIVETRAIN CLASS
+    protected Encoder encLeft;
+    protected Encoder encRight;
     
     //METHOD CALLED BY COMMANDBASE TO RETRIEVE INSTANCE OF DT
     public static Drivetrain getInstance() {
@@ -32,6 +35,10 @@ public class Drivetrain extends Subsystem{
         //JAGUAR INITIALIZATION
         rightJ = new Jaguar(RobotMap.LEFT_JAG_MOTOR_SLOT, RobotMap.LEFT_JAG_MOTOR_CHAN);
         leftJ = new Jaguar(RobotMap.RIGHT_JAG_MOTOR_SLOT, RobotMap.LEFT_JAG_MOTOR_CHAN);
+        encLeft = new Encoder(RobotMap.ENC_DT_LEFT_A, RobotMap.ENC_DT_LEFT_B, true);
+        encRight = new Encoder(RobotMap.ENC_DT_RIGHT_A, RobotMap.ENC_DT_RIGHT_B, true);
+        encLeft.start();
+        encRight.start();
     }
     
     protected void initDefaultCommand() {
@@ -51,7 +58,11 @@ public class Drivetrain extends Subsystem{
         
     }
     
-    
+    public void autoDrive(){
+        
+        
+        
+    }
     
 
 }

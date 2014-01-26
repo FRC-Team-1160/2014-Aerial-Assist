@@ -17,8 +17,8 @@ public class RobotMap {
     public static final int RIGHT_JAG_MOTOR_CHAN = 1;
     
     //-SHOOT-
-    public static final int SHOOT_MOTOR_SLOT = 3;
-    public static final int SHOOT_MOTOR_CHAN = 1;
+    public static final int SHOOT_MOTOR_SLOT = 1;
+    public static final int SHOOT_MOTOR_CHAN = 3;
     
     //---JOYSTICKS---
     public static final int JOY_PORT = 1;
@@ -28,6 +28,14 @@ public class RobotMap {
     public static final int SOLENOID_TWO = 5;
     public static final int COMPRESSOR_SWITCH_CHAN = 1;
     public static final int COMPRESSOR_RELAY_CHAN = 1;
+    
+    //---ENCODERS---
+    public static final int ENC_DT_LEFT_A = 2;
+    public static final int ENC_DT_LEFT_B = 3;
+    public static final int ENC_DT_RIGHT_A = 4;
+    public static final int ENC_DT_RIGHT_B = 5;
+    public static final int ENC_SHOOT_A = 6;
+    public static final int ENC_SHOOT_B = 7;
     
     //---SPEED VALUES---
     public static final int LET_GO = 0;
