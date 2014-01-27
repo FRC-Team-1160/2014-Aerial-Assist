@@ -3,7 +3,7 @@ package com.team1160.assistant;
 import java.util.Random;
 
 public class Version {
-	public static String[] RANDOM_MESSAGES = new String[] { "Heh...",
+	public static final String[] RANDOM_MESSAGES = new String[] { "Heh...",
 			"Gabriel and Orangutan are red COUCHES.", "Zach is a god.",
 			"That's a dick move." };
 	final double version = 0.1;

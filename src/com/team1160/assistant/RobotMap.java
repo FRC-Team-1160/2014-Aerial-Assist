@@ -48,7 +48,6 @@ public interface RobotMap {
 	 *-------------------------*/
 	public static final int Y_IMAGE_RES = 240;
 	public static final double VIEW_ANGLE = 41.7; // Axis 206 camera
-	public static final double PI = 3.141592653;
 	// Score limits used for target identification
 	public static final int RECTANGULARITY_LIMIT = 40;
 	public static final int ASPECT_RATIO_LIMIT = 55;
