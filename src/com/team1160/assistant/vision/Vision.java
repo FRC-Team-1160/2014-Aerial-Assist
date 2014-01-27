@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj.image.*;
  * 
  * 
  * ..you have been warned. */
-public class Vision extends Subsystem {
+public class Vision extends Subsystem implements RobotMap {
 	AxisCamera camera;
 	CriteriaCollection cc;
 	public boolean autonomous;
@@ -43,9 +43,8 @@ public class Vision extends Subsystem {
 		 *        false to treat it as a center target
 		 * @return True if the particle meets all limits, false otherwise */
 		public boolean isTarget(boolean vertical) {
-			if (rectangularity <= RobotMap.RECTANGULARITY_LIMIT)
-				return false;
-			return (vertical ? aspectRatioVertical : aspectRatioHorizontal) > RobotMap.ASPECT_RATIO_LIMIT;
+			if (rectangularity <= RECTANGULARITY_LIMIT) return false;
+			return (vertical ? aspectRatioVertical : aspectRatioHorizontal) > ASPECT_RATIO_LIMIT;
 		}
 		/** Computes a score (0-100) comparing the aspect ratio to the ideal
 		 * aspect ratio for the target. This method uses the equivalent
@@ -103,12 +102,10 @@ public class Vision extends Subsystem {
 		 * score limits to evaluate if the target is a hot target or not.
 		 * Returns True if the target is hot. False if it is not. */
 		boolean isHot() {
-			if (this.tapeWidthScore < RobotMap.TAPE_WIDTH_LIMIT)
-				return false;
-			if (this.verticalScore < RobotMap.VERTICAL_SCORE_LIMIT)
-				return false;
-			return (this.leftScore > RobotMap.LR_SCORE_LIMIT)
-					|| (this.rightScore > RobotMap.LR_SCORE_LIMIT);
+			if (this.tapeWidthScore < TAPE_WIDTH_LIMIT) return false;
+			if (this.verticalScore < VERTICAL_SCORE_LIMIT) return false;
+			return (this.leftScore > LR_SCORE_LIMIT)
+					|| (this.rightScore > LR_SCORE_LIMIT);
 		}
 	};
 	public static Vision getInstance() {
@@ -121,8 +118,8 @@ public class Vision extends Subsystem {
 		camera = AxisCamera.getInstance(); // get an instance of the camera
 		cc = new CriteriaCollection(); // create the criteria for the particle
 									// filter
-		cc.addCriteria(NIVision.MeasurementType.IMAQ_MT_AREA,
-				RobotMap.AREA_MINIMUM, 65535, false);
+		cc.addCriteria(NIVision.MeasurementType.IMAQ_MT_AREA, AREA_MINIMUM,
+				65535, false);
 	}
 	double computeDistance(BinaryImage image, ParticleAnalysisReport report,
 			int particleNumber) throws NIVisionException {
@@ -134,9 +131,9 @@ public class Vision extends Subsystem {
 		// on skewed rectangles
 		double height = Math.min(report.boundingRectHeight, rectLong);
 		int targetHeight = 32;
-		return RobotMap.Y_IMAGE_RES
+		return Y_IMAGE_RES
 				* targetHeight
-				/ (height * 12 * 2 * Math.tan(RobotMap.VIEW_ANGLE * Math.PI
+				/ (height * 12 * 2 * Math.tan(VIEW_ANGLE * Math.PI
 						/ (180 * 2)));
 	}
 	/** Computes a score (0-100) estimating how rectangular the particle is by
@@ -161,8 +158,8 @@ public class Vision extends Subsystem {
 	}
 	public void vision() {
 		System.out.println("Vision code STARTED! Good Luck!");
-		int verticalTargets[] = new int[RobotMap.MAX_PARTICLES];
-		int horizontalTargets[] = new int[RobotMap.MAX_PARTICLES];
+		int verticalTargets[] = new int[MAX_PARTICLES];
+		int horizontalTargets[] = new int[MAX_PARTICLES];
 		int verticalTargetCount, horizontalTargetCount;
 		while (autonomous) {
 			try {
@@ -181,9 +178,9 @@ public class Vision extends Subsystem {
 					image.free();
 					continue;
 				}
-				Scores scores[] = new Scores[Math.min(
-						filteredImage.getNumberParticles(),
-						RobotMap.MAX_PARTICLES)];
+				Scores scores[] = new Scores[Math
+						.min(filteredImage.getNumberParticles(),
+								MAX_PARTICLES)];
 				horizontalTargetCount = verticalTargetCount = 0;
 				for (int i = 0; i < scores.length; i++) {
 					ParticleAnalysisReport report = filteredImage
