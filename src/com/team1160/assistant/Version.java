@@ -2,6 +2,20 @@ package com.team1160.assistant;
 
 import java.util.Random;
 
+
+/*
+ * -TODO-
+ * 
+ * Priority   ||| --- Task
+ * ---------------------------
+ *    1       ||| --- Encoders
+ *    2       ||| --- Vision
+ *    3       ||| --- Autonomous
+ *    4       ||| --- Implement Pickup (motor)
+ *    5       ||| --- Remove Pneumatics
+ * 
+ */
+
 public class Version {
 
     public String s1;
@@ -30,6 +44,6 @@ public class Version {
         } else if (a == 3) {
             s1 = "That's a dick move.";
         }
-        System.out.println("Successful deploy. Currently: v" + version + "Random message: " + s1);
+        System.out.println("Successful deploy. Currently: v" + version + " Random message: " + s1);
     }
 }
