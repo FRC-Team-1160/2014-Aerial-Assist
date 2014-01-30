@@ -15,6 +15,7 @@ public class Vision extends Subsystem implements RobotMap {
 	AxisCamera camera;
 	CriteriaCollection cc;
 	public boolean autonomous;
+	public Executor exec;
 	protected static Vision instance = null;
 	public static Vision getInstance() {
 		if (instance == null) {
@@ -28,6 +29,7 @@ public class Vision extends Subsystem implements RobotMap {
 		// filter
 		cc.addCriteria(NIVision.MeasurementType.IMAQ_MT_AREA, AREA_MINIMUM,
 				65535, false);
+		exec = new Executor();
 	}
 	public static class Scores {
 		final double rectangularity, aspectRatioVertical,
@@ -121,7 +123,7 @@ public class Vision extends Subsystem implements RobotMap {
 		this.setDefaultCommand(null);
 	}
 	public void vision() {
-		System.out.println("Vision code STARTED! Good Luck!");
+		exec.startVision();
 		int verticalTargets[] = new int[MAX_PARTICLES];
 		int horizontalTargets[] = new int[MAX_PARTICLES];
 		int verticalTargetCount, horizontalTargetCount;
@@ -155,18 +157,15 @@ public class Vision extends Subsystem implements RobotMap {
 					// Check if the particle is a horizontal target,
 					// if not, check if it's a vertical target
 					if (scores[i].isTarget(false)) {
-						System.out.println("particle: " + i
-								+ "is a Horizontal Target centerX: "
-								+ report.center_mass_x + "centerY: "
-								+ report.center_mass_y);
+						exec.horizontalTargetFound(i,
+								report.center_mass_x,
+								report.center_mass_y);
 						horizontalTargets[horizontalTargetCount++] = i;
 						// Add particle to target array and increment
 						// count
 					} else if (scores[i].isTarget(true)) {
-						System.out.println("particle: " + i
-								+ "is a Vertical Target centerX: "
-								+ report.center_mass_x + "centerY: "
-								+ report.center_mass_y);
+						exec.verticalTargetFound(i, report.center_mass_x,
+								report.center_mass_y);
 						verticalTargets[verticalTargetCount++] = i;
 						// Add particle to target array and increment
 						// count
@@ -329,5 +328,24 @@ public class Vision extends Subsystem implements RobotMap {
 		t.totalScore = Math.max(t.leftScore, t.rightScore) + t.tapeWidthScore
 				+ t.verticalScore;
 		return t;
+	}
+	/** Class that executes commands carried out by the main Vision class. This
+	 * is really an attempt to get all of the execution code in one place so we
+	 * won't have to hunt for it when this class does something more than print
+	 * stuff. */
+	public class Executor {
+		public void startVision() {
+			System.out.println("Vision code STARTED! Good Luck!");
+		}
+		public void verticalTargetFound(int index, int centerX, int centerY) {
+			System.out.println("particle: " + index
+					+ "is a Vertical Target centerX: " + centerX
+					+ "centerY: " + centerY);
+		}
+		public void horizontalTargetFound(int index, int centerX, int centerY) {
+			System.out.println("particle: " + index
+					+ "is a Horizontal Target centerX: " + centerX
+					+ "centerY: " + centerY);
+		}
 	}
 }
