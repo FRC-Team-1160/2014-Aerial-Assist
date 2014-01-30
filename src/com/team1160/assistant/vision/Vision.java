@@ -42,7 +42,7 @@ public class Vision extends Subsystem implements RobotMap {
 		}
 		public Scores(BinaryImage filteredImage,
 				ParticleAnalysisReport report, int index)
-				throws NIVisionException {
+				throws NIVisionException { 
 			this(scoreRectangularity(report), scoreAspectRatio(
 					filteredImage, report, index, true), scoreAspectRatio(
 					filteredImage, report, index, false));
@@ -102,6 +102,11 @@ public class Vision extends Subsystem implements RobotMap {
 						/ idealAspectRatio);
 			}
 			return aspectRatio;
+		}
+		public String toString() {
+			return "rect: " + rectangularity + ", ARHoriz: "
+					+ aspectRatioHorizontal + ", ARVert: "
+					+ aspectRatioVertical;
 		}
 	}
 	public static class TargetReport {
@@ -170,16 +175,10 @@ public class Vision extends Subsystem implements RobotMap {
 						// Add particle to target array and increment
 						// count
 					} else {
-						System.out.println("particle: " + i
-								+ "is not a Target centerX: "
-								+ report.center_mass_x + "centerY: "
-								+ report.center_mass_y);
+						exec.noTargetFound(i, report.center_mass_x,
+								report.center_mass_y);
 					}
-					System.out.println("rect: " + scores[i].rectangularity
-							+ "ARHoriz: "
-							+ scores[i].aspectRatioHorizontal);
-					System.out.println("ARVert: "
-							+ scores[i].aspectRatioVertical);
+					exec.scoreCalculated(scores[i]);
 				}
 				// Set verticalIndex to first target in case there are no
 				// horizontal targets
@@ -213,13 +212,7 @@ public class Vision extends Subsystem implements RobotMap {
 							.getParticleAnalysisReport(target.verticalIndex);
 					double distance = computeDistance(filteredImage,
 							distanceReport, target.verticalIndex);
-					if (target.isHot()) {
-						System.out.println("Hot target located");
-						System.out.println("Distance: " + distance + "in");
-					} else {
-						System.out.println("No hot target present");
-						System.out.println("Distance: " + distance + "in");
-					}
+					exec.bestTargetFound(target.isHot(), distance);
 				}
 				/** all images in Java must be freed after they are used
 				 * since
@@ -239,7 +232,7 @@ public class Vision extends Subsystem implements RobotMap {
 		}
 	}
 	public void stahp() {
-		System.out.println("Camera proccessing complete.");
+		exec.cameraComplete();
 	}
 	private static double computeDistance(BinaryImage image,
 			ParticleAnalysisReport report, int particleNumber)
@@ -333,19 +326,43 @@ public class Vision extends Subsystem implements RobotMap {
 	 * is really an attempt to get all of the execution code in one place so we
 	 * won't have to hunt for it when this class does something more than print
 	 * stuff. */
-	public class Executor {
+	public static class Executor {// TODO Class only outputs information. Does
+							// not actually *do* anything.
+		/** Tell the executor that vision code has started */
 		public void startVision() {
-			System.out.println("Vision code STARTED! Good Luck!");
+			output("Vision code STARTED! Good Luck!");
 		}
+		/** Tell the executor that the camera proscessing is complete */
+		public void cameraComplete() {
+			output("Camera proccessing complete.");
+		}
+		/** Tell the executor that the best target has been found */
+		public void bestTargetFound(boolean hot, double distance) {
+			output(hot ? "Hot target located" : "No hot target present");
+			output("Distance: " + distance + "in");
+		}
+		/** Tell the executor that a score has been calculated */
+		public void scoreCalculated(Scores score) {
+			output(score.toString());
+		}
+		/** Tell the executor that no target has been found */
+		public void noTargetFound(int index, int centerX, int centerY) {
+			output("particle: " + index + "is not a Target centerX: "
+					+ centerX + "centerY: " + centerY);
+		}
+		/** Tell the executor that a vertical target has been found */
 		public void verticalTargetFound(int index, int centerX, int centerY) {
-			System.out.println("particle: " + index
-					+ "is a Vertical Target centerX: " + centerX
-					+ "centerY: " + centerY);
+			output("particle: " + index + "is a Vertical Target centerX: "
+					+ centerX + "centerY: " + centerY);
 		}
+		/** Tell the executor that a horizontal target has been found */
 		public void horizontalTargetFound(int index, int centerX, int centerY) {
-			System.out.println("particle: " + index
-					+ "is a Horizontal Target centerX: " + centerX
-					+ "centerY: " + centerY);
+			output("particle: " + index + "is a Horizontal Target centerX: "
+					+ centerX + "centerY: " + centerY);
+		}
+		/** Outputs a message (currently to {@link java.lang.System#out System.out}) */
+		private void output(String message) {
+			System.out.println(message);
 		}
 	}
 }
