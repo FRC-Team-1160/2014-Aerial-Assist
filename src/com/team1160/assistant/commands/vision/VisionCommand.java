@@ -2,9 +2,9 @@ package com.team1160.assistant.commands.vision;
 
 import com.team1160.assistant.commands.CommandBase;
 
-public class visionCommand extends CommandBase {
+public class VisionCommand extends CommandBase {
 
-    public visionCommand() {
+    public VisionCommand() {
         requires(vision);
     }
 

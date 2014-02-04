@@ -2,9 +2,9 @@ package com.team1160.assistant.commands.vision;
 
 import com.team1160.assistant.commands.CommandBase;
 
-public class visionDoNothing extends CommandBase {
+public class VisionDoNothing extends CommandBase {
 
-    public visionDoNothing() {
+    public VisionDoNothing() {
         requires(vision);
     }
 

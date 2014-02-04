@@ -20,9 +20,21 @@ import java.util.Random;
  */
 public class Version {
 
-    public static final String[] RANDOM_MESSAGES = new String[]{"Heh...",
-        "Gabriel and Orangutan are red COUCHES.", "Zach is a god.",
-        "That's a dick move."};
+    public static final String[] RANDOM_MESSAGES =
+            new String[]{
+        "Heh...",
+        "Gabriel and Orangutan are red COUCHES.",
+        "Zach is a god.",
+        "I like trains.",
+        "Desmond the moon bear!",
+        "Hey! Did you know that carrots are good for your eyesight?",
+        "YOU LIED TO ME.",
+        "That's a dick move.",
+        "Don't break shit please.",
+        "Look out! He's got a nose!! -add gunshots here-",
+        "When I grow up, I want to go to the moon.",
+        "WHY WAIT? -KICK-"
+    };
     final double version = 0.1;
     public static Version instance = null;
 

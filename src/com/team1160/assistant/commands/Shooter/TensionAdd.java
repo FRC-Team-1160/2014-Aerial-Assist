@@ -2,8 +2,8 @@ package com.team1160.assistant.commands.Shooter;
 
 import com.team1160.assistant.commands.CommandBase;
 
-public class tensionAdd extends CommandBase {
-	public tensionAdd() {
+public class TensionAdd extends CommandBase {
+	public TensionAdd() {
 		requires(shoot);
 	}
 	protected void initialize() {}

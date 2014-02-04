@@ -2,19 +2,19 @@ package com.team1160.assistant.subsystems;
 
 import com.team1160.assistant.OI;
 import com.team1160.assistant.RobotMap;
-import com.team1160.assistant.commands.Drive.arcadeDrive;
+import com.team1160.assistant.commands.Drive.ArcadeDrive;
 import edu.wpi.first.wpilibj.AnalogChannel;
 import edu.wpi.first.wpilibj.Encoder;
-import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.SpeedController;
+import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.command.PIDSubsystem;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 
 
 public class Drivetrain extends PIDSubsystem implements RobotMap {
 	// LOCAL VARIABLES - WILL BE ASSIGNED VIA CHECKS
-	protected final Jaguar rightJ, leftJ;
+	protected final Talon rightT, leftT;
 	protected final Joystick stick;
 	protected static Drivetrain instance = null;
 	// INSTANCE OF DRIVETRAIN CLASS
@@ -38,17 +38,17 @@ public class Drivetrain extends PIDSubsystem implements RobotMap {
 	// CONSTRUCTOR - IS CALLED ONCE, ONLY BY GETINSTANCE
 	private Drivetrain() {
             super("Drivetrain", 0, 0, 0); //numerical values PID will be changed to experimental value 
-		// JAGUAR INITIALIZATION
-		rightJ = new Jaguar(LEFT_JAG_MOTOR_SLOT, RIGHT_JAG_MOTOR_CHAN);
-		leftJ = new Jaguar(RIGHT_JAG_MOTOR_SLOT, LEFT_JAG_MOTOR_CHAN);
+		// dat TALON INITIALIZATION
+		rightT = new Talon(LEFT_TAL_MOTOR_SLOT, RIGHT_TAL_MOTOR_CHAN);
+		leftT = new Talon(RIGHT_TAL_MOTOR_SLOT, LEFT_TAL_MOTOR_CHAN);
 		encLeft = new Encoder(ENC_DT_LEFT_A, ENC_DT_LEFT_B, true);
 		encRight = new Encoder(ENC_DT_RIGHT_A, ENC_DT_RIGHT_B, true);
 		stick = OI.getInstance().getJoystick();
 		encLeft.start();
 		encRight.start();
                 //speed control 
-                rightmotorcontrol = rightJ; 
-                leftmotorcontrol = leftJ; 
+                rightmotorcontrol = rightT; 
+                leftmotorcontrol = leftT; 
                 rightmotorchan = new AnalogChannel(RobotMap.ENC_DT_RIGHT_A); //connected to one of the channels
                 leftmotorchan = new AnalogChannel(RobotMap.ENC_DT_LEFT_A); //same as above
                 getPIDController().setContinuous(false); 
@@ -58,17 +58,14 @@ public class Drivetrain extends PIDSubsystem implements RobotMap {
                 leftmotorcontrol.set(SETPOINT); //I think these set up the setpoints; if not, uncomment the line below
                 //setSetpoint(SETPOINT);
                 enable(); 
-                
-                
-                
 	}
 	protected void initDefaultCommand() {
-		this.setDefaultCommand(new arcadeDrive());
+		this.setDefaultCommand(new ArcadeDrive());
 	}
 	public void arcadeDrive() {
 		// STANDARD DRIVE CODE
-		leftJ.set(stick.getX() - stick.getY());
-		rightJ.set(stick.getX() + stick.getY());
+		leftT.set(stick.getX() - stick.getY());
+		rightT.set(stick.getX() + stick.getY());
 	}
 	public void autoDrive() {}
 

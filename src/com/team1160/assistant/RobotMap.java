@@ -7,13 +7,16 @@ package com.team1160.assistant;
 public interface RobotMap {
 	// ---MOTORS---
 	// -DRIVE-
-	public static final int LEFT_JAG_MOTOR_SLOT = 1;
-	public static final int LEFT_JAG_MOTOR_CHAN = 1;
-	public static final int RIGHT_JAG_MOTOR_SLOT = 2;
-	public static final int RIGHT_JAG_MOTOR_CHAN = 1;
+	public static final int LEFT_TAL_MOTOR_SLOT = 1;
+	public static final int LEFT_TAL_MOTOR_CHAN = 1;
+	public static final int RIGHT_TAL_MOTOR_SLOT = 2;
+	public static final int RIGHT_TAL_MOTOR_CHAN = 1;
 	// -SHOOT-
 	public static final int SHOOT_MOTOR_SLOT = 1;
 	public static final int SHOOT_MOTOR_CHAN = 3;
+        // -PICKUP-
+        public static final int PICKUP_TAL_MOTOR_SLOT = 4;
+        public static final int PICKUP_TAL_MOTOR_CHAN = 1;
 	// ---JOYSTICKS---
 	public static final int JOY_PORT = 1;
 	// ---ENCODERS---

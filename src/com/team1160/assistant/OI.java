@@ -1,10 +1,10 @@
 package com.team1160.assistant;
 
-import com.team1160.assistant.commands.Shooter.tensionAdd;
-import com.team1160.assistant.commands.Shooter.tensionLetGo;
-import com.team1160.assistant.commands.Shooter.tensionRelease;
-import com.team1160.assistant.commands.vision.visionCommand;
-import com.team1160.assistant.commands.vision.visionDoNothing;
+import com.team1160.assistant.commands.Shooter.TensionAdd;
+import com.team1160.assistant.commands.Shooter.TensionLetGo;
+import com.team1160.assistant.commands.Shooter.TensionRelease;
+import com.team1160.assistant.commands.vision.VisionCommand;
+import com.team1160.assistant.commands.vision.VisionDoNothing;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
@@ -42,11 +42,11 @@ public class OI {
 		tieButtons();
 	}
 	private void tieButtons() {
-		addTension.whenPressed(new tensionAdd());
-		releaseTension.whenPressed(new tensionRelease());
-		letGo.whenPressed(new tensionLetGo());
-		track.whenPressed(new visionCommand());
-		stopTrack.whenPressed(new visionDoNothing());
+		addTension.whenPressed(new TensionAdd());
+		releaseTension.whenPressed(new TensionRelease());
+		letGo.whenPressed(new TensionLetGo());
+		track.whenPressed(new VisionCommand());
+		stopTrack.whenPressed(new VisionDoNothing());
 	}
 	// JOYSTICK GETTER FUNCTION
 	public Joystick getJoystick() {
