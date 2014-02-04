@@ -17,7 +17,9 @@ public interface RobotMap {
         // -PICKUP-
         public static final int PICKUP_TAL_MOTOR_SLOT = 4;
         public static final int PICKUP_TAL_MOTOR_CHAN = 1;
-	// ---JOYSTICKS---
+        public static final double PICKUP_HARDSTOP_H = 0;
+	public static final double PICKUP_HARDSTOP_L = 0;
+        // ---JOYSTICKS---
 	public static final int JOY_PORT = 1;
 	// ---ENCODERS---
 	public static final int ENC_DT_LEFT_A = 2;
@@ -27,9 +29,11 @@ public interface RobotMap {
 	public static final int ENC_SHOOT_A = 6;
 	public static final int ENC_SHOOT_B = 7;
 	// ---SPEED VALUES---
-	public static final int LET_GO = 0;
-	public static final int ADD_TENSION = 0;
-	public static final int RELEASE_TENSION = 0;
+	public static final double LET_GO = 0;
+	public static final double ADD_TENSION = 0;
+	public static final double RELEASE_TENSION = 0;
+        public static final double RAISE_ARM = 0.4;
+        public static final double LOWER_ARM = -0.4;
 	// ---JOYSTICK BUTTONS---
 	public static final int VISION_TRACK_BUT = 2;
 	public static final int STOP_VISION_TRACK_BUT = 3;

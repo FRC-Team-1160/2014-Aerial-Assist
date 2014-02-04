@@ -49,8 +49,8 @@ public class Drivetrain extends PIDSubsystem implements RobotMap {
                 //speed control 
                 rightmotorcontrol = rightT; 
                 leftmotorcontrol = leftT; 
-                rightmotorchan = new AnalogChannel(RobotMap.ENC_DT_RIGHT_A); //connected to one of the channels
-                leftmotorchan = new AnalogChannel(RobotMap.ENC_DT_LEFT_A); //same as above
+                rightmotorchan = new AnalogChannel(ENC_DT_RIGHT_A); //connected to one of the channels
+                leftmotorchan = new AnalogChannel(ENC_DT_LEFT_A); //same as above
                 getPIDController().setContinuous(false); 
                 LiveWindow.addActuator("Drivetrain", "PIDSubsystem", getPIDController()); 
                 setAbsoluteTolerance(ABSOLUTE_TOLERANCE); 
@@ -67,7 +67,9 @@ public class Drivetrain extends PIDSubsystem implements RobotMap {
 		leftT.set(stick.getX() - stick.getY());
 		rightT.set(stick.getX() + stick.getY());
 	}
-	public void autoDrive() {}
+	public void autoDrive() {
+            
+        }
 
     protected double returnPIDInput() {
         return rightmotorchan.getAverageVoltage();  //this only returns rightmotorchan, no left motor 
