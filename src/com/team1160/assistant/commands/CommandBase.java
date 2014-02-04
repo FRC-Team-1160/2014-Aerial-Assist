@@ -12,12 +12,10 @@ import edu.wpi.first.wpilibj.command.Command;
  * @author Author */
 public abstract class CommandBase extends Command {
 	protected static Drivetrain drivetrain;
-	protected static Pneumatics airsystem;
 	protected static Shooter shoot;
 	protected static Vision vision;
 	public static void init() {
 		drivetrain = Drivetrain.getInstance();
-		airsystem = Pneumatics.getInstance();
 		shoot = Shooter.getInstance();
 		vision = Vision.getInstance();
 		OI.getInstance();

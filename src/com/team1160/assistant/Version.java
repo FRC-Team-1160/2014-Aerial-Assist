@@ -12,7 +12,10 @@ import java.util.Random;
  *    2       ||| --- Vision
  *    3       ||| --- Autonomous
  *    4       ||| --- Implement Pickup (motor)
- *    5       ||| --- Remove Pneumatics
+ * 
+ * 
+ * 
+ *    5       ||| --- Remove Pneumatics --- DONE
  * 
  */
 public class Version {
@@ -33,7 +36,7 @@ public class Version {
     private Version() {
         System.out.println("Successful deploy. Currently: v"
                 + version
-                + "Random message: "
+                + " Random message: "
                 + RANDOM_MESSAGES[new Random()
                 .nextInt(RANDOM_MESSAGES.length)]);
     }

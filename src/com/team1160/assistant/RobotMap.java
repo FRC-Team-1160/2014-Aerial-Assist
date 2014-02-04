@@ -16,11 +16,6 @@ public interface RobotMap {
 	public static final int SHOOT_MOTOR_CHAN = 3;
 	// ---JOYSTICKS---
 	public static final int JOY_PORT = 1;
-	// ---PNEUMATICS---
-	public static final int SOLENOID_ONE = 4;
-	public static final int SOLENOID_TWO = 5;
-	public static final int COMPRESSOR_SWITCH_CHAN = 1;
-	public static final int COMPRESSOR_RELAY_CHAN = 1;
 	// ---ENCODERS---
 	public static final int ENC_DT_LEFT_A = 2;
 	public static final int ENC_DT_LEFT_B = 3;
@@ -35,8 +30,6 @@ public interface RobotMap {
 	// ---JOYSTICK BUTTONS---
 	public static final int VISION_TRACK_BUT = 2;
 	public static final int STOP_VISION_TRACK_BUT = 3;
-	public static final int EXTEND_PISTON_BUT = 4;
-	public static final int RETRACT_PISTON_BUT = 5;
 	public static final int RELEASE_TENSION_BUT = 8;
 	public static final int ADD_TENSION_BUT = 9;
 	public static final int LET_GO_BUT = 1;
