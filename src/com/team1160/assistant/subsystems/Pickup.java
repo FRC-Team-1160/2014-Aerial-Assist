@@ -16,7 +16,7 @@ public class Pickup extends Subsystem implements RobotMap{
         talPickup = new Talon(PICKUP_TAL_MOTOR_SLOT, PICKUP_TAL_MOTOR_CHAN);
     }
     
-    public Pickup getInstance(){
+    public static Pickup getInstance(){
         if(instance == null){
             instance = new Pickup();
         }
