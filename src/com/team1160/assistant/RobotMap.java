@@ -19,6 +19,7 @@ public interface RobotMap {
         public static final int PICKUP_TAL_MOTOR_CHAN = 1;
         public static final double PICKUP_HARDSTOP_H = 0;
 	public static final double PICKUP_HARDSTOP_L = 0;
+        public static final double PICKUP_STALL = 0;
         // ---JOYSTICKS---
 	public static final int JOY_PORT = 1;
 	// ---ENCODERS---

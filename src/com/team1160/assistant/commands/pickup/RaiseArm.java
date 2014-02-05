@@ -9,6 +9,7 @@ public class RaiseArm extends CommandBase{
     } 
     
     protected void initialize() {
+        
     }
 
     protected void execute() {
