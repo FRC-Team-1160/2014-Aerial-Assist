@@ -12,7 +12,7 @@ public class team1160 extends IterativeRobot {
 		Version.getInstance();
 		CommandBase.init();
 	}
-	public void autonomous() {
+	public void autonomousInit() {
 		vision.autonomous = true;
 		vision.vision();
 	}

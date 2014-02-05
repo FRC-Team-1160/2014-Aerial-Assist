@@ -35,6 +35,7 @@ public class OI {
 	private OI() {
 		stick = new Joystick(RobotMap.JOY_PORT);
 		initButtons();
+		tieButtons();
 	}
 	private void initButtons() {
 		extendPiston = new JoystickButton(stick, RobotMap.EXTEND_PISTON_BUT);
@@ -45,7 +46,6 @@ public class OI {
 		letGo = new JoystickButton(stick, RobotMap.LET_GO_BUT);
 		track = new JoystickButton(stick, RobotMap.VISION_TRACK_BUT);
 		stopTrack = new JoystickButton(stick, RobotMap.STOP_VISION_TRACK_BUT);
-		tieButtons();
 	}
 	private void tieButtons() {
 		extendPiston.whenPressed(new extendPiston());
@@ -56,7 +56,6 @@ public class OI {
 		track.whenPressed(new visionCommand());
 		stopTrack.whenPressed(new visionDoNothing());
 	}
-	// JOYSTICK GETTER FUNCTION
 	public Joystick getJoystick() {
 		return stick;
 	}
