@@ -1,12 +1,10 @@
 package com.team1160.assistant;
 
-import com.team1160.assistant.commands.Pistons.extendPiston;
-import com.team1160.assistant.commands.Pistons.retractPiston;
-import com.team1160.assistant.commands.Shooter.tensionAdd;
-import com.team1160.assistant.commands.Shooter.tensionLetGo;
-import com.team1160.assistant.commands.Shooter.tensionRelease;
-import com.team1160.assistant.commands.vision.visionCommand;
-import com.team1160.assistant.commands.vision.visionDoNothing;
+import com.team1160.assistant.commands.Shooter.TensionAdd;
+import com.team1160.assistant.commands.Shooter.TensionLetGo;
+import com.team1160.assistant.commands.Shooter.TensionRelease;
+import com.team1160.assistant.commands.vision.VisionCommand;
+import com.team1160.assistant.commands.vision.VisionDoNothing;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
@@ -17,8 +15,6 @@ public class OI {
 	// JOYSTICK
 	private Joystick stick;
 	// BUTTONS
-	private Button extendPiston;
-	private Button retractPiston;
 	private Button addTension;
 	private Button releaseTension;
 	private Button letGo;
@@ -38,8 +34,6 @@ public class OI {
 		tieButtons();
 	}
 	private void initButtons() {
-		extendPiston = new JoystickButton(stick, RobotMap.EXTEND_PISTON_BUT);
-		retractPiston = new JoystickButton(stick, RobotMap.RETRACT_PISTON_BUT);
 		addTension = new JoystickButton(stick, RobotMap.ADD_TENSION_BUT);
 		releaseTension = new JoystickButton(stick,
 				RobotMap.RELEASE_TENSION_BUT);
@@ -48,13 +42,11 @@ public class OI {
 		stopTrack = new JoystickButton(stick, RobotMap.STOP_VISION_TRACK_BUT);
 	}
 	private void tieButtons() {
-		extendPiston.whenPressed(new extendPiston());
-		retractPiston.whenPressed(new retractPiston());
-		addTension.whenPressed(new tensionAdd());
-		releaseTension.whenPressed(new tensionRelease());
-		letGo.whenPressed(new tensionLetGo());
-		track.whenPressed(new visionCommand());
-		stopTrack.whenPressed(new visionDoNothing());
+		addTension.whenPressed(new TensionAdd());
+		releaseTension.whenPressed(new TensionRelease());
+		letGo.whenPressed(new TensionLetGo());
+		track.whenPressed(new VisionCommand());
+		stopTrack.whenPressed(new VisionDoNothing());
 	}
 	public Joystick getJoystick() {
 		return stick;

@@ -7,20 +7,21 @@ package com.team1160.assistant;
 public interface RobotMap {
 	// ---MOTORS---
 	// -DRIVE-
-	public static final int LEFT_JAG_MOTOR_SLOT = 1;
-	public static final int LEFT_JAG_MOTOR_CHAN = 1;
-	public static final int RIGHT_JAG_MOTOR_SLOT = 2;
-	public static final int RIGHT_JAG_MOTOR_CHAN = 1;
+	public static final int LEFT_TAL_MOTOR_SLOT = 1;
+	public static final int LEFT_TAL_MOTOR_CHAN = 1;
+	public static final int RIGHT_TAL_MOTOR_SLOT = 2;
+	public static final int RIGHT_TAL_MOTOR_CHAN = 1;
 	// -SHOOT-
 	public static final int SHOOT_MOTOR_SLOT = 1;
 	public static final int SHOOT_MOTOR_CHAN = 3;
-	// ---JOYSTICKS---
+        // -PICKUP-
+        public static final int PICKUP_TAL_MOTOR_SLOT = 4;
+        public static final int PICKUP_TAL_MOTOR_CHAN = 1;
+        public static final double PICKUP_HARDSTOP_H = 0;
+	public static final double PICKUP_HARDSTOP_L = 0;
+        public static final double PICKUP_STALL = 0;
+        // ---JOYSTICKS---
 	public static final int JOY_PORT = 1;
-	// ---PNEUMATICS---
-	public static final int SOLENOID_ONE = 4;
-	public static final int SOLENOID_TWO = 5;
-	public static final int COMPRESSOR_SWITCH_CHAN = 1;
-	public static final int COMPRESSOR_RELAY_CHAN = 1;
 	// ---ENCODERS---
 	public static final int ENC_DT_LEFT_A = 2;
 	public static final int ENC_DT_LEFT_B = 3;
@@ -29,14 +30,14 @@ public interface RobotMap {
 	public static final int ENC_SHOOT_A = 6;
 	public static final int ENC_SHOOT_B = 7;
 	// ---SPEED VALUES---
-	public static final int LET_GO = 0;
-	public static final int ADD_TENSION = 0;
-	public static final int RELEASE_TENSION = 0;
+	public static final double LET_GO = 0;
+	public static final double ADD_TENSION = 0;
+	public static final double RELEASE_TENSION = 0;
+        public static final double RAISE_ARM = 0.4;
+        public static final double LOWER_ARM = -0.4;
 	// ---JOYSTICK BUTTONS---
 	public static final int VISION_TRACK_BUT = 2;
 	public static final int STOP_VISION_TRACK_BUT = 3;
-	public static final int EXTEND_PISTON_BUT = 4;
-	public static final int RETRACT_PISTON_BUT = 5;
 	public static final int RELEASE_TENSION_BUT = 8;
 	public static final int ADD_TENSION_BUT = 9;
 	public static final int LET_GO_BUT = 1;
