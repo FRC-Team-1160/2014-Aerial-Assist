@@ -38,8 +38,7 @@ public class Shooter extends PIDSubsystem implements RobotMap {
         getPIDController().setContinuous(false);
         LiveWindow.addActuator("Drivetrain", "PIDSubsystem", getPIDController());
         setAbsoluteTolerance(ABSOLUTE_TOLERANCE);
-        shootmotorcontrol.set(SETPOINT); //I think these set up the setpoints; if not, uncomment the line below
-        //setSetpoint(SETPOINT);
+        shootmotorcontrol.set(SETPOINT);
         enable();
     }
 

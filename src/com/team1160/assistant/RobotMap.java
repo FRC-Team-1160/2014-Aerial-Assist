@@ -23,12 +23,13 @@ public interface RobotMap {
         // ---JOYSTICKS---
 	public static final int JOY_PORT = 1;
 	// ---ENCODERS---
+        public static final int ENC_PICKUP_A = 1;
 	public static final int ENC_DT_LEFT_A = 2;
 	public static final int ENC_DT_LEFT_B = 3;
 	public static final int ENC_DT_RIGHT_A = 4;
 	public static final int ENC_DT_RIGHT_B = 5;
 	public static final int ENC_SHOOT_A = 6;
-	public static final int ENC_SHOOT_B = 7;
+	public static final int ENC_SHOOT_B = 7;;
 	// ---SPEED VALUES---
 	public static final double LET_GO = 0;
 	public static final double ADD_TENSION = 0;

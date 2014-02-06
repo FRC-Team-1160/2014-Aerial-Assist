@@ -33,7 +33,9 @@ public class Version {
         "Don't break shit please.",
         "Look out! He's got a nose!! -add gunshots here-",
         "When I grow up, I want to go to the moon.",
-        "WHY WAIT? -KICK-"
+        "WHY WAIT? -KICK-",
+        "ERROR 404: NO VERSION MESSAGE FOUND",
+        "ERROR -2147483647: GET REK'D"
     };
     final double version = 0.1;
     public static Version instance = null;
