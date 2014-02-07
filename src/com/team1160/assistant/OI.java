@@ -51,8 +51,8 @@ public class OI {
 		addTension.whenPressed(new TensionAdd());
 		releaseTension.whenPressed(new TensionRelease());
 		letGo.whenPressed(new TensionLetGo());
-		//track.whenPressed(new VisionCommand());
-		//stopTrack.whenPressed(new VisionDoNothing());
+		track.whenPressed(new VisionCommand());
+		stopTrack.whenPressed(new VisionDoNothing());
                 pickupRaise.whenPressed(new RaiseArm());
                 pickupLower.whenPressed(new LowerArm());
 	}

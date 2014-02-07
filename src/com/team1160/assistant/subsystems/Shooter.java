@@ -34,7 +34,7 @@ public class Shooter extends PIDSubsystem implements RobotMap {
         encoder.start();
         //speed control
         shootmotorcontrol = TalM;
-        encoderchan = new AnalogChannel(RobotMap.ENC_SHOOT_A); //use only one of the encoder channels
+        encoderchan = new AnalogChannel(ENC_SHOOT_A); //use only one of the encoder channels
         getPIDController().setContinuous(false);
         LiveWindow.addActuator("Drivetrain", "PIDSubsystem", getPIDController());
         setAbsoluteTolerance(ABSOLUTE_TOLERANCE);

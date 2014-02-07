@@ -2,17 +2,17 @@ package com.team1160.assistant.commands.Drive;
 
 import com.team1160.assistant.commands.CommandBase;
 
-public class ArcadeDrive extends CommandBase {
+public class ArcadeDriveLeft extends CommandBase {
 
-    public ArcadeDrive() {
-        requires(drivetrain);
+    public ArcadeDriveLeft() {
+        requires(left);
     }
 
     protected void initialize() {
     }
 
     protected void execute() {
-        drivetrain.arcadeDrive();
+        left.arcadeLeft();
     }
 
     protected boolean isFinished() {
