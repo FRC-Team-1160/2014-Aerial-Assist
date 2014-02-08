@@ -4,11 +4,13 @@ import com.team1160.assistant.RobotMap;
 import com.team1160.assistant.commands.Shooter.Neutral;
 import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.PIDController;
+import edu.wpi.first.wpilibj.PIDOutput;
+import edu.wpi.first.wpilibj.PIDSource;
 import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 
-public class Shooter extends Subsystem implements RobotMap {
+public class Shooter extends Subsystem implements RobotMap,  PIDSource, PIDOutput {
 
     protected static Shooter instance;
     protected Talon TalM;
@@ -56,11 +58,11 @@ public class Shooter extends Subsystem implements RobotMap {
         TalM.set(LET_GO);
     }
 
-    protected double pidGet() {
+    public double pidGet() {
         return encoder.pidGet(); 
     }
 
-    protected void pidWrite(double d) {
+    public void pidWrite(double d) {
        TalM.set(shootmotorcontrol.get() +d); 
     }
 }
