@@ -15,17 +15,19 @@ public class Pickup extends Subsystem implements PIDSource, PIDOutput, RobotMap 
     protected static Pickup instance;
     protected Encoder enc;
     protected PIDController pid;
-    protected final double ABSOLUTE_TOLERANCE = 0;
 
     private Pickup() {
         talPickup = new Talon(PICKUP_TAL_MOTOR_SLOT, PICKUP_TAL_MOTOR_CHAN);
         enc = new Encoder(ENC_PICKUP_A, ENC_PICKUP_B, true);
+        enc.start();
+        enc.startLiveWindowMode(); 
         pid = new PIDController(0, 0, 0, this, this);
         pid.startLiveWindowMode();
-        enc.startLiveWindowMode();
         pid.enable();
-        pid.setAbsoluteTolerance(0);
-        enc.start();
+        pid.setAbsoluteTolerance(SHOOT_TOLERANCE);
+        pid.setSetpoint(SHOOT_SETPOINT); 
+        
+        
         
     }
 

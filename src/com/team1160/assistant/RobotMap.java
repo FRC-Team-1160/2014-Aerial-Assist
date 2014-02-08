@@ -14,17 +14,23 @@ public interface RobotMap {
     public static final int LEFT_TAL_MOTOR_CHAN = 1;
     public static final int RIGHT_TAL_MOTOR_SLOT = 1;
     public static final int RIGHT_TAL_MOTOR_CHAN = 2;
-    public static final double DRIVE_RIGHT_TOLERANCE =0;
+    public static final double DRIVE_RIGHT_TOLERANCE = 0;
     public static final double DRIVE_RIGHT_SETPOINT = 0;
+    public static final double DRIVE_LEFT_TOLERANCE = 0; 
+    public static final double DRICE_LEFT_SETPOINT = 0; 
     // -SHOOT-
     public static final int SHOOT_MOTOR_SLOT = 1;
     public static final int SHOOT_MOTOR_CHAN = 3;
+    public static final double SHOOT_SETPOINT =0; 
+    public static final double SHOOT_TOLERANCE = 0; 
     // -PICKUP-
     public static final int PICKUP_TAL_MOTOR_SLOT = 1;
     public static final int PICKUP_TAL_MOTOR_CHAN = 4;
     public static final double PICKUP_HARDSTOP_H = 0;
     public static final double PICKUP_HARDSTOP_L = 0;
     public static final double PICKUP_STALL = 0;
+    public static final double PICKUP_TOLERANCE =0; 
+    public static final double PICKUP_SETPOINT = 0; 
     // ---JOYSTICKS---
     public static final int JOY_PORT = 1;
     // ---ENCODERS---

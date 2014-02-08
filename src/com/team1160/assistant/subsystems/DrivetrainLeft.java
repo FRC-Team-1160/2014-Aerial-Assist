@@ -26,7 +26,8 @@ public class DrivetrainLeft extends DrivetrainBase{
         pid = new PIDController(0, 0, 0, enc, this);
         pid.startLiveWindowMode();
         pid.enable();
-        pid.setAbsoluteTolerance(ABSOLUTE);
+        pid.setAbsoluteTolerance(DRIVE_LEFT_TOLERANCE);
+        pid.setSetpoint(DRICE_LEFT_SETPOINT); 
         stick = this.getJoystick();
     }
     
