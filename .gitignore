@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ant specific
 dist/
 build/
@@ -20,3 +21,30 @@ nbproject/*
 *.DS_Store
 *.lock
 /bin
+=======
+*.class
+
+/nbproject/private/
+/nbbuild/
+
+
+*~
+
+*.lock
+
+*.DS_Store
+
+*.swp
+
+*.out
+build
+/abc123pig/nbproject/private/
+/Pumpkin/nbproject/private/
+/Pumpkin/dist/
+/Example/nbproject/private/
+/LatticePaths/nbproject/private/
+/aa/nbproject/private/
+/Seven/nbproject/private/
+/Wat/nbproject/private/
+/MotorControlTest/nbproject/private/
+>>>>>>> master
