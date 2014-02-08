@@ -1,0 +1,6 @@
+MIDlet-Name: RobotTemplate
+MIDlet-Version: 1.0.0
+MIDlet-Vendor: FIRST
+MIDlet-1: team1160, ,com.team1160.feathers.team1160
+MicroEdition-Profile: IMP-1.0
+MicroEdition-Configuration: CLDC-1.1

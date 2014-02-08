@@ -14,3 +14,12 @@
 
 *.out
 build
+/abc123pig/nbproject/private/
+/Pumpkin/nbproject/private/
+/Pumpkin/dist/
+/Example/nbproject/private/
+/LatticePaths/nbproject/private/
+/aa/nbproject/private/
+/Seven/nbproject/private/
+/Wat/nbproject/private/
+/MotorControlTest/nbproject/private/
