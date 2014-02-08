@@ -14,6 +14,8 @@ public interface RobotMap {
     public static final int LEFT_TAL_MOTOR_CHAN = 1;
     public static final int RIGHT_TAL_MOTOR_SLOT = 1;
     public static final int RIGHT_TAL_MOTOR_CHAN = 2;
+    public static final double DRIVE_RIGHT_TOLERANCE =0;
+    public static final double DRIVE_RIGHT_SETPOINT = 0;
     // -SHOOT-
     public static final int SHOOT_MOTOR_SLOT = 1;
     public static final int SHOOT_MOTOR_CHAN = 3;
