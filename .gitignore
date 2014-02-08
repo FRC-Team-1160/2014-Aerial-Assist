@@ -20,6 +20,7 @@ nbproject/*
 *.swp
 *.DS_Store
 *.lock
+<<<<<<< HEAD
 /bin
 =======
 *.class
@@ -48,3 +49,5 @@ build
 /Wat/nbproject/private/
 /MotorControlTest/nbproject/private/
 >>>>>>> master
+=======
+>>>>>>> parent of 5019612... minor

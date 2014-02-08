@@ -17,9 +17,6 @@ public class Vision extends Subsystem implements RobotMap {
 	public boolean autonomous;
 	public Executor exec;
 	protected static Vision instance = null;
-	private BinaryImage thresholdImage;
-	private BinaryImage filteredImage;
-	private ColorImage image;
 	public static Vision getInstance() {
 		if (instance == null) {
 			instance = new Vision();
@@ -27,9 +24,9 @@ public class Vision extends Subsystem implements RobotMap {
 		return instance;
 	}
 	public Vision() {
-		camera = AxisCamera.getInstance();
-		cc = new CriteriaCollection();
-		// create the criteria for the particle filter
+		camera = AxisCamera.getInstance(); // get an instance of the camera
+		cc = new CriteriaCollection(); // create the criteria for the particle
+		// filter
 		cc.addCriteria(NIVision.MeasurementType.IMAQ_MT_AREA, AREA_MINIMUM,
 				65535, false);
 		exec = new Executor();
@@ -41,50 +38,52 @@ public class Vision extends Subsystem implements RobotMap {
 		exec.startVision();
 		int verticalTargets[] = new int[MAX_PARTICLES];
 		int horizontalTargets[] = new int[MAX_PARTICLES];
+		int verticalTargetCount, horizontalTargetCount;
 		while (autonomous) {
 			try {
-				image = camera.getImage();
-				thresholdImage = image.thresholdHSV(136, 182, 45, 255, 116,
-						255);
+				ColorImage image = camera.getImage();
+				BinaryImage thresholdImage = image.thresholdHSV(136, 182,
+						45, 255, 116, 255);
 				thresholdImage.write("/threshold.bmp");
-				filteredImage = thresholdImage.particleFilter(cc);
+				BinaryImage filteredImage = thresholdImage
+						.particleFilter(cc);
 				filteredImage.write("/filteredImage.bmp");
 				// iterate through each particle and score to see if it is a
 				// target
 				if (filteredImage.getNumberParticles() <= 0) {
-					freeImages();
+					filteredImage.free();
+					thresholdImage.free();
+					image.free();
 					continue;
 				}
-				// iterate through each particle and score to see if it is a
-				// target
 				Scores scores[] = new Scores[Math
 						.min(filteredImage.getNumberParticles(),
 								MAX_PARTICLES)];
-				ParticleAnalysisReport[] reports = new ParticleAnalysisReport[scores.length];
-				int horizontalTargetCount = 0, verticalTargetCount = 0;
+				horizontalTargetCount = verticalTargetCount = 0;
 				for (int i = 0; i < scores.length; i++) {
-					reports[i] = filteredImage
+					ParticleAnalysisReport report = filteredImage
 							.getParticleAnalysisReport(i);
-					scores[i] = new Scores(filteredImage, reports[i], i);
+					scores[i] = new Scores(filteredImage, report, i);
+					// Score each particle on rectangularity and
+					// aspect ratio
 					// Check if the particle is a horizontal target,
 					// if not, check if it's a vertical target
 					if (scores[i].isTarget(false)) {
 						exec.horizontalTargetFound(i,
-								reports[i].center_mass_x,
-								reports[i].center_mass_y);
+								report.center_mass_x,
+								report.center_mass_y);
 						horizontalTargets[horizontalTargetCount++] = i;
 						// Add particle to target array and increment
 						// count
 					} else if (scores[i].isTarget(true)) {
-						exec.verticalTargetFound(i,
-								reports[i].center_mass_x,
-								reports[i].center_mass_y);
+						exec.verticalTargetFound(i, report.center_mass_x,
+								report.center_mass_y);
 						verticalTargets[verticalTargetCount++] = i;
 						// Add particle to target array and increment
 						// count
 					} else {
-						exec.noTargetFound(i, reports[i].center_mass_x,
-								reports[i].center_mass_y);
+						exec.noTargetFound(i, report.center_mass_x,
+								report.center_mass_y);
 					}
 					exec.scoreCalculated(scores[i]);
 				}
@@ -92,12 +91,15 @@ public class Vision extends Subsystem implements RobotMap {
 				// horizontal targets
 				TargetReport target = new TargetReport(verticalTargets[0]);
 				for (int i = 0; i < verticalTargetCount; i++) {
+					ParticleAnalysisReport verticalReport = filteredImage
+							.getParticleAnalysisReport(verticalTargets[i]);
 					for (int j = 0; j < horizontalTargetCount; j++) {
+						ParticleAnalysisReport horizontalReport = filteredImage
+								.getParticleAnalysisReport(horizontalTargets[j]);
 						TargetReport targetCur = new TargetReport(
 								filteredImage, verticalTargets[i],
-								horizontalTargets[j],
-								reports[verticalTargets[i]],
-								reports[horizontalTargets[j]]);
+								horizontalTargets[j], verticalReport,
+								horizontalReport);
 						// If the target is the best detected so far
 						// store the information about it
 						if (targetCur.totalScore > target.totalScore) {
@@ -112,12 +114,21 @@ public class Vision extends Subsystem implements RobotMap {
 					// locations use the
 					// horizontal or vertical index to get the
 					// particle report as shown below
+					ParticleAnalysisReport distanceReport = filteredImage
+							.getParticleAnalysisReport(target.verticalIndex);
 					double distance = computeDistance(filteredImage,
-							reports[target.verticalIndex],
-							target.verticalIndex);
+							distanceReport, target.verticalIndex);
 					exec.bestTargetFound(target.isHot(), distance);
 				}
-				freeImages();
+				/** all images in Java must be freed after they are used
+				 * since
+				 * they are allocated out of C data structures. Not calling
+				 * free() will cause the memory to accumulate over each pass
+				 * of
+				 * this loop. */
+				filteredImage.free();
+				thresholdImage.free();
+				image.free();
 			} catch (AxisCameraException ex) {
 				// this is needed if the camera.getImage() is called
 				ex.printStackTrace();
@@ -125,15 +136,6 @@ public class Vision extends Subsystem implements RobotMap {
 				ex.printStackTrace();
 			}
 		}
-	}
-	/** All images in Java must be freed after they are used
-	 * since they are allocated out of C data structures. Not
-	 * calling free() will cause the memory to accumulate over
-	 * each pass of this loop. */
-	private void freeImages() throws NIVisionException {
-		filteredImage.free();
-		thresholdImage.free();
-		image.free();
 	}
 	public void stahp() {
 		exec.cameraComplete();
