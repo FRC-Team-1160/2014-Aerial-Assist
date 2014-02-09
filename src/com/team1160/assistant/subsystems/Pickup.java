@@ -63,6 +63,6 @@ public class Pickup extends Subsystem implements PIDSource, PIDOutput, RobotMap 
     }
 
     public void pidWrite(double d) {
-        talPickup.set(talPickup.get() + d);
+        talPickup.set(talPickup.get()+d);
     }
 }
