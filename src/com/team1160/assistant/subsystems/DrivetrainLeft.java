@@ -1,6 +1,6 @@
 package com.team1160.assistant.subsystems;
 
-import com.team1160.assistant.commands.Drive.ArcadeDriveRight;
+import com.team1160.assistant.commands.Drive.ArcadeDriveLeft;
 import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.PIDController;
 import edu.wpi.first.wpilibj.Talon;
@@ -31,7 +31,7 @@ public class DrivetrainLeft extends DrivetrainBase{
     }
     
     protected void initDefaultCommand() {
-        this.setDefaultCommand(new ArcadeDriveRight());
+        this.setDefaultCommand(new ArcadeDriveLeft());
     }
 
     public void pidWrite(double d) {
