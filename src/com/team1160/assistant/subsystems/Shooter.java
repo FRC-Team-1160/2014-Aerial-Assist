@@ -33,8 +33,8 @@ public class Shooter extends Subsystem implements RobotMap,  PIDSource, PIDOutpu
         shootmotorcontrol = new PIDController(0, 0, 0, encoder, TalM); 
         shootmotorcontrol.startLiveWindowMode(); 
         shootmotorcontrol.enable();
-        shootmotorcontrol.setAbsoluteTolerance(PICKUP_TOLERANCE);
-        shootmotorcontrol.setSetpoint(PICKUP_SETPOINT);
+        shootmotorcontrol.setAbsoluteTolerance(SHOOT_TOLERANCE);
+        shootmotorcontrol.setSetpoint(SHOOT_SETPOINT);
         
     }
 

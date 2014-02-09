@@ -24,8 +24,8 @@ public class Pickup extends Subsystem implements PIDSource, PIDOutput, RobotMap 
         pid = new PIDController(0, 0, 0, this, this);
         pid.startLiveWindowMode();
         pid.enable();
-        pid.setAbsoluteTolerance(SHOOT_TOLERANCE);
-        pid.setSetpoint(SHOOT_SETPOINT); 
+        pid.setAbsoluteTolerance(PICKUP_TOLERANCE);
+        pid.setSetpoint(PICKUP_SETPOINT); 
         
         
         
