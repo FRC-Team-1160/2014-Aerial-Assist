@@ -3,7 +3,9 @@ package com.team1160.assistant.commands.vision;
 import com.team1160.assistant.commands.CommandBase;
 
 public class VisionCommand extends CommandBase {
-
+    
+    public static boolean done;
+    
     public VisionCommand() {
         requires(vision);
     }
