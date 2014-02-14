@@ -10,22 +10,16 @@ public interface RobotMap {
     // ---MOTORS---
     // -DRIVE-
 
-    public static final int LEFT_TAL_MOTOR_SLOT = 1;
-    public static final int LEFT_TAL_MOTOR_CHAN = 1;
-    public static final int RIGHT_TAL_MOTOR_SLOT = 1;
-    public static final int RIGHT_TAL_MOTOR_CHAN = 2;
-    public static final double DRIVE_RIGHT_TOLERANCE = 0;
-    public static final double DRIVE_RIGHT_SETPOINT = 0;
-    public static final double DRIVE_LEFT_TOLERANCE = 0; 
-    public static final double DRIVE_LEFT_SETPOINT = 0; 
+    public static final int LEFT_TAL_MOTOR = 1;
+    public static final int RIGHT_TAL_MOTOR = 2;
+    public static double SETPOINT = 100;
     // -SHOOT-
     public static final int SHOOT_MOTOR_SLOT = 1;
-    public static final int SHOOT_MOTOR_CHAN = 3;
-    public static final double SHOOT_SETPOINT =0; 
+    public static final int SHOOT_MOTOR_CHAN = 4;
+    public static final double SHOOT_SETPOINT = 0; 
     public static final double SHOOT_TOLERANCE = 0; 
     // -PICKUP-
-    public static final int PICKUP_TAL_MOTOR_SLOT = 1;
-    public static final int PICKUP_TAL_MOTOR_CHAN = 4;
+    public static final int PICKUP_TAL_MOTOR_CHAN = 3;
     public static final double PICKUP_HARDSTOP_H = 0;
     public static final double PICKUP_HARDSTOP_L = 0;
     public static final double PICKUP_STALL = 0;
@@ -42,6 +36,7 @@ public interface RobotMap {
     public static final int ENC_DT_RIGHT_B = 6;
     public static final int ENC_SHOOT_A = 7;
     public static final int ENC_SHOOT_B = 8;
+    public static final double PULSE_DISTANCE = 0.004;
     // ---SPEED VALUES---
     public static final double LET_GO = 0;
     public static final double ADD_TENSION = 0;
@@ -51,7 +46,7 @@ public interface RobotMap {
     public static final double P = 0.1;
     public static final double I = 0.001;
     public static final double D = 0;
-    public static final double ABSOLUTE = 0;
+    public static final double ABSOLUTE = 15;
     
     // ---JOYSTICK BUTTONS---
     public static final int VISION_TRACK_BUT = 2;

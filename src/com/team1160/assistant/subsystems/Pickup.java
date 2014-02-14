@@ -1,15 +1,14 @@
 package com.team1160.assistant.subsystems;
 
 import com.team1160.assistant.RobotMap;
-import com.team1160.assistant.commands.pickup.LowerArm;
+import com.team1160.assistant.commands.pickup.Stall;
 import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.PIDController;
 import edu.wpi.first.wpilibj.PIDOutput;
-import edu.wpi.first.wpilibj.PIDSource;
 import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
-public class Pickup extends Subsystem implements PIDSource, PIDOutput, RobotMap {
+public class Pickup extends Subsystem implements PIDOutput, RobotMap {
 
     protected Talon talPickup;
     protected static Pickup instance;
@@ -17,18 +16,21 @@ public class Pickup extends Subsystem implements PIDSource, PIDOutput, RobotMap 
     protected PIDController pid;
 
     private Pickup() {
-        talPickup = new Talon(PICKUP_TAL_MOTOR_SLOT, PICKUP_TAL_MOTOR_CHAN);
+        talPickup = new Talon(PICKUP_TAL_MOTOR_CHAN);
         enc = new Encoder(ENC_PICKUP_A, ENC_PICKUP_B, true);
         enc.start();
         enc.startLiveWindowMode(); 
-        pid = new PIDController(0, 0, 0, this, this);
+        pid = new PIDController(0, 0, 0, enc, this);
         pid.startLiveWindowMode();
         pid.enable();
         pid.setAbsoluteTolerance(PICKUP_TOLERANCE);
         pid.setSetpoint(PICKUP_SETPOINT); 
+<<<<<<< HEAD
         
         
         
+=======
+>>>>>>> 05d14496e35f81e8da1eefe25a4a2df9775a19bc
     }
 
     public static Pickup getInstance() {
@@ -39,7 +41,7 @@ public class Pickup extends Subsystem implements PIDSource, PIDOutput, RobotMap 
     }
 
     protected void initDefaultCommand() {
-        this.setDefaultCommand(new LowerArm());
+        this.setDefaultCommand(new Stall());
     }
 
 //    public void lowerArm() {
@@ -49,7 +51,7 @@ public class Pickup extends Subsystem implements PIDSource, PIDOutput, RobotMap 
 //    }
 
     public void stall() {
-        talPickup.set(PICKUP_STALL);
+        talPickup.set(0);
     }
 
 //    public void raiseArm() {
@@ -65,4 +67,13 @@ public class Pickup extends Subsystem implements PIDSource, PIDOutput, RobotMap 
     public void pidWrite(double d) {
         talPickup.set(talPickup.get()+d);
     }
+    
+    public void raiseArm(){
+        talPickup.set(-1);
+    }
+    
+    public void lowerArm(){
+        talPickup.set(1);
+    }
+    
 }

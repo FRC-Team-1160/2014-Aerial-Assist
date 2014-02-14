@@ -13,6 +13,7 @@ public class RaiseArm extends CommandBase{
     }
 
     protected void execute() {
+        pickup.raiseArm();
     }
 
     protected boolean isFinished() {
