@@ -7,29 +7,26 @@ import edu.wpi.first.wpilibj.Talon;
 
 public class DrivetrainLeft extends DrivetrainBase {
 
-    protected static DrivetrainLeft instance;
+    protected static DrivetrainLeft instanceDT;
 
     public static DrivetrainLeft getInstance() {
-        if (instance == null) {
-            instance = new DrivetrainLeft();
+        if (instanceDT == null) {
+            instanceDT = new DrivetrainLeft();
         }
-        return instance;
+        return instanceDT;
     }
 
     private DrivetrainLeft() {
-
         tal = new Talon(LEFT_TAL_MOTOR);
         enc = new Encoder(ENC_DT_LEFT_A, ENC_DT_LEFT_B, true);
         enc.startLiveWindowMode();
-        enc.start();
+        enc.setDistancePerPulse(PULSE_DISTANCE);
         pid = new PIDController(P, I, D, enc, this);
         pid.startLiveWindowMode();
-        pid.setAbsoluteTolerance(ABSOLUTE);
         pid.setSetpoint(SETPOINT);
+        pid.setAbsoluteTolerance(ABSOLUTE);
         stick = this.getJoystick();
-        pid.enable();
-        startLogging("left_pid", pid);
-        startLogging("left_enc", enc);
+        pid.setContinuous();
     }
 
     protected void initDefaultCommand() {
@@ -39,10 +36,6 @@ public class DrivetrainLeft extends DrivetrainBase {
     public void pidWrite(double d) {
         tal.set(tal.get() + d);
         System.out.println("Left working towards: " + d);
-    }
-
-    public double pidGet() {
-        return enc.pidGet();
     }
 
     public void arcadeLeft() {

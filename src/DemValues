@@ -1,0 +1,2375 @@
+[cRIO] PID SAYS: -1
+[cRIO] Previous value minus current: 1.0
+[cRIO] Ratio is: -12.8 Y is: -0.078125 Difference is: 1.0
+[cRIO] PID SAYS: -2
+[cRIO] Previous value minus current: 1.0
+[cRIO] Ratio is: -8.0 Y is: -0.125 Difference is: 1.0
+[cRIO] PID SAYS: -3
+[cRIO] Previous value minus current: 1.0
+[cRIO] Ratio is: -8.0 Y is: -0.125 Difference is: 1.0
+[cRIO] PID SAYS: -5
+[cRIO] Previous value minus current: 1.0
+[cRIO] Ratio is: -7.111111111111111 Y is: -0.140625 Difference is: 1.0
+[cRIO] PID SAYS: -7
+[cRIO] Previous value minus current: 2.0
+[cRIO] Ratio is: -12.8 Y is: -0.15625 Difference is: 2.0
+[cRIO] PID SAYS: -9
+[cRIO] Previous value minus current: 2.0
+[cRIO] Ratio is: -12.8 Y is: -0.15625 Difference is: 2.0
+[cRIO] PID SAYS: -11
+[cRIO] Previous value minus current: 1.0
+[cRIO] Ratio is: -6.4 Y is: -0.15625 Difference is: 1.0
+[cRIO] PID SAYS: -14
+[cRIO] Previous value minus current: 2.0
+[cRIO] Ratio is: -11.636363636363637 Y is: -0.171875 Difference is: 2.0
+[cRIO] PID SAYS: -17
+[cRIO] Previous value minus current: 2.0
+[cRIO] Ratio is: -11.636363636363637 Y is: -0.171875 Difference is: 2.0
+[cRIO] PID SAYS: -21
+[cRIO] Previous value minus current: 3.0
+[cRIO] Ratio is: -17.454545454545453 Y is: -0.171875 Difference is: 3.0
+[cRIO] PID SAYS: -25
+[cRIO] Previous value minus current: 3.0
+[cRIO] Ratio is: -16.0 Y is: -0.1875 Difference is: 3.0
+[cRIO] PID SAYS: -29
+[cRIO] Previous value minus current: 3.0
+[cRIO] Ratio is: -16.0 Y is: -0.1875 Difference is: 3.0
+[cRIO] PID SAYS: -34
+[cRIO] Previous value minus current: 4.0
+[cRIO] Ratio is: -21.333333333333332 Y is: -0.1875 Difference is: 4.0
+[cRIO] PID SAYS: -39
+[cRIO] Previous value minus current: 5.0
+[cRIO] Ratio is: -26.666666666666668 Y is: -0.1875 Difference is: 5.0
+[cRIO] PID SAYS: -45
+[cRIO] Previous value minus current: 4.0
+[cRIO] Ratio is: -19.692307692307693 Y is: -0.203125 Difference is: 4.0
+[cRIO] PID SAYS: -50
+[cRIO] Previous value minus current: 4.0
+[cRIO] Ratio is: -19.692307692307693 Y is: -0.203125 Difference is: 4.0
+[cRIO] PID SAYS: -56
+[cRIO] Previous value minus current: 4.0
+[cRIO] Ratio is: -19.692307692307693 Y is: -0.203125 Difference is: 4.0
+[cRIO] PID SAYS: -62
+[cRIO] Previous value minus current: 4.0
+[cRIO] Ratio is: -19.692307692307693 Y is: -0.203125 Difference is: 4.0
+[cRIO] PID SAYS: -68
+[cRIO] Previous value minus current: 5.0
+[cRIO] Ratio is: -24.615384615384617 Y is: -0.203125 Difference is: 5.0
+[cRIO] PID SAYS: -75
+[cRIO] Previous value minus current: 6.0
+[cRIO] Ratio is: -29.53846153846154 Y is: -0.203125 Difference is: 6.0
+[cRIO] PID SAYS: -82
+[cRIO] Previous value minus current: 5.0
+[cRIO] Ratio is: -24.615384615384617 Y is: -0.203125 Difference is: 5.0
+[cRIO] PID SAYS: -89
+[cRIO] Previous value minus current: 5.0
+[cRIO] Ratio is: -24.615384615384617 Y is: -0.203125 Difference is: 5.0
+[cRIO] PID SAYS: -96
+[cRIO] Previous value minus current: 5.0
+[cRIO] Ratio is: -24.615384615384617 Y is: -0.203125 Difference is: 5.0
+[cRIO] PID SAYS: -103
+[cRIO] Previous value minus current: 5.0
+[cRIO] Ratio is: -24.615384615384617 Y is: -0.203125 Difference is: 5.0
+[cRIO] PID SAYS: -110
+[cRIO] Previous value minus current: 5.0
+[cRIO] Ratio is: -24.615384615384617 Y is: -0.203125 Difference is: 5.0
+[cRIO] PID SAYS: -116
+[cRIO] Previous value minus current: 5.0
+[cRIO] Ratio is: -24.615384615384617 Y is: -0.203125 Difference is: 5.0
+[cRIO] PID SAYS: -124
+[cRIO] Previous value minus current: 6.0
+[cRIO] Ratio is: -29.53846153846154 Y is: -0.203125 Difference is: 6.0
+[cRIO] PID SAYS: -131
+[cRIO] Previous value minus current: 5.0
+[cRIO] Ratio is: -24.615384615384617 Y is: -0.203125 Difference is: 5.0
+[cRIO] PID SAYS: -138
+[cRIO] Previous value minus current: 6.0
+[cRIO] Ratio is: -25.6 Y is: -0.234375 Difference is: 6.0
+[cRIO] PID SAYS: -145
+[cRIO] Previous value minus current: 6.0
+[cRIO] Ratio is: -25.6 Y is: -0.234375 Difference is: 6.0
+[cRIO] PID SAYS: -153
+[cRIO] Previous value minus current: 7.0
+[cRIO] Ratio is: -28.0 Y is: -0.25 Difference is: 7.0
+[cRIO] PID SAYS: -161
+[cRIO] Previous value minus current: 7.0
+[cRIO] Ratio is: -28.0 Y is: -0.25 Difference is: 7.0
+[cRIO] PID SAYS: -171
+[cRIO] Previous value minus current: 7.0
+[cRIO] Ratio is: -28.0 Y is: -0.25 Difference is: 7.0
+[cRIO] PID SAYS: -179
+[cRIO] Previous value minus current: 7.0
+[cRIO] Ratio is: -26.352941176470587 Y is: -0.265625 Difference is: 7.0
+[cRIO] PID SAYS: -189
+[cRIO] Previous value minus current: 7.0
+[cRIO] Ratio is: -26.352941176470587 Y is: -0.265625 Difference is: 7.0
+[cRIO] PID SAYS: -198
+[cRIO] Previous value minus current: 8.0
+[cRIO] Ratio is: -28.444444444444443 Y is: -0.28125 Difference is: 8.0
+[cRIO] PID SAYS: -207
+[cRIO] Previous value minus current: 7.0
+[cRIO] Ratio is: -23.57894736842105 Y is: -0.296875 Difference is: 7.0
+[cRIO] PID SAYS: -217
+[cRIO] Previous value minus current: 7.0
+[cRIO] Ratio is: -23.57894736842105 Y is: -0.296875 Difference is: 7.0
+[cRIO] PID SAYS: -227
+[cRIO] Previous value minus current: 7.0
+[cRIO] Ratio is: -23.57894736842105 Y is: -0.296875 Difference is: 7.0
+[cRIO] PID SAYS: -237
+[cRIO] Previous value minus current: 7.0
+[cRIO] Ratio is: -22.4 Y is: -0.3125 Difference is: 7.0
+[cRIO] PID SAYS: -247
+[cRIO] Previous value minus current: 9.0
+[cRIO] Ratio is: -28.8 Y is: -0.3125 Difference is: 9.0
+[cRIO] PID SAYS: -258
+[cRIO] Previous value minus current: 8.0
+[cRIO] Ratio is: -24.38095238095238 Y is: -0.328125 Difference is: 8.0
+[cRIO] PID SAYS: -269
+[cRIO] Previous value minus current: 9.0
+[cRIO] Ratio is: -26.181818181818183 Y is: -0.34375 Difference is: 9.0
+[cRIO] PID SAYS: -280
+[cRIO] Previous value minus current: 9.0
+[cRIO] Ratio is: -26.181818181818183 Y is: -0.34375 Difference is: 9.0
+[cRIO] PID SAYS: -293
+[cRIO] Previous value minus current: 9.0
+[cRIO] Ratio is: -25.043478260869566 Y is: -0.359375 Difference is: 9.0
+[cRIO] PID SAYS: -305
+[cRIO] Previous value minus current: 10.0
+[cRIO] Ratio is: -27.82608695652174 Y is: -0.359375 Difference is: 10.0
+[cRIO] PID SAYS: -318
+[cRIO] Previous value minus current: 10.0
+[cRIO] Ratio is: -27.82608695652174 Y is: -0.359375 Difference is: 10.0
+[cRIO] PID SAYS: -332
+[cRIO] Previous value minus current: 11.0
+[cRIO] Ratio is: -29.333333333333332 Y is: -0.375 Difference is: 11.0
+[cRIO] PID SAYS: -347
+[cRIO] Previous value minus current: 11.0
+[cRIO] Ratio is: -29.333333333333332 Y is: -0.375 Difference is: 11.0
+[cRIO] PID SAYS: -362
+[cRIO] Previous value minus current: 11.0
+[cRIO] Ratio is: -28.16 Y is: -0.390625 Difference is: 11.0
+[cRIO] PID SAYS: -377
+[cRIO] Previous value minus current: 12.0
+[cRIO] Ratio is: -29.53846153846154 Y is: -0.40625 Difference is: 12.0
+[cRIO] PID SAYS: -393
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: -30.814814814814813 Y is: -0.421875 Difference is: 13.0
+[cRIO] PID SAYS: -409
+[cRIO] Previous value minus current: 12.0
+[cRIO] Ratio is: -28.444444444444443 Y is: -0.421875 Difference is: 12.0
+[cRIO] PID SAYS: -427
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: -29.714285714285715 Y is: -0.4375 Difference is: 13.0
+[cRIO] PID SAYS: -444
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: -28.689655172413794 Y is: -0.453125 Difference is: 13.0
+[cRIO] PID SAYS: -462
+[cRIO] Previous value minus current: 14.0
+[cRIO] Ratio is: -29.866666666666667 Y is: -0.46875 Difference is: 14.0
+[cRIO] PID SAYS: -479
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: -26.838709677419356 Y is: -0.484375 Difference is: 13.0
+[cRIO] PID SAYS: -499
+[cRIO] Previous value minus current: 15.0
+[cRIO] Ratio is: -30.0 Y is: -0.5 Difference is: 15.0
+[cRIO] PID SAYS: -517
+[cRIO] Previous value minus current: 15.0
+[cRIO] Ratio is: -29.09090909090909 Y is: -0.515625 Difference is: 15.0
+[cRIO] PID SAYS: -537
+[cRIO] Previous value minus current: 15.0
+[cRIO] Ratio is: -28.235294117647058 Y is: -0.53125 Difference is: 15.0
+[cRIO] PID SAYS: -558
+[cRIO] Previous value minus current: 16.0
+[cRIO] Ratio is: -30.11764705882353 Y is: -0.53125 Difference is: 16.0
+[cRIO] PID SAYS: -579
+[cRIO] Previous value minus current: 16.0
+[cRIO] Ratio is: -30.11764705882353 Y is: -0.53125 Difference is: 16.0
+[cRIO] PID SAYS: -600
+[cRIO] Previous value minus current: 16.0
+[cRIO] Ratio is: -30.11764705882353 Y is: -0.53125 Difference is: 16.0
+[cRIO] PID SAYS: -624
+[cRIO] Previous value minus current: 18.0
+[cRIO] Ratio is: -33.88235294117647 Y is: -0.53125 Difference is: 18.0
+[cRIO] PID SAYS: -646
+[cRIO] Previous value minus current: 18.0
+[cRIO] Ratio is: -33.88235294117647 Y is: -0.53125 Difference is: 18.0
+[cRIO] PID SAYS: -671
+[cRIO] Previous value minus current: 19.0
+[cRIO] Ratio is: -45.03703703703704 Y is: -0.421875 Difference is: 19.0
+[cRIO] PID SAYS: -694
+[cRIO] Previous value minus current: 17.0
+[cRIO] Ratio is: -49.45454545454545 Y is: -0.34375 Difference is: 17.0
+[cRIO] PID SAYS: -716
+[cRIO] Previous value minus current: 17.0
+[cRIO] Ratio is: -68.0 Y is: -0.25 Difference is: 17.0
+[cRIO] PID SAYS: -734
+[cRIO] Previous value minus current: 15.0
+[cRIO] Ratio is: -160.0 Y is: -0.09375 Difference is: 15.0
+[cRIO] PID SAYS: -749
+[cRIO] Previous value minus current: 12.0
+[cRIO] Ratio is: -768.0 Y is: -0.015625 Difference is: 12.0
+[cRIO] PID SAYS: -759
+[cRIO] Previous value minus current: 7.0
+[cRIO] Ratio is: -896.0 Y is: -0.0078125 Difference is: 7.0
+[cRIO] PID SAYS: -764
+[cRIO] Previous value minus current: 3.0
+[cRIO] Ratio is: -384.0 Y is: -0.0078125 Difference is: 3.0
+[cRIO] PID SAYS: -766
+[cRIO] Previous value minus current: 1.0
+[cRIO] Ratio is: -5.333333333333333 Y is: -0.1875 Difference is: 1.0
+[cRIO] PID SAYS: -768
+[cRIO] Previous value minus current: 2.0
+[cRIO] Ratio is: -3.878787878787879 Y is: -0.515625 Difference is: 2.0
+[cRIO] PID SAYS: -775
+[cRIO] Previous value minus current: 6.0
+[cRIO] Ratio is: -7.529411764705882 Y is: -0.796875 Difference is: 6.0
+[cRIO] PID SAYS: -788
+[cRIO] Previous value minus current: 11.0
+[cRIO] Ratio is: -11.0 Y is: -1.0 Difference is: 11.0
+[cRIO] PID SAYS: -807
+[cRIO] Previous value minus current: 17.0
+[cRIO] Ratio is: -17.0 Y is: -1.0 Difference is: 17.0
+[cRIO] PID SAYS: -837
+[cRIO] Previous value minus current: 25.0
+[cRIO] Ratio is: -25.0 Y is: -1.0 Difference is: 25.0
+[cRIO] PID SAYS: -871
+[cRIO] Previous value minus current: 27.0
+[cRIO] Ratio is: -27.0 Y is: -1.0 Difference is: 27.0
+[cRIO] PID SAYS: -912
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -951
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -994
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -1038
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -1080
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -1123
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -1168
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -1211
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -1257
+[cRIO] Previous value minus current: 38.0
+[cRIO] Ratio is: -38.0 Y is: -1.0 Difference is: 38.0
+[cRIO] PID SAYS: -1299
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -1344
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -1387
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -1433
+[cRIO] Previous value minus current: 37.0
+[cRIO] Ratio is: -37.0 Y is: -1.0 Difference is: 37.0
+[cRIO] PID SAYS: -1476
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -1521
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -1564
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -1609
+[cRIO] Previous value minus current: 37.0
+[cRIO] Ratio is: -37.0 Y is: -1.0 Difference is: 37.0
+[cRIO] PID SAYS: -1652
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -1696
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -1740
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -1783
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -1828
+[cRIO] Previous value minus current: 37.0
+[cRIO] Ratio is: -37.0 Y is: -1.0 Difference is: 37.0
+[cRIO] PID SAYS: -1871
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -1915
+[cRIO] Previous value minus current: 37.0
+[cRIO] Ratio is: -37.0 Y is: -1.0 Difference is: 37.0
+[cRIO] PID SAYS: -1958
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -2004
+[cRIO] Previous value minus current: 37.0
+[cRIO] Ratio is: -37.0 Y is: -1.0 Difference is: 37.0
+[cRIO] PID SAYS: -2046
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -2091
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -2136
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -2179
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -2222
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -2267
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -2310
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -2354
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -2397
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -2442
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -2485
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -2529
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -2572
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -2616
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -2659
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -2705
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -2747
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -2789
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -2833
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -2876
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -2922
+[cRIO] Previous value minus current: 37.0
+[cRIO] Ratio is: -37.0 Y is: -1.0 Difference is: 37.0
+[cRIO] PID SAYS: -2965
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -3010
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -3052
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -3097
+[cRIO] Previous value minus current: 37.0
+[cRIO] Ratio is: -37.0 Y is: -1.0 Difference is: 37.0
+[cRIO] PID SAYS: -3139
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -3184
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -3229
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -3271
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -3313
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -3358
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -3400
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -3446
+[cRIO] Previous value minus current: 37.0
+[cRIO] Ratio is: -37.0 Y is: -1.0 Difference is: 37.0
+[cRIO] PID SAYS: -3488
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -3533
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -3575
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -3620
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -3662
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -3708
+[cRIO] Previous value minus current: 37.0
+[cRIO] Ratio is: -37.0 Y is: -1.0 Difference is: 37.0
+[cRIO] PID SAYS: -3750
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -3794
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -3837
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -3880
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -3924
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -3967
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -4012
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -4054
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -4098
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -4141
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -4186
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -4229
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -4273
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -4317
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -4359
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -4402
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -4446
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -4488
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -4533
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -4575
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -4619
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -4662
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -4707
+[cRIO] Previous value minus current: 37.0
+[cRIO] Ratio is: -37.0 Y is: -1.0 Difference is: 37.0
+[cRIO] PID SAYS: -4749
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -4793
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -4835
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -4879
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -4923
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -4965
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -5009
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -5051
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -5096
+[cRIO] Previous value minus current: 37.0
+[cRIO] Ratio is: -37.0 Y is: -1.0 Difference is: 37.0
+[cRIO] PID SAYS: -5138
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -5183
+[cRIO] Previous value minus current: 37.0
+[cRIO] Ratio is: -37.0 Y is: -1.0 Difference is: 37.0
+[cRIO] PID SAYS: -5225
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -5269
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -5311
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -5355
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -5400
+[cRIO] Previous value minus current: 37.0
+[cRIO] Ratio is: -37.0 Y is: -1.0 Difference is: 37.0
+[cRIO] PID SAYS: -5443
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -5485
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -5529
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -5571
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -5616
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -5658
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -5702
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -5744
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -5788
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -5830
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -5874
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -5916
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -5961
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -6003
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -38.75229357798165 Y is: -0.8515625 Difference is: 33.0
+[cRIO] PID SAYS: -6045
+[cRIO] Previous value minus current: 31.0
+[cRIO] Ratio is: -48.98765432098765 Y is: -0.6328125 Difference is: 31.0
+[cRIO] PID SAYS: -6087
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -107.78947368421052 Y is: -0.296875 Difference is: 32.0
+[cRIO] PID SAYS: -6124
+[cRIO] Previous value minus current: 27.0
+[cRIO] Ratio is: -216.0 Y is: -0.125 Difference is: 27.0
+[cRIO] PID SAYS: -6153
+[cRIO] Previous value minus current: 21.0
+[cRIO] Ratio is: Infinity Y is: 0.0 Difference is: 21.0
+[cRIO] PID SAYS: -6171
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: Infinity Y is: 0.0 Difference is: 13.0
+[cRIO] PID SAYS: -6180
+[cRIO] Previous value minus current: 6.0
+[cRIO] Ratio is: Infinity Y is: 0.0 Difference is: 6.0
+[cRIO] PID SAYS: -6183
+[cRIO] Previous value minus current: 2.0
+[cRIO] Ratio is: Infinity Y is: 0.0 Difference is: 2.0
+[cRIO] PID SAYS: -6182
+[cRIO] Previous value minus current: -1.0
+[cRIO] Ratio is: -2.953488372093023 Y is: 0.33858267716535434 Difference is: -1.0
+[cRIO] PID SAYS: -6180
+[cRIO] Previous value minus current: -3.0
+[cRIO] Ratio is: -6.927272727272727 Y is: 0.4330708661417323 Difference is: -3.0
+[cRIO] PID SAYS: -6173
+[cRIO] Previous value minus current: -6.0
+[cRIO] Ratio is: -9.071428571428571 Y is: 0.6614173228346457 Difference is: -6.0
+[cRIO] PID SAYS: -6163
+[cRIO] Previous value minus current: -8.0
+[cRIO] Ratio is: -9.584905660377359 Y is: 0.8346456692913385 Difference is: -8.0
+[cRIO] PID SAYS: -6146
+[cRIO] Previous value minus current: -13.0
+[cRIO] Ratio is: -13.0 Y is: 1.0 Difference is: -13.0
+[cRIO] PID SAYS: -6123
+[cRIO] Previous value minus current: -20.0
+[cRIO] Ratio is: -20.0 Y is: 1.0 Difference is: -20.0
+[cRIO] PID SAYS: -6091
+[cRIO] Previous value minus current: -27.0
+[cRIO] Ratio is: -27.0 Y is: 1.0 Difference is: -27.0
+[cRIO] PID SAYS: -6056
+[cRIO] Previous value minus current: -28.0
+[cRIO] Ratio is: -28.0 Y is: 1.0 Difference is: -28.0
+[cRIO] PID SAYS: -6016
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -5977
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -5935
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -5894
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -5852
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -5809
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -5766
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -5722
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -5680
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -5636
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -5594
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -5549
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -5507
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -5463
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -5419
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -5376
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -5334
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -5290
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -5248
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -5203
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -5162
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -5117
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -5075
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -5030
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -4988
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -4944
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -4903
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -4858
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -4816
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -4773
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -4730
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -4688
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -4643
+[cRIO] Previous value minus current: -37.0
+[cRIO] Ratio is: -37.0 Y is: 1.0 Difference is: -37.0
+[cRIO] PID SAYS: -4601
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -4556
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -4515
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -4470
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -4429
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -4385
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -4340
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -4298
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -4256
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -4213
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -4171
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -4127
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -4084
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -4040
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -3999
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -3955
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -3913
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -3869
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -3827
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -3783
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -3742
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -3700
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -3657
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -3615
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -3570
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -3528
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -3485
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -3444
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -3400
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -3358
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -3314
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -3270
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -3228
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -3187
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -3143
+[cRIO] Previous value minus current: -21.0
+[cRIO] Ratio is: -21.0 Y is: 1.0 Difference is: -21.0
+[cRIO] PID SAYS: -3100
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -3057
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -3015
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -2972
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -2931
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -2887
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -2844
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -2801
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -2760
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -2715
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -2675
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -2633
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -2589
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -2547
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -2503
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -2462
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -2418
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -2378
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -2333
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -2292
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -2249
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -2206
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -2164
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -2123
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -2079
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -2038
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -1994
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -1952
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -1909
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -1868
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -1823
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -1782
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -1739
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -1698
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -1654
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -1613
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -1571
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -1528
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -1486
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -1442
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -1401
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -1357
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -1315
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -1271
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -1230
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -1187
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -1142
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -1100
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -1058
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -1015
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -973
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -929
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -888
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -844
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -802
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -758
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -716
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -673
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -631
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -587
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -545
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -504
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -460
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -419
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -375
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -333
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -288
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: -248
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -204
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -162
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -119
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -75
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -33
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: 8
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: 51
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: 92
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: 137
+[cRIO] Previous value minus current: -36.0
+[cRIO] Ratio is: -36.0 Y is: 1.0 Difference is: -36.0
+[cRIO] PID SAYS: 178
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: 222
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: 263
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: 307
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: 348
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: 392
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: 434
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: 478
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: 519
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: 560
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: 603
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: 644
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: 689
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: 730
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: 772
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: 813
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: 857
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: 899
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: 941
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: 985
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: 1026
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: 1067
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: 1110
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -39.98148148148148 Y is: 0.8503937007874016 Difference is: -34.0
+[cRIO] PID SAYS: 1151
+[cRIO] Previous value minus current: -30.0
+[cRIO] Ratio is: -48.84615384615385 Y is: 0.6141732283464567 Difference is: -30.0
+[cRIO] PID SAYS: 1193
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -103.60526315789473 Y is: 0.2992125984251969 Difference is: -31.0
+[cRIO] PID SAYS: 1229
+[cRIO] Previous value minus current: -24.0
+[cRIO] Ratio is: -169.33333333333334 Y is: 0.14173228346456693 Difference is: -24.0
+[cRIO] PID SAYS: 1257
+[cRIO] Previous value minus current: -19.0
+[cRIO] Ratio is: 2432.0 Y is: -0.0078125 Difference is: -19.0
+[cRIO] PID SAYS: 1273
+[cRIO] Previous value minus current: -11.0
+[cRIO] Ratio is: 1408.0 Y is: -0.0078125 Difference is: -11.0
+[cRIO] PID SAYS: 1279
+[cRIO] Previous value minus current: -3.0
+[cRIO] Ratio is: 384.0 Y is: -0.0078125 Difference is: -3.0
+[cRIO] PID SAYS: 1278
+[cRIO] Previous value minus current: 1.0
+[cRIO] Ratio is: -128.0 Y is: -0.0078125 Difference is: 1.0
+[cRIO] PID SAYS: 1277
+[cRIO] Previous value minus current: 1.0
+[cRIO] Ratio is: -128.0 Y is: -0.0078125 Difference is: 1.0
+[cRIO] PID SAYS: 1276
+[cRIO] Previous value minus current: 1.0
+[cRIO] Ratio is: -9.142857142857142 Y is: -0.109375 Difference is: 1.0
+[cRIO] PID SAYS: 1275
+[cRIO] Previous value minus current: 1.0
+[cRIO] Ratio is: -7.111111111111111 Y is: -0.140625 Difference is: 1.0
+[cRIO] PID SAYS: 1273
+[cRIO] Previous value minus current: 2.0
+[cRIO] Ratio is: -11.636363636363637 Y is: -0.171875 Difference is: 2.0
+[cRIO] PID SAYS: 1271
+[cRIO] Previous value minus current: 2.0
+[cRIO] Ratio is: -11.636363636363637 Y is: -0.171875 Difference is: 2.0
+[cRIO] PID SAYS: 1269
+[cRIO] Previous value minus current: 3.0
+[cRIO] Ratio is: -17.454545454545453 Y is: -0.171875 Difference is: 3.0
+[cRIO] PID SAYS: 1265
+[cRIO] Previous value minus current: 3.0
+[cRIO] Ratio is: -17.454545454545453 Y is: -0.171875 Difference is: 3.0
+[cRIO] PID SAYS: 1261
+[cRIO] Previous value minus current: 3.0
+[cRIO] Ratio is: -17.454545454545453 Y is: -0.171875 Difference is: 3.0
+[cRIO] PID SAYS: 1257
+[cRIO] Previous value minus current: 3.0
+[cRIO] Ratio is: -17.454545454545453 Y is: -0.171875 Difference is: 3.0
+[cRIO] PID SAYS: 1253
+[cRIO] Previous value minus current: 3.0
+[cRIO] Ratio is: -16.0 Y is: -0.1875 Difference is: 3.0
+[cRIO] PID SAYS: 1249
+[cRIO] Previous value minus current: 4.0
+[cRIO] Ratio is: -19.692307692307693 Y is: -0.203125 Difference is: 4.0
+[cRIO] PID SAYS: 1244
+[cRIO] Previous value minus current: 3.0
+[cRIO] Ratio is: -14.76923076923077 Y is: -0.203125 Difference is: 3.0
+[cRIO] PID SAYS: 1239
+[cRIO] Previous value minus current: 5.0
+[cRIO] Ratio is: -24.615384615384617 Y is: -0.203125 Difference is: 5.0
+[cRIO] PID SAYS: 1233
+[cRIO] Previous value minus current: 4.0
+[cRIO] Ratio is: -19.692307692307693 Y is: -0.203125 Difference is: 4.0
+[cRIO] PID SAYS: 1227
+[cRIO] Previous value minus current: 4.0
+[cRIO] Ratio is: -19.692307692307693 Y is: -0.203125 Difference is: 4.0
+[cRIO] PID SAYS: 1221
+[cRIO] Previous value minus current: 4.0
+[cRIO] Ratio is: -18.285714285714285 Y is: -0.21875 Difference is: 4.0
+[cRIO] PID SAYS: 1215
+[cRIO] Previous value minus current: 4.0
+[cRIO] Ratio is: -17.066666666666666 Y is: -0.234375 Difference is: 4.0
+[cRIO] PID SAYS: 1209
+[cRIO] Previous value minus current: 4.0
+[cRIO] Ratio is: -17.066666666666666 Y is: -0.234375 Difference is: 4.0
+[cRIO] PID SAYS: 1202
+[cRIO] Previous value minus current: 5.0
+[cRIO] Ratio is: -20.0 Y is: -0.25 Difference is: 5.0
+[cRIO] PID SAYS: 1195
+[cRIO] Previous value minus current: 6.0
+[cRIO] Ratio is: -24.0 Y is: -0.25 Difference is: 6.0
+[cRIO] PID SAYS: 1187
+[cRIO] Previous value minus current: 7.0
+[cRIO] Ratio is: -28.0 Y is: -0.25 Difference is: 7.0
+[cRIO] PID SAYS: 1178
+[cRIO] Previous value minus current: 7.0
+[cRIO] Ratio is: -26.352941176470587 Y is: -0.265625 Difference is: 7.0
+[cRIO] PID SAYS: 1169
+[cRIO] Previous value minus current: 7.0
+[cRIO] Ratio is: -26.352941176470587 Y is: -0.265625 Difference is: 7.0
+[cRIO] PID SAYS: 1161
+[cRIO] Previous value minus current: 7.0
+[cRIO] Ratio is: -24.88888888888889 Y is: -0.28125 Difference is: 7.0
+[cRIO] PID SAYS: 1151
+[cRIO] Previous value minus current: 8.0
+[cRIO] Ratio is: -26.94736842105263 Y is: -0.296875 Difference is: 8.0
+[cRIO] PID SAYS: 1141
+[cRIO] Previous value minus current: 8.0
+[cRIO] Ratio is: -26.94736842105263 Y is: -0.296875 Difference is: 8.0
+[cRIO] PID SAYS: 1130
+[cRIO] Previous value minus current: 8.0
+[cRIO] Ratio is: -26.94736842105263 Y is: -0.296875 Difference is: 8.0
+[cRIO] PID SAYS: 1120
+[cRIO] Previous value minus current: 8.0
+[cRIO] Ratio is: -26.94736842105263 Y is: -0.296875 Difference is: 8.0
+[cRIO] PID SAYS: 1108
+[cRIO] Previous value minus current: 9.0
+[cRIO] Ratio is: -28.8 Y is: -0.3125 Difference is: 9.0
+[cRIO] PID SAYS: 1097
+[cRIO] Previous value minus current: 8.0
+[cRIO] Ratio is: -25.6 Y is: -0.3125 Difference is: 8.0
+[cRIO] PID SAYS: 1086
+[cRIO] Previous value minus current: 9.0
+[cRIO] Ratio is: -28.8 Y is: -0.3125 Difference is: 9.0
+[cRIO] PID SAYS: 1074
+[cRIO] Previous value minus current: 10.0
+[cRIO] Ratio is: -30.476190476190474 Y is: -0.328125 Difference is: 10.0
+[cRIO] PID SAYS: 1062
+[cRIO] Previous value minus current: 8.0
+[cRIO] Ratio is: -24.38095238095238 Y is: -0.328125 Difference is: 8.0
+[cRIO] PID SAYS: 1050
+[cRIO] Previous value minus current: 10.0
+[cRIO] Ratio is: -29.09090909090909 Y is: -0.34375 Difference is: 10.0
+[cRIO] PID SAYS: 1038
+[cRIO] Previous value minus current: 9.0
+[cRIO] Ratio is: -26.181818181818183 Y is: -0.34375 Difference is: 9.0
+[cRIO] PID SAYS: 1025
+[cRIO] Previous value minus current: 10.0
+[cRIO] Ratio is: -29.09090909090909 Y is: -0.34375 Difference is: 10.0
+[cRIO] PID SAYS: 1014
+[cRIO] Previous value minus current: 9.0
+[cRIO] Ratio is: -25.043478260869566 Y is: -0.359375 Difference is: 9.0
+[cRIO] PID SAYS: 1001
+[cRIO] Previous value minus current: 9.0
+[cRIO] Ratio is: -24.0 Y is: -0.375 Difference is: 9.0
+[cRIO] PID SAYS: 989
+[cRIO] Previous value minus current: 10.0
+[cRIO] Ratio is: -26.666666666666668 Y is: -0.375 Difference is: 10.0
+[cRIO] PID SAYS: 976
+[cRIO] Previous value minus current: 10.0
+[cRIO] Ratio is: -26.666666666666668 Y is: -0.375 Difference is: 10.0
+[cRIO] PID SAYS: 962
+[cRIO] Previous value minus current: 11.0
+[cRIO] Ratio is: -28.16 Y is: -0.390625 Difference is: 11.0
+[cRIO] PID SAYS: 948
+[cRIO] Previous value minus current: 11.0
+[cRIO] Ratio is: -27.076923076923077 Y is: -0.40625 Difference is: 11.0
+[cRIO] PID SAYS: 934
+[cRIO] Previous value minus current: 11.0
+[cRIO] Ratio is: -26.074074074074073 Y is: -0.421875 Difference is: 11.0
+[cRIO] PID SAYS: 919
+[cRIO] Previous value minus current: 12.0
+[cRIO] Ratio is: -28.444444444444443 Y is: -0.421875 Difference is: 12.0
+[cRIO] PID SAYS: 903
+[cRIO] Previous value minus current: 11.0
+[cRIO] Ratio is: -26.074074074074073 Y is: -0.421875 Difference is: 11.0
+[cRIO] PID SAYS: 887
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: -30.814814814814813 Y is: -0.421875 Difference is: 13.0
+[cRIO] PID SAYS: 870
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: -30.814814814814813 Y is: -0.421875 Difference is: 13.0
+[cRIO] PID SAYS: 853
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: -30.814814814814813 Y is: -0.421875 Difference is: 13.0
+[cRIO] PID SAYS: 836
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: -29.714285714285715 Y is: -0.4375 Difference is: 13.0
+[cRIO] PID SAYS: 818
+[cRIO] Previous value minus current: 14.0
+[cRIO] Ratio is: -32.0 Y is: -0.4375 Difference is: 14.0
+[cRIO] PID SAYS: 801
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: -29.714285714285715 Y is: -0.4375 Difference is: 13.0
+[cRIO] PID SAYS: 784
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: -29.714285714285715 Y is: -0.4375 Difference is: 13.0
+[cRIO] PID SAYS: 767
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: -28.689655172413794 Y is: -0.453125 Difference is: 13.0
+[cRIO] PID SAYS: 749
+[cRIO] Previous value minus current: 14.0
+[cRIO] Ratio is: -29.866666666666667 Y is: -0.46875 Difference is: 14.0
+[cRIO] PID SAYS: 732
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: -27.733333333333334 Y is: -0.46875 Difference is: 13.0
+[cRIO] PID SAYS: 715
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: -27.733333333333334 Y is: -0.46875 Difference is: 13.0
+[cRIO] PID SAYS: 696
+[cRIO] Previous value minus current: 14.0
+[cRIO] Ratio is: -29.866666666666667 Y is: -0.46875 Difference is: 14.0
+[cRIO] PID SAYS: 678
+[cRIO] Previous value minus current: 14.0
+[cRIO] Ratio is: -28.903225806451612 Y is: -0.484375 Difference is: 14.0
+[cRIO] PID SAYS: 658
+[cRIO] Previous value minus current: 15.0
+[cRIO] Ratio is: -30.967741935483872 Y is: -0.484375 Difference is: 15.0
+[cRIO] PID SAYS: 640
+[cRIO] Previous value minus current: 14.0
+[cRIO] Ratio is: -28.903225806451612 Y is: -0.484375 Difference is: 14.0
+[cRIO] PID SAYS: 620
+[cRIO] Previous value minus current: 15.0
+[cRIO] Ratio is: -30.0 Y is: -0.5 Difference is: 15.0
+[cRIO] PID SAYS: 600
+[cRIO] Previous value minus current: 16.0
+[cRIO] Ratio is: -32.0 Y is: -0.5 Difference is: 16.0
+[cRIO] PID SAYS: 579
+[cRIO] Previous value minus current: 17.0
+[cRIO] Ratio is: -33.47692307692308 Y is: -0.5078125 Difference is: 17.0
+[cRIO] PID SAYS: 559
+[cRIO] Previous value minus current: 15.0
+[cRIO] Ratio is: -28.65671641791045 Y is: -0.5234375 Difference is: 15.0
+[cRIO] PID SAYS: 538
+[cRIO] Previous value minus current: 16.0
+[cRIO] Ratio is: -30.567164179104477 Y is: -0.5234375 Difference is: 16.0
+[cRIO] PID SAYS: 517
+[cRIO] Previous value minus current: 16.0
+[cRIO] Ratio is: -29.681159420289855 Y is: -0.5390625 Difference is: 16.0
+[cRIO] PID SAYS: 496
+[cRIO] Previous value minus current: 15.0
+[cRIO] Ratio is: -27.82608695652174 Y is: -0.5390625 Difference is: 15.0
+[cRIO] PID SAYS: 476
+[cRIO] Previous value minus current: 15.0
+[cRIO] Ratio is: -27.04225352112676 Y is: -0.5546875 Difference is: 15.0
+[cRIO] PID SAYS: 454
+[cRIO] Previous value minus current: 17.0
+[cRIO] Ratio is: -30.64788732394366 Y is: -0.5546875 Difference is: 17.0
+[cRIO] PID SAYS: 433
+[cRIO] Previous value minus current: 16.0
+[cRIO] Ratio is: -28.054794520547944 Y is: -0.5703125 Difference is: 16.0
+[cRIO] PID SAYS: 409
+[cRIO] Previous value minus current: 18.0
+[cRIO] Ratio is: -30.72 Y is: -0.5859375 Difference is: 18.0
+[cRIO] PID SAYS: 387
+[cRIO] Previous value minus current: 17.0
+[cRIO] Ratio is: -29.013333333333332 Y is: -0.5859375 Difference is: 17.0
+[cRIO] PID SAYS: 362
+[cRIO] Previous value minus current: 19.0
+[cRIO] Ratio is: -32.42666666666667 Y is: -0.5859375 Difference is: 19.0
+[cRIO] PID SAYS: 338
+[cRIO] Previous value minus current: 18.0
+[cRIO] Ratio is: -29.92207792207792 Y is: -0.6015625 Difference is: 18.0
+[cRIO] PID SAYS: 313
+[cRIO] Previous value minus current: 19.0
+[cRIO] Ratio is: -31.584415584415584 Y is: -0.6015625 Difference is: 19.0
+[cRIO] PID SAYS: 288
+[cRIO] Previous value minus current: 18.0
+[cRIO] Ratio is: -29.92207792207792 Y is: -0.6015625 Difference is: 18.0
+[cRIO] PID SAYS: 263
+[cRIO] Previous value minus current: 19.0
+[cRIO] Ratio is: -30.78481012658228 Y is: -0.6171875 Difference is: 19.0
+[cRIO] PID SAYS: 238
+[cRIO] Previous value minus current: 19.0
+[cRIO] Ratio is: -30.78481012658228 Y is: -0.6171875 Difference is: 19.0
+[cRIO] PID SAYS: 212
+[cRIO] Previous value minus current: 20.0
+[cRIO] Ratio is: -31.604938271604937 Y is: -0.6328125 Difference is: 20.0
+[cRIO] PID SAYS: 187
+[cRIO] Previous value minus current: 19.0
+[cRIO] Ratio is: -30.02469135802469 Y is: -0.6328125 Difference is: 19.0
+[cRIO] PID SAYS: 161
+[cRIO] Previous value minus current: 19.0
+[cRIO] Ratio is: -29.301204819277107 Y is: -0.6484375 Difference is: 19.0
+[cRIO] PID SAYS: 134
+[cRIO] Previous value minus current: 20.0
+[cRIO] Ratio is: -30.843373493975903 Y is: -0.6484375 Difference is: 20.0
+[cRIO] PID SAYS: 107
+[cRIO] Previous value minus current: 20.0
+[cRIO] Ratio is: -30.11764705882353 Y is: -0.6640625 Difference is: 20.0
+[cRIO] PID SAYS: 78
+[cRIO] Previous value minus current: 22.0
+[cRIO] Ratio is: -33.129411764705885 Y is: -0.6640625 Difference is: 22.0
+[cRIO] PID SAYS: 51
+[cRIO] Previous value minus current: 20.0
+[cRIO] Ratio is: -29.42528735632184 Y is: -0.6796875 Difference is: 20.0
+[cRIO] PID SAYS: 22
+[cRIO] Previous value minus current: 22.0
+[cRIO] Ratio is: -32.367816091954026 Y is: -0.6796875 Difference is: 22.0
+[cRIO] PID SAYS: -5
+[cRIO] Previous value minus current: 19.0
+[cRIO] Ratio is: -27.95402298850575 Y is: -0.6796875 Difference is: 19.0
+[cRIO] PID SAYS: -34
+[cRIO] Previous value minus current: 22.0
+[cRIO] Ratio is: -32.367816091954026 Y is: -0.6796875 Difference is: 22.0
+[cRIO] PID SAYS: -62
+[cRIO] Previous value minus current: 21.0
+[cRIO] Ratio is: -30.202247191011235 Y is: -0.6953125 Difference is: 21.0
+[cRIO] PID SAYS: -91
+[cRIO] Previous value minus current: 23.0
+[cRIO] Ratio is: -33.07865168539326 Y is: -0.6953125 Difference is: 23.0
+[cRIO] PID SAYS: -122
+[cRIO] Previous value minus current: 23.0
+[cRIO] Ratio is: -32.35164835164835 Y is: -0.7109375 Difference is: 23.0
+[cRIO] PID SAYS: -152
+[cRIO] Previous value minus current: 23.0
+[cRIO] Ratio is: -32.35164835164835 Y is: -0.7109375 Difference is: 23.0
+[cRIO] PID SAYS: -181
+[cRIO] Previous value minus current: 22.0
+[cRIO] Ratio is: -30.27956989247312 Y is: -0.7265625 Difference is: 22.0
+[cRIO] PID SAYS: -212
+[cRIO] Previous value minus current: 23.0
+[cRIO] Ratio is: -31.655913978494624 Y is: -0.7265625 Difference is: 23.0
+[cRIO] PID SAYS: -242
+[cRIO] Previous value minus current: 22.0
+[cRIO] Ratio is: -29.642105263157895 Y is: -0.7421875 Difference is: 22.0
+[cRIO] PID SAYS: -274
+[cRIO] Previous value minus current: 24.0
+[cRIO] Ratio is: -31.670103092783506 Y is: -0.7578125 Difference is: 24.0
+[cRIO] PID SAYS: -304
+[cRIO] Previous value minus current: 23.0
+[cRIO] Ratio is: -29.737373737373737 Y is: -0.7734375 Difference is: 23.0
+[cRIO] PID SAYS: -337
+[cRIO] Previous value minus current: 25.0
+[cRIO] Ratio is: -31.683168316831683 Y is: -0.7890625 Difference is: 25.0
+[cRIO] PID SAYS: -368
+[cRIO] Previous value minus current: 24.0
+[cRIO] Ratio is: -29.825242718446603 Y is: -0.8046875 Difference is: 24.0
+[cRIO] PID SAYS: -403
+[cRIO] Previous value minus current: 26.0
+[cRIO] Ratio is: -32.310679611650485 Y is: -0.8046875 Difference is: 26.0
+[cRIO] PID SAYS: -437
+[cRIO] Previous value minus current: 25.0
+[cRIO] Ratio is: -30.476190476190474 Y is: -0.8203125 Difference is: 25.0
+[cRIO] PID SAYS: -471
+[cRIO] Previous value minus current: 26.0
+[cRIO] Ratio is: -31.102803738317757 Y is: -0.8359375 Difference is: 26.0
+[cRIO] PID SAYS: -505
+[cRIO] Previous value minus current: 25.0
+[cRIO] Ratio is: -29.906542056074766 Y is: -0.8359375 Difference is: 25.0
+[cRIO] PID SAYS: -542
+[cRIO] Previous value minus current: 27.0
+[cRIO] Ratio is: -31.706422018348626 Y is: -0.8515625 Difference is: 27.0
+[cRIO] PID SAYS: -576
+[cRIO] Previous value minus current: 26.0
+[cRIO] Ratio is: -30.53211009174312 Y is: -0.8515625 Difference is: 26.0
+[cRIO] PID SAYS: -611
+[cRIO] Previous value minus current: 26.0
+[cRIO] Ratio is: -29.98198198198198 Y is: -0.8671875 Difference is: 26.0
+[cRIO] PID SAYS: -648
+[cRIO] Previous value minus current: 28.0
+[cRIO] Ratio is: -31.16521739130435 Y is: -0.8984375 Difference is: 28.0
+[cRIO] PID SAYS: -685
+[cRIO] Previous value minus current: 28.0
+[cRIO] Ratio is: -30.632478632478634 Y is: -0.9140625 Difference is: 28.0
+[cRIO] PID SAYS: -725
+[cRIO] Previous value minus current: 30.0
+[cRIO] Ratio is: -32.26890756302521 Y is: -0.9296875 Difference is: 30.0
+[cRIO] PID SAYS: -762
+[cRIO] Previous value minus current: 28.0
+[cRIO] Ratio is: -30.11764705882353 Y is: -0.9296875 Difference is: 28.0
+[cRIO] PID SAYS: -801
+[cRIO] Previous value minus current: 30.0
+[cRIO] Ratio is: -31.735537190082646 Y is: -0.9453125 Difference is: 30.0
+[cRIO] PID SAYS: -840
+[cRIO] Previous value minus current: 29.0
+[cRIO] Ratio is: -30.677685950413224 Y is: -0.9453125 Difference is: 29.0
+[cRIO] PID SAYS: -882
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -33.300813008130085 Y is: -0.9609375 Difference is: 32.0
+[cRIO] PID SAYS: -923
+[cRIO] Previous value minus current: 31.0
+[cRIO] Ratio is: -32.260162601626014 Y is: -0.9609375 Difference is: 31.0
+[cRIO] PID SAYS: -966
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -33.300813008130085 Y is: -0.9609375 Difference is: 32.0
+[cRIO] PID SAYS: -1009
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.25984251968504 Y is: -0.9921875 Difference is: 33.0
+[cRIO] PID SAYS: -1051
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.25196850393701 Y is: -0.9921875 Difference is: 32.0
+[cRIO] PID SAYS: -1091
+[cRIO] Previous value minus current: 31.0
+[cRIO] Ratio is: -31.0 Y is: -1.0 Difference is: 31.0
+[cRIO] PID SAYS: -1135
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -1177
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -1221
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -1262
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -1308
+[cRIO] Previous value minus current: 37.0
+[cRIO] Ratio is: -37.0 Y is: -1.0 Difference is: 37.0
+[cRIO] PID SAYS: -1347
+[cRIO] Previous value minus current: 31.0
+[cRIO] Ratio is: -31.0 Y is: -1.0 Difference is: 31.0
+[cRIO] PID SAYS: -1391
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -1432
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -1476
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -1517
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -1561
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -1601
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -1643
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -1687
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -1728
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -1773
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -1813
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -1857
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -1898
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -1942
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -1983
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -2026
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -2069
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -2110
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -2152
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -2195
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -2236
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -2279
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -2320
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -2363
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -2405
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -2449
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -2489
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -2532
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -2573
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -2617
+[cRIO] Previous value minus current: 36.0
+[cRIO] Ratio is: -36.0 Y is: -1.0 Difference is: 36.0
+[cRIO] PID SAYS: -2658
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -2699
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -2742
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -2782
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -2826
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -2867
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -2910
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -2952
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -2996
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -3036
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -3079
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -3122
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -3163
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -3205
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -3247
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -3287
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -3329
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -3370
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -3413
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -3454
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -3497
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -3538
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -3579
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -3620
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -3663
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -3704
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -3744
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -3785
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -3825
+[cRIO] Previous value minus current: 31.0
+[cRIO] Ratio is: -31.0 Y is: -1.0 Difference is: 31.0
+[cRIO] PID SAYS: -3867
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -3908
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -3951
+[cRIO] Previous value minus current: 35.0
+[cRIO] Ratio is: -35.0 Y is: -1.0 Difference is: 35.0
+[cRIO] PID SAYS: -3990
+[cRIO] Previous value minus current: 31.0
+[cRIO] Ratio is: -31.0 Y is: -1.0 Difference is: 31.0
+[cRIO] PID SAYS: -4031
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -4070
+[cRIO] Previous value minus current: 31.0
+[cRIO] Ratio is: -31.0 Y is: -1.0 Difference is: 31.0
+[cRIO] PID SAYS: -4112
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -4154
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -34.0 Y is: -1.0 Difference is: 34.0
+[cRIO] PID SAYS: -4194
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -4234
+[cRIO] Previous value minus current: 32.0
+[cRIO] Ratio is: -32.0 Y is: -1.0 Difference is: 32.0
+[cRIO] PID SAYS: -4274
+[cRIO] Previous value minus current: 33.0
+[cRIO] Ratio is: -33.0 Y is: -1.0 Difference is: 33.0
+[cRIO] PID SAYS: -4312
+[cRIO] Previous value minus current: 31.0
+[cRIO] Ratio is: -31.0 Y is: -1.0 Difference is: 31.0
+[cRIO] PID SAYS: -4354
+[cRIO] Previous value minus current: 34.0
+[cRIO] Ratio is: -36.57142857142857 Y is: -0.9296875 Difference is: 34.0
+[cRIO] PID SAYS: -4394
+[cRIO] Previous value minus current: 30.0
+[cRIO] Ratio is: -35.22935779816514 Y is: -0.8515625 Difference is: 30.0
+[cRIO] PID SAYS: -4435
+[cRIO] Previous value minus current: 31.0
+[cRIO] Ratio is: -38.52427184466019 Y is: -0.8046875 Difference is: 31.0
+[cRIO] PID SAYS: -4473
+[cRIO] Previous value minus current: 28.0
+[cRIO] Ratio is: -38.53763440860215 Y is: -0.7265625 Difference is: 28.0
+[cRIO] PID SAYS: -4511
+[cRIO] Previous value minus current: 28.0
+[cRIO] Ratio is: -42.16470588235294 Y is: -0.6640625 Difference is: 28.0
+[cRIO] PID SAYS: -4544
+[cRIO] Previous value minus current: 24.0
+[cRIO] Ratio is: -37.01204819277108 Y is: -0.6484375 Difference is: 24.0
+[cRIO] PID SAYS: -4575
+[cRIO] Previous value minus current: 24.0
+[cRIO] Ratio is: -38.88607594936709 Y is: -0.6171875 Difference is: 24.0
+[cRIO] PID SAYS: -4604
+[cRIO] Previous value minus current: 21.0
+[cRIO] Ratio is: -36.821917808219176 Y is: -0.5703125 Difference is: 21.0
+[cRIO] PID SAYS: -4633
+[cRIO] Previous value minus current: 23.0
+[cRIO] Ratio is: -43.940298507462686 Y is: -0.5234375 Difference is: 23.0
+[cRIO] PID SAYS: -4660
+[cRIO] Previous value minus current: 20.0
+[cRIO] Ratio is: -40.0 Y is: -0.5 Difference is: 20.0
+[cRIO] PID SAYS: -4683
+[cRIO] Previous value minus current: 19.0
+[cRIO] Ratio is: -40.53333333333333 Y is: -0.46875 Difference is: 19.0
+[cRIO] PID SAYS: -4706
+[cRIO] Previous value minus current: 17.0
+[cRIO] Ratio is: -37.51724137931034 Y is: -0.453125 Difference is: 17.0
+[cRIO] PID SAYS: -4727
+[cRIO] Previous value minus current: 15.0
+[cRIO] Ratio is: -34.285714285714285 Y is: -0.4375 Difference is: 15.0
+[cRIO] PID SAYS: -4747
+[cRIO] Previous value minus current: 15.0
+[cRIO] Ratio is: -35.55555555555556 Y is: -0.421875 Difference is: 15.0
+[cRIO] PID SAYS: -4764
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: -33.28 Y is: -0.390625 Difference is: 13.0
+[cRIO] PID SAYS: -4781
+[cRIO] Previous value minus current: 13.0
+[cRIO] Ratio is: -36.17391304347826 Y is: -0.359375 Difference is: 13.0
+[cRIO] PID SAYS: -4796
+[cRIO] Previous value minus current: 12.0
+[cRIO] Ratio is: -34.90909090909091 Y is: -0.34375 Difference is: 12.0
+[cRIO] PID SAYS: -4811
+[cRIO] Previous value minus current: 12.0
+[cRIO] Ratio is: -36.57142857142857 Y is: -0.328125 Difference is: 12.0
+[cRIO] PID SAYS: -4825
+[cRIO] Previous value minus current: 10.0
+[cRIO] Ratio is: -32.0 Y is: -0.3125 Difference is: 10.0
+[cRIO] PID SAYS: -4839
+[cRIO] Previous value minus current: 11.0
+[cRIO] Ratio is: -37.05263157894737 Y is: -0.296875 Difference is: 11.0
+[cRIO] PID SAYS: -4852
+[cRIO] Previous value minus current: 11.0
+[cRIO] Ratio is: -37.05263157894737 Y is: -0.296875 Difference is: 11.0
+[cRIO] PID SAYS: -4864
+[cRIO] Previous value minus current: 9.0
+[cRIO] Ratio is: -36.0 Y is: -0.25 Difference is: 9.0
+[cRIO] PID SAYS: -4876
+[cRIO] Previous value minus current: 9.0
+[cRIO] Ratio is: -41.142857142857146 Y is: -0.21875 Difference is: 9.0
+[cRIO] PID SAYS: -4887
+[cRIO] Previous value minus current: 9.0
+[cRIO] Ratio is: -48.0 Y is: -0.1875 Difference is: 9.0
+[cRIO] PID SAYS: -4897
+[cRIO] Previous value minus current: 7.0
+[cRIO] Ratio is: -49.77777777777778 Y is: -0.140625 Difference is: 7.0
+[cRIO] PID SAYS: -4905
+[cRIO] Previous value minus current: 6.0
+[cRIO] Ratio is: -64.0 Y is: -0.09375 Difference is: 6.0
+[cRIO] PID SAYS: -4911
+[cRIO] Previous value minus current: 5.0
+[cRIO] Ratio is: -80.0 Y is: -0.0625 Difference is: 5.0
+[cRIO] PID SAYS: -4916
+[cRIO] Previous value minus current: 3.0
+[cRIO] Ratio is: -96.0 Y is: -0.03125 Difference is: 3.0
+[cRIO] PID SAYS: -4918
+[cRIO] Previous value minus current: 2.0
+[cRIO] Ratio is: -64.0 Y is: -0.03125 Difference is: 2.0
+[cRIO] PID SAYS: -4917
+[cRIO] Previous value minus current: -1.0
+[cRIO] Ratio is: -7.9375 Y is: 0.12598425196850394 Difference is: -1.0
+[cRIO] PID SAYS: -4916
+[cRIO] Previous value minus current: -1.0
+[cRIO] Ratio is: -4.233333333333333 Y is: 0.23622047244094488 Difference is: -1.0
+[cRIO] PID SAYS: -4914
+[cRIO] Previous value minus current: -3.0
+[cRIO] Ratio is: -11.205882352941176 Y is: 0.2677165354330709 Difference is: -3.0
+[cRIO] PID SAYS: -4910
+[cRIO] Previous value minus current: -3.0
+[cRIO] Ratio is: -9.071428571428571 Y is: 0.33070866141732286 Difference is: -3.0
+[cRIO] PID SAYS: -4905
+[cRIO] Previous value minus current: -3.0
+[cRIO] Ratio is: -8.282608695652174 Y is: 0.36220472440944884 Difference is: -3.0
+[cRIO] PID SAYS: -4900
+[cRIO] Previous value minus current: -5.0
+[cRIO] Ratio is: -12.7 Y is: 0.3937007874015748 Difference is: -5.0
+[cRIO] PID SAYS: -4892
+[cRIO] Previous value minus current: -6.0
+[cRIO] Ratio is: -14.653846153846153 Y is: 0.4094488188976378 Difference is: -6.0
+[cRIO] PID SAYS: -4883
+[cRIO] Previous value minus current: -7.0
+[cRIO] Ratio is: -15.327586206896552 Y is: 0.4566929133858268 Difference is: -7.0
+[cRIO] PID SAYS: -4872
+[cRIO] Previous value minus current: -8.0
+[cRIO] Ratio is: -16.387096774193548 Y is: 0.4881889763779528 Difference is: -8.0
+[cRIO] PID SAYS: -4861
+[cRIO] Previous value minus current: -9.0
+[cRIO] Ratio is: -17.31818181818182 Y is: 0.5196850393700787 Difference is: -9.0
+[cRIO] PID SAYS: -4846
+[cRIO] Previous value minus current: -11.0
+[cRIO] Ratio is: -19.957142857142856 Y is: 0.5511811023622047 Difference is: -11.0
+[cRIO] PID SAYS: -4831
+[cRIO] Previous value minus current: -12.0
+[cRIO] Ratio is: -20.594594594594597 Y is: 0.5826771653543307 Difference is: -12.0
+[cRIO] PID SAYS: -4813
+[cRIO] Previous value minus current: -14.0
+[cRIO] Ratio is: -22.794871794871796 Y is: 0.6141732283464567 Difference is: -14.0
+[cRIO] PID SAYS: -4795
+[cRIO] Previous value minus current: -13.0
+[cRIO] Ratio is: -20.134146341463417 Y is: 0.6456692913385826 Difference is: -13.0
+[cRIO] PID SAYS: -4774
+[cRIO] Previous value minus current: -15.0
+[cRIO] Ratio is: -22.678571428571427 Y is: 0.6614173228346457 Difference is: -15.0
+[cRIO] PID SAYS: -4753
+[cRIO] Previous value minus current: -15.0
+[cRIO] Ratio is: -22.151162790697676 Y is: 0.6771653543307087 Difference is: -15.0
+[cRIO] PID SAYS: -4729
+[cRIO] Previous value minus current: -18.0
+[cRIO] Ratio is: -25.400000000000002 Y is: 0.7086614173228346 Difference is: -18.0
+[cRIO] PID SAYS: -4707
+[cRIO] Previous value minus current: -16.0
+[cRIO] Ratio is: -22.57777777777778 Y is: 0.7086614173228346 Difference is: -16.0
+[cRIO] PID SAYS: -4683
+[cRIO] Previous value minus current: -17.0
+[cRIO] Ratio is: -23.467391304347824 Y is: 0.7244094488188977 Difference is: -17.0
+[cRIO] PID SAYS: -4657
+[cRIO] Previous value minus current: -19.0
+[cRIO] Ratio is: -26.228260869565215 Y is: 0.7244094488188977 Difference is: -19.0
+[cRIO] PID SAYS: -4631
+[cRIO] Previous value minus current: -20.0
+[cRIO] Ratio is: -26.458333333333332 Y is: 0.7559055118110236 Difference is: -20.0
+[cRIO] PID SAYS: -4602
+[cRIO] Previous value minus current: -22.0
+[cRIO] Ratio is: -29.104166666666668 Y is: 0.7559055118110236 Difference is: -22.0
+[cRIO] PID SAYS: -4574
+[cRIO] Previous value minus current: -20.0
+[cRIO] Ratio is: -25.918367346938776 Y is: 0.7716535433070866 Difference is: -20.0
+[cRIO] PID SAYS: -4544
+[cRIO] Previous value minus current: -22.0
+[cRIO] Ratio is: -27.939999999999998 Y is: 0.7874015748031497 Difference is: -22.0
+[cRIO] PID SAYS: -4516
+[cRIO] Previous value minus current: -20.0
+[cRIO] Ratio is: -24.901960784313726 Y is: 0.8031496062992126 Difference is: -20.0
+[cRIO] PID SAYS: -4485
+[cRIO] Previous value minus current: -24.0
+[cRIO] Ratio is: -28.754716981132077 Y is: 0.8346456692913385 Difference is: -24.0
+[cRIO] PID SAYS: -4455
+[cRIO] Previous value minus current: -21.0
+[cRIO] Ratio is: -24.694444444444443 Y is: 0.8503937007874016 Difference is: -21.0
+[cRIO] PID SAYS: -4423
+[cRIO] Previous value minus current: -24.0
+[cRIO] Ratio is: -27.214285714285715 Y is: 0.8818897637795275 Difference is: -24.0
+[cRIO] PID SAYS: -4390
+[cRIO] Previous value minus current: -24.0
+[cRIO] Ratio is: -27.214285714285715 Y is: 0.8818897637795275 Difference is: -24.0
+[cRIO] PID SAYS: -4356
+[cRIO] Previous value minus current: -25.0
+[cRIO] Ratio is: -27.85087719298246 Y is: 0.8976377952755905 Difference is: -25.0
+[cRIO] PID SAYS: -4322
+[cRIO] Previous value minus current: -25.0
+[cRIO] Ratio is: -27.370689655172413 Y is: 0.9133858267716536 Difference is: -25.0
+[cRIO] PID SAYS: -4285
+[cRIO] Previous value minus current: -27.0
+[cRIO] Ratio is: -29.059322033898304 Y is: 0.9291338582677166 Difference is: -27.0
+[cRIO] PID SAYS: -4250
+[cRIO] Previous value minus current: -25.0
+[cRIO] Ratio is: -26.458333333333332 Y is: 0.9448818897637795 Difference is: -25.0
+[cRIO] PID SAYS: -4213
+[cRIO] Previous value minus current: -28.0
+[cRIO] Ratio is: -29.147540983606557 Y is: 0.9606299212598425 Difference is: -28.0
+[cRIO] PID SAYS: -4176
+[cRIO] Previous value minus current: -25.0
+[cRIO] Ratio is: -26.024590163934427 Y is: 0.9606299212598425 Difference is: -25.0
+[cRIO] PID SAYS: -4138
+[cRIO] Previous value minus current: -29.0
+[cRIO] Ratio is: -29.701612903225804 Y is: 0.9763779527559056 Difference is: -29.0
+[cRIO] PID SAYS: -4100
+[cRIO] Previous value minus current: -28.0
+[cRIO] Ratio is: -28.0 Y is: 1.0 Difference is: -28.0
+[cRIO] PID SAYS: -4060
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -4021
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -3979
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -3940
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -3898
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -3858
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -3818
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -3776
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -3735
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -3693
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -3653
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -3611
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -3571
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -3528
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -3487
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -3446
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -3404
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -3364
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -3324
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -3281
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -3241
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -3199
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -3160
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -3118
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -3078
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -3035
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -2995
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -2954
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -2914
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -2872
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -2832
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -2792
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -2750
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -2711
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -2669
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -2629
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -2587
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -2548
+[cRIO] Previous value minus current: -30.0
+[cRIO] Ratio is: -30.0 Y is: 1.0 Difference is: -30.0
+[cRIO] PID SAYS: -2505
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -2465
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -2425
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -2383
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -2343
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -2303
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -2261
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -2222
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -2180
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -2141
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -2099
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -2059
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -2017
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -1976
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -1936
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -1896
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -1854
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -1814
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -1774
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -1733
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -1693
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -1651
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -1611
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -1569
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -1529
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -1487
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -1447
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -1406
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -1364
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -1324
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -1284
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -1242
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -1202
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -1160
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -1120
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -1080
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -1039
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -997
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -957
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -916
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -877
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -834
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -795
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -755
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: -713
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -674
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -631
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -592
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -549
+[cRIO] Previous value minus current: -35.0
+[cRIO] Ratio is: -35.0 Y is: 1.0 Difference is: -35.0
+[cRIO] PID SAYS: -510
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -467
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -428
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: -387
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: -345
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: -304
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -34.925 Y is: 0.9448818897637795 Difference is: -33.0
+[cRIO] PID SAYS: -264
+[cRIO] Previous value minus current: -30.0
+[cRIO] Ratio is: -31.75 Y is: 0.9448818897637795 Difference is: -30.0
+[cRIO] PID SAYS: -223
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -39.07692307692308 Y is: 0.8188976377952756 Difference is: -32.0
+[cRIO] PID SAYS: -184
+[cRIO] Previous value minus current: -28.0
+[cRIO] Ratio is: -37.041666666666664 Y is: 0.7559055118110236 Difference is: -28.0
+[cRIO] PID SAYS: -145
+[cRIO] Previous value minus current: -29.0
+[cRIO] Ratio is: -42.825581395348834 Y is: 0.6771653543307087 Difference is: -29.0
+[cRIO] PID SAYS: -110
+[cRIO] Previous value minus current: -25.0
+[cRIO] Ratio is: -41.77631578947368 Y is: 0.5984251968503937 Difference is: -25.0
+[cRIO] PID SAYS: -76
+[cRIO] Previous value minus current: -24.0
+[cRIO] Ratio is: -46.18181818181819 Y is: 0.5196850393700787 Difference is: -24.0
+[cRIO] PID SAYS: -47
+[cRIO] Previous value minus current: -21.0
+[cRIO] Ratio is: -55.5625 Y is: 0.3779527559055118 Difference is: -21.0
+[cRIO] PID SAYS: -21
+[cRIO] Previous value minus current: -20.0
+[cRIO] Ratio is: -60.476190476190474 Y is: 0.33070866141732286 Difference is: -20.0
+[cRIO] PID SAYS: -2
+[cRIO] Previous value minus current: -13.0
+[cRIO] Ratio is: -55.03333333333333 Y is: 0.23622047244094488 Difference is: -13.0
+[cRIO] PID SAYS: 14
+[cRIO] Previous value minus current: -11.0
+[cRIO] Ratio is: -77.61111111111111 Y is: 0.14173228346456693 Difference is: -11.0
+[cRIO] PID SAYS: 24
+[cRIO] Previous value minus current: -7.0
+[cRIO] Ratio is: -111.125 Y is: 0.06299212598425197 Difference is: -7.0
+[cRIO] PID SAYS: 29
+[cRIO] Previous value minus current: -3.0
+[cRIO] Ratio is: -Infinity Y is: 0.0 Difference is: -3.0
+[cRIO] PID SAYS: 28
+[cRIO] Previous value minus current: 1.0
+[cRIO] Ratio is: Infinity Y is: 0.0 Difference is: 1.0
+[cRIO] PID SAYS: 27
+[cRIO] Previous value minus current: 1.0
+[cRIO] Ratio is: Infinity Y is: 0.0 Difference is: 1.0
+[cRIO] PID SAYS: 28
+[cRIO] Previous value minus current: -1.0
+[cRIO] Ratio is: -2.6458333333333335 Y is: 0.3779527559055118 Difference is: -1.0
+[cRIO] PID SAYS: 33
+[cRIO] Previous value minus current: -4.0
+[cRIO] Ratio is: -6.684210526315789 Y is: 0.5984251968503937 Difference is: -4.0
+[cRIO] PID SAYS: 39
+[cRIO] Previous value minus current: -5.0
+[cRIO] Ratio is: -7.215909090909091 Y is: 0.6929133858267716 Difference is: -5.0
+[cRIO] PID SAYS: 49
+[cRIO] Previous value minus current: -9.0
+[cRIO] Ratio is: -11.205882352941176 Y is: 0.8031496062992126 Difference is: -9.0
+[cRIO] PID SAYS: 65
+[cRIO] Previous value minus current: -11.0
+[cRIO] Ratio is: -12.043103448275861 Y is: 0.9133858267716536 Difference is: -11.0
+[cRIO] PID SAYS: 86
+[cRIO] Previous value minus current: -17.0
+[cRIO] Ratio is: -17.0 Y is: 1.0 Difference is: -17.0
+[cRIO] PID SAYS: 111
+[cRIO] Previous value minus current: -21.0
+[cRIO] Ratio is: -21.0 Y is: 1.0 Difference is: -21.0
+[cRIO] PID SAYS: 143
+[cRIO] Previous value minus current: -25.0
+[cRIO] Ratio is: -25.0 Y is: 1.0 Difference is: -25.0
+[cRIO] PID SAYS: 179
+[cRIO] Previous value minus current: -30.0
+[cRIO] Ratio is: -30.0 Y is: 1.0 Difference is: -30.0
+[cRIO] PID SAYS: 216
+[cRIO] Previous value minus current: -29.0
+[cRIO] Ratio is: -29.0 Y is: 1.0 Difference is: -29.0
+[cRIO] PID SAYS: 258
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: 297
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: 338
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: 377
+[cRIO] Previous value minus current: -31.0
+[cRIO] Ratio is: -31.0 Y is: 1.0 Difference is: -31.0
+[cRIO] PID SAYS: 419
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -34.0 Y is: 1.0 Difference is: -34.0
+[cRIO] PID SAYS: 459
+[cRIO] Previous value minus current: -32.0
+[cRIO] Ratio is: -32.0 Y is: 1.0 Difference is: -32.0
+[cRIO] PID SAYS: 501
+[cRIO] Previous value minus current: -33.0
+[cRIO] Ratio is: -33.0 Y is: 1.0 Difference is: -33.0
+[cRIO] PID SAYS: 543
+[cRIO] Previous value minus current: -34.0
+[cRIO] Ratio is: -37.877192982456144 Y is: 0.8976377952755905 Difference is: -34.0
+[cRIO] PID SAYS: 584
+[cRIO] Previous value minus current: -29.0
+[cRIO] Ratio is: -37.58163265306123 Y is: 0.7716535433070866 Difference is: -29.0
+[cRIO] PID SAYS: 622
+[cRIO] Previous value minus current: -28.0
+[cRIO] Ratio is: -44.45 Y is: 0.6299212598425197 Difference is: -28.0
+[cRIO] PID SAYS: 660
+[cRIO] Previous value minus current: -29.0
+[cRIO] Ratio is: -46.0375 Y is: 0.6299212598425197 Difference is: -29.0
+[cRIO] PID SAYS: 692
+[cRIO] Previous value minus current: -23.0
+[cRIO] Ratio is: -41.72857142857143 Y is: 0.5511811023622047 Difference is: -23.0
+[cRIO] PID SAYS: 722
+[cRIO] Previous value minus current: -22.0
+[cRIO] Ratio is: -60.7391304347826 Y is: 0.36220472440944884 Difference is: -22.0
+[cRIO] PID SAYS: 748
+[cRIO] Previous value minus current: -18.0
+[cRIO] Ratio is: -71.4375 Y is: 0.25196850393700787 Difference is: -18.0
+[cRIO] PID SAYS: 770
+[cRIO] Previous value minus current: -15.0
+[cRIO] Ratio is: -68.03571428571429 Y is: 0.2204724409448819 Difference is: -15.0
+[cRIO] PID SAYS: 784
+[cRIO] Previous value minus current: -9.0
+[cRIO] Ratio is: -63.5 Y is: 0.14173228346456693 Difference is: -9.0
+[cRIO] PID SAYS: 792
+[cRIO] Previous value minus current: -7.0
+[cRIO] Ratio is: -63.5 Y is: 0.11023622047244094 Difference is: -7.0
+[cRIO] PID SAYS: 796
+[cRIO] Previous value minus current: -3.0
+[cRIO] Ratio is: -47.625 Y is: 0.06299212598425197 Difference is: -3.0
+[cRIO] PID SAYS: 796
+[cRIO] Previous value minus current: 1.0
+[cRIO] Ratio is: 63.5 Y is: 0.015748031496062992 Difference is: 1.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+226 (?)
+482
+734
+982
+
+
+252
+248

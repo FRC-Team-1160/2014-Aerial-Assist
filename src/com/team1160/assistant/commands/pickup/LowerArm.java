@@ -13,6 +13,7 @@ public class LowerArm extends CommandBase{
     }
 
     protected void execute() {
+        pickup.lowerArm();
     }
 
     protected boolean isFinished() {

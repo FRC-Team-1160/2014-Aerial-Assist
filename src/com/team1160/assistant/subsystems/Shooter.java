@@ -15,7 +15,6 @@ public class Shooter extends Subsystem implements RobotMap,  PIDSource, PIDOutpu
     protected static Shooter instance;
     protected Talon TalM;
     protected Encoder encoder;
-    //speed controller
     protected final PIDController shootmotorcontrol;
 
     public static Shooter getInstance() {
@@ -63,6 +62,6 @@ public class Shooter extends Subsystem implements RobotMap,  PIDSource, PIDOutpu
     }
 
     public void pidWrite(double d) {
-       TalM.set(shootmotorcontrol.get() +d); 
+       TalM.set(shootmotorcontrol.get() + d); 
     }
 }

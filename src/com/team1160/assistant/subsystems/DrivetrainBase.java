@@ -17,6 +17,7 @@ public abstract class DrivetrainBase extends Subsystem implements RobotMap, PIDO
     protected PIDController pid;
     protected Joystick stick;
     protected SmartDashboard sd;
+    protected static DrivetrainBase instance;
 
     public Joystick getJoystick() {
         if (stick == null) {
@@ -24,15 +25,24 @@ public abstract class DrivetrainBase extends Subsystem implements RobotMap, PIDO
         }
         return stick;
     }
+    
+    public void startEncoder() {
+        pid.enable();
+        enc.start();
+    }
+    
+    public void stopEncoder(){
+        pid.disable();
+        pid.reset();
+        enc.stop();
+        enc.reset();
+    }
 
-    public void driveDist() {
-    }
-    
-    public void startLogging(String side, PIDController p){
+    public void startLogging(String side, PIDController p) {
         SmartDashboard.putData(side, p);
     }
-    public void startLogging(String side, Encoder p){
+
+    public void startLogging(String side, Encoder p) {
         SmartDashboard.putData(side, p);
     }
-    
 }

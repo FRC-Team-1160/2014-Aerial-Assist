@@ -5,8 +5,8 @@ import com.team1160.assistant.commands.Shooter.TensionLetGo;
 import com.team1160.assistant.commands.Shooter.TensionRelease;
 import com.team1160.assistant.commands.pickup.LowerArm;
 import com.team1160.assistant.commands.pickup.RaiseArm;
-import com.team1160.assistant.commands.vision.VisionCommand;
-import com.team1160.assistant.commands.vision.VisionDoNothing;
+//import com.team1160.assistant.commands.vision.VisionCommand;
+//import com.team1160.assistant.commands.vision.VisionDoNothing;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
@@ -22,8 +22,8 @@ public class OI {
 	private Button letGo;
         private Button pickupRaise;
         private Button pickupLower;
-	private Button track;
-	private Button stopTrack;
+	//private Button track;
+	//private Button stopTrack;
 	private static OI instance;
 	// ALLOWS CLASSES TO RETRIEVE INSTANCE OF OI
 	public static OI getInstance() {
@@ -41,8 +41,8 @@ public class OI {
 		releaseTension = new JoystickButton(stick,
 				RobotMap.RELEASE_TENSION_BUT);
 		letGo = new JoystickButton(stick, RobotMap.LET_GO_BUT);
-		track = new JoystickButton(stick, RobotMap.VISION_TRACK_BUT);
-		stopTrack = new JoystickButton(stick, RobotMap.STOP_VISION_TRACK_BUT);
+		//track = new JoystickButton(stick, RobotMap.VISION_TRACK_BUT);
+		//stopTrack = new JoystickButton(stick, RobotMap.STOP_VISION_TRACK_BUT);
                 pickupRaise = new JoystickButton(stick, RobotMap.PICKUP_RAISE_BUT);
                 pickupLower = new JoystickButton(stick, RobotMap.PICKUP_LOWER_BUT);
 		tieButtons();
@@ -51,10 +51,10 @@ public class OI {
 		addTension.whenPressed(new TensionAdd());
 		releaseTension.whenPressed(new TensionRelease());
 		letGo.whenPressed(new TensionLetGo());
-		track.whenPressed(new VisionCommand());
-		stopTrack.whenPressed(new VisionDoNothing());
-                pickupRaise.whenPressed(new RaiseArm());
-                pickupLower.whenPressed(new LowerArm());
+		//track.whenPressed(new VisionCommand());
+		//stopTrack.whenPressed(new VisionDoNothing());
+                pickupRaise.whileHeld(new RaiseArm());
+                pickupLower.whileHeld(new LowerArm());
 	}
 	// JOYSTICK GETTER FUNCTION
 	public Joystick getJoystick() {

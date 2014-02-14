@@ -1,7 +1,5 @@
 package com.team1160.assistant;
 
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
  * to a variable name. This provides flexibility changing wiring, makes checking
@@ -14,15 +12,14 @@ public interface RobotMap {
 
     public static final int LEFT_TAL_MOTOR = 1;
     public static final int RIGHT_TAL_MOTOR = 2;
-    public static double SETPOINT = SmartDashboard.getNumber("Setpoint", 100);
+    public static double SETPOINT = 100;
     // -SHOOT-
     public static final int SHOOT_MOTOR_SLOT = 1;
-    public static final int SHOOT_MOTOR_CHAN = 3;
+    public static final int SHOOT_MOTOR_CHAN = 4;
     public static final double SHOOT_SETPOINT = 0; 
     public static final double SHOOT_TOLERANCE = 0; 
     // -PICKUP-
-    public static final int PICKUP_TAL_MOTOR_SLOT = 1;
-    public static final int PICKUP_TAL_MOTOR_CHAN = 4;
+    public static final int PICKUP_TAL_MOTOR_CHAN = 3;
     public static final double PICKUP_HARDSTOP_H = 0;
     public static final double PICKUP_HARDSTOP_L = 0;
     public static final double PICKUP_STALL = 0;
@@ -39,16 +36,17 @@ public interface RobotMap {
     public static final int ENC_DT_RIGHT_B = 6;
     public static final int ENC_SHOOT_A = 7;
     public static final int ENC_SHOOT_B = 8;
+    public static final double PULSE_DISTANCE = 0.004;
     // ---SPEED VALUES---
     public static final double LET_GO = 0;
     public static final double ADD_TENSION = 0;
     public static final double RELEASE_TENSION = 0;
     public static final double RAISE_ARM = 0.4;
     public static final double LOWER_ARM = -0.4;
-    public static double P = SmartDashboard.getNumber("P", 0.1);
-    public static double I = SmartDashboard.getNumber("I", 0.001);
-    public static double D = SmartDashboard.getNumber("D", 0);
-    public static double ABSOLUTE = SmartDashboard.getNumber("absolute", 0);
+    public static final double P = 0.1;
+    public static final double I = 0.001;
+    public static final double D = 0;
+    public static final double ABSOLUTE = 15;
     
     // ---JOYSTICK BUTTONS---
     public static final int VISION_TRACK_BUT = 2;
