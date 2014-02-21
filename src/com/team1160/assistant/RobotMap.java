@@ -7,55 +7,37 @@ package com.team1160.assistant;
  * floating around.
  */
 public interface RobotMap {
-    // ---MOTORS---
-    // -DRIVE-
-
-    public static final int LEFT_TAL_MOTOR = 1;
-    public static final int RIGHT_TAL_MOTOR = 2;
-    public static double SETPOINT = 100;
-    // -SHOOT-
-    public static final int SHOOT_MOTOR_SLOT = 1;
-    public static final int SHOOT_MOTOR_CHAN = 4;
-    public static final double SHOOT_SETPOINT = 0; 
-    public static final double SHOOT_TOLERANCE = 0; 
-    // -PICKUP-
-    public static final int PICKUP_TAL_MOTOR_CHAN = 3;
-    public static final double PICKUP_HARDSTOP_H = 0;
-    public static final double PICKUP_HARDSTOP_L = 0;
-    public static final double PICKUP_STALL = 0;
-    public static final double PICKUP_TOLERANCE =0; 
-    public static final double PICKUP_SETPOINT = 0; 
+    // ---NUMBER CONSTANTS---
+    public static final double AUTO_TIME = 2.3;
+    public static final double RAISE_ARM = -0.8;
+    public static final double LOWER_ARM = 0.6;
+    public static final double SHOOT_LENGTH = 0.5;
+    public static final double RESET_LENGTH = 1;
     // ---JOYSTICKS---
     public static final int JOY_PORT = 1;
-    // ---ENCODERS---
-    public static final int ENC_PICKUP_A = 1;
-    public static final int ENC_PICKUP_B = 2;
-    public static final int ENC_DT_LEFT_A = 3;
-    public static final int ENC_DT_LEFT_B = 4;
-    public static final int ENC_DT_RIGHT_A = 5;
-    public static final int ENC_DT_RIGHT_B = 6;
-    public static final int ENC_SHOOT_A = 7;
-    public static final int ENC_SHOOT_B = 8;
-    public static final double PULSE_DISTANCE = 0.004;
-    // ---SPEED VALUES---
-    public static final double LET_GO = 0;
-    public static final double ADD_TENSION = 0;
-    public static final double RELEASE_TENSION = 0;
-    public static final double RAISE_ARM = 0.4;
-    public static final double LOWER_ARM = -0.4;
-    public static final double P = 0.1;
-    public static final double I = 0.001;
-    public static final double D = 0;
-    public static final double ABSOLUTE = 15;
-    
-    // ---JOYSTICK BUTTONS---
-    public static final int VISION_TRACK_BUT = 2;
-    public static final int STOP_VISION_TRACK_BUT = 3;
+    public static final int SHOOT_STICK = 2;
+    public static final int FIRE_BUT = 1;
+    public static final int RELOAD_BUT = 2;
     public static final int PICKUP_RAISE_BUT = 4;
     public static final int PICKUP_LOWER_BUT = 5;
-    public static final int RELEASE_TENSION_BUT = 8;
-    public static final int ADD_TENSION_BUT = 9;
-    public static final int LET_GO_BUT = 1;
+    public static final int MAN_PICKUP_U = 4;
+    public static final int MAN_PICKUP_D = 5;
+    public static final int AUTO_BUT = 9;
+    // ---MOTORS---
+    public static final int LEFT_TAL_MOTOR = 1;
+    public static final int RIGHT_TAL_MOTOR = 2;
+    public static final int PICKUP_TAL_MOTOR = 3;
+    public static final int SHOOT_MOTOR_A = 4;
+    public static final int SHOOT_MOTOR_B = 5;
+
+    // -- DIGITAL INPUT --
+    public static final int ENC_DT_RIGHT_A = 1;
+    public static final int ENC_DT_RIGHT_B = 2;
+    public static final int ENC_DT_LEFT_A = 3;
+    public static final int ENC_DT_LEFT_B = 4;
+    public static final int LIMIT_SHOOTER_L = 8;
+    public static final int LIMIT_PICKUP_L = 11;
+    public static final int LIMIT_PICKUP_H = 10;
     /*--------------------------
      * --------WARNING----------
      * ---THE FOLLOWING LINES---

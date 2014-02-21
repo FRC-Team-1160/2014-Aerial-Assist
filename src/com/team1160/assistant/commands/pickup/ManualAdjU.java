@@ -1,19 +1,18 @@
-package com.team1160.assistant.commands.Shooter;
+package com.team1160.assistant.commands.pickup;
 
 import com.team1160.assistant.commands.CommandBase;
 
-public class TensionRelease extends CommandBase {
-
-    public TensionRelease() {
-        requires(shoot);
+public class ManualAdjU extends CommandBase{
+    
+    public ManualAdjU(){
+        requires(pickup);
     }
-
+    
     protected void initialize() {
-        
     }
 
     protected void execute() {
-        shoot.releaseTension();
+        pickup.manualAdjUP();
     }
 
     protected boolean isFinished() {
@@ -21,10 +20,10 @@ public class TensionRelease extends CommandBase {
     }
 
     protected void end() {
-        
+        pickup.stall();
     }
 
     protected void interrupted() {
-        
     }
+
 }

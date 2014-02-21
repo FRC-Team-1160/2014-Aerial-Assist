@@ -8,14 +8,11 @@ import java.util.Random;
  * 
  * Priority   ||| --- Task
  * ---------------------------
- *    1       ||| --- Encoders
- *    2       ||| --- Vision
- *    3       ||| --- Autonomous
- *    4       ||| --- Implement Pickup (motor)
  * 
- * 
- * 
- *    5       ||| --- Remove Pneumatics --- DONE
+ *    0 ---/-/-|-\-\--- Switches for pickup
+ *    1 ---/-/-|-\-\--- Shooter PID Implementation
+ *    2 ---/-/-|-\-\--- Vision stop fix
+ *    3 ---/-/-|-\-\--- More vision debugging
  * 
  */
 public class Version {
@@ -32,11 +29,15 @@ public class Version {
         "That's a dick move.",
         "Don't break shit please.",
         "Look out! He's got a nose!! -add gunshots here-",
-        "When I grow up, I want to go to the moon.",
-        "WHY WAIT? -KICK-",
+        "When I grow up, I want to go to the moon. WHY WAIT? -KICK-",
         "SARAH FLASHER STATUS",
         "ERROR 404: NO VERSION MESSAGE FOUND",
-        "ERROR -2147483647: GET REK'D"
+        "ERROR -2147483647: GET REK'D",
+        "OHHH LAWDY REEKRIS BE WITH YOU OH LAWDY",
+        "MOTHER FUCKIN BOOTLEGGED FIRETWERKS",
+        "NISPY - SAY IT 5 TIMES FAST",
+        "ETHAN MOTHER FUCKING ROOKE that was pretty good",
+        "Ethan.. remember that time when- oh.. nevermind.. we don't talk about that.."
     };
     final double version = 0.2;
     public static Version instance = null;
@@ -52,7 +53,6 @@ public class Version {
         System.out.println("Successful deploy. Currently: v"
                 + version
                 + " Random message: "
-                + RANDOM_MESSAGES[new Random()
-                .nextInt(RANDOM_MESSAGES.length)]);
+                + RANDOM_MESSAGES[new Random().nextInt(RANDOM_MESSAGES.length)]);
     }
 }

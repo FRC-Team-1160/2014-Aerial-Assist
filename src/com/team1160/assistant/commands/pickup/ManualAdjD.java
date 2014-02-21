@@ -1,18 +1,18 @@
-package com.team1160.assistant.commands.Drive;
+package com.team1160.assistant.commands.pickup;
 
 import com.team1160.assistant.commands.CommandBase;
 
-public class ArcadeDriveRight extends CommandBase{
+public class ManualAdjD extends CommandBase{
     
-    public ArcadeDriveRight(){
-        requires(right);
+    public ManualAdjD(){
+        requires(pickup);
     }
-    
+
     protected void initialize() {
     }
 
     protected void execute() {
-        right.arcadeRight();
+        pickup.manualAdjDOWN();
     }
 
     protected boolean isFinished() {
@@ -20,11 +20,10 @@ public class ArcadeDriveRight extends CommandBase{
     }
 
     protected void end() {
+        pickup.stall();
     }
 
     protected void interrupted() {
     }
-    
-    
-    
+
 }

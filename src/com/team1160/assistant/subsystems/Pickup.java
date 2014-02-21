@@ -2,35 +2,20 @@ package com.team1160.assistant.subsystems;
 
 import com.team1160.assistant.RobotMap;
 import com.team1160.assistant.commands.pickup.Stall;
-import edu.wpi.first.wpilibj.Encoder;
-import edu.wpi.first.wpilibj.PIDController;
-import edu.wpi.first.wpilibj.PIDOutput;
+import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
-public class Pickup extends Subsystem implements PIDOutput, RobotMap {
+public class Pickup extends Subsystem implements RobotMap {
 
     protected Talon talPickup;
     protected static Pickup instance;
-    protected Encoder enc;
-    protected PIDController pid;
+    protected DigitalInput limitSwitchL, limitSwitchH;
 
     private Pickup() {
-        talPickup = new Talon(PICKUP_TAL_MOTOR_CHAN);
-        enc = new Encoder(ENC_PICKUP_A, ENC_PICKUP_B, true);
-        enc.start();
-        enc.startLiveWindowMode(); 
-        pid = new PIDController(0, 0, 0, enc, this);
-        pid.startLiveWindowMode();
-        pid.enable();
-        pid.setAbsoluteTolerance(PICKUP_TOLERANCE);
-        pid.setSetpoint(PICKUP_SETPOINT); 
-<<<<<<< HEAD
-        
-        
-        
-=======
->>>>>>> 05d14496e35f81e8da1eefe25a4a2df9775a19bc
+        talPickup = new Talon(PICKUP_TAL_MOTOR);
+        limitSwitchL = new DigitalInput(LIMIT_PICKUP_L);
+        limitSwitchH = new DigitalInput(LIMIT_PICKUP_H);
     }
 
     public static Pickup getInstance() {
@@ -44,36 +29,32 @@ public class Pickup extends Subsystem implements PIDOutput, RobotMap {
         this.setDefaultCommand(new Stall());
     }
 
-//    public void lowerArm() {
-//        while (currentPos > PICKUP_HARDSTOP_L) {
-//            talPickup.set(LOWER_ARM);
-//        }
-//    }
-
     public void stall() {
         talPickup.set(0);
     }
-
-//    public void raiseArm() {
-//        while (currentPos < PICKUP_HARDSTOP_H) {
-//            talPickup.set(RAISE_ARM);
-//        }
-//    }
-
-    public double pidGet() {
-        return enc.pidGet();
-    }
-
-    public void pidWrite(double d) {
-        talPickup.set(talPickup.get()+d);
-    }
     
     public void raiseArm(){
-        talPickup.set(-1);
+        talPickup.set(RAISE_ARM);
     }
     
     public void lowerArm(){
-        talPickup.set(1);
+        talPickup.set(LOWER_ARM);
+    }
+    
+    public boolean getLimitLower(){
+        return limitSwitchL.get();
+    }
+    
+    public boolean getLimitHigh(){
+        return limitSwitchH.get();
+    }
+    
+    public void manualAdjUP(){
+        talPickup.set(-0.5);
+    }
+    
+    public void manualAdjDOWN(){
+        talPickup.set(0.5);
     }
     
 }

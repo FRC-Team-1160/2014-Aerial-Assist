@@ -2,12 +2,12 @@ package com.team1160.assistant.commands.pickup;
 
 import com.team1160.assistant.commands.CommandBase;
 
-public class RaiseArm extends CommandBase{
-    
-    public RaiseArm(){
+public class RaiseArm extends CommandBase {
+
+    public RaiseArm() {
         requires(pickup);
-    } 
-    
+    }
+
     protected void initialize() {
         
     }
@@ -17,13 +17,18 @@ public class RaiseArm extends CommandBase{
     }
 
     protected boolean isFinished() {
-        return true;
+        if (pickup.getLimitHigh()){
+            System.out.println("Pick up is high");
+            return true;
+        }else{
+            return false;
+        }
     }
 
     protected void end() {
+        pickup.stall();
     }
 
     protected void interrupted() {
     }
-
 }
