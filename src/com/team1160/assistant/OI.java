@@ -30,7 +30,6 @@ public class OI implements RobotMap{
 
     private OI() {
         stick = new Joystick(JOY_PORT);
-        shootStick = new Joystick(SHOOT_STICK);
         initButtons();
     }
 
@@ -40,8 +39,8 @@ public class OI implements RobotMap{
         auto = new JoystickButton(stick, AUTO_BUT);
         fire = new JoystickButton(stick, FIRE_BUT);
         reload = new JoystickButton(stick, RELOAD_BUT);
-        manPicku = new JoystickButton(shootStick, MAN_PICKUP_U);
-        manPickd = new JoystickButton(shootStick, MAN_PICKUP_D);
+        manPicku = new JoystickButton(stick, 11);
+        manPickd = new JoystickButton(stick, 10);
         tieButtons();
     }
 
@@ -57,10 +56,6 @@ public class OI implements RobotMap{
 
     public Joystick getJoystick() {
         return stick;
-    }
-    
-    public Joystick getShootJoystick(){
-        return shootStick;
     }
 
 }

@@ -15,7 +15,6 @@ public interface RobotMap {
     public static final double RESET_LENGTH = 1;
     // ---JOYSTICKS---
     public static final int JOY_PORT = 1;
-    public static final int SHOOT_STICK = 2;
     public static final int FIRE_BUT = 1;
     public static final int RELOAD_BUT = 2;
     public static final int PICKUP_RAISE_BUT = 4;
