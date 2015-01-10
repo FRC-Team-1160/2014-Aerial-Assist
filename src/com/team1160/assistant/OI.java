@@ -1,12 +1,9 @@
 package com.team1160.assistant;
 
 import com.team1160.assistant.commands.DriveForward;
-import com.team1160.assistant.commands.Shooter.Reset;
-import com.team1160.assistant.commands.Shooter.Shoot;
-import com.team1160.assistant.commands.pickup.LowerArm;
-import com.team1160.assistant.commands.pickup.ManualAdjD;
-import com.team1160.assistant.commands.pickup.ManualAdjU;
-import com.team1160.assistant.commands.pickup.RaiseArm;
+import com.team1160.assistant.commands.Shooter.*;
+import com.team1160.assistant.commands.pickup.*;
+import com.team1160.assistant.commands.pneumatics.*;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
@@ -18,7 +15,7 @@ import edu.wpi.first.wpilibj.buttons.JoystickButton;
 public class OI implements RobotMap{
 
     private Joystick stick, shootStick;
-    private Button pickupRaise, pickupLower, auto, fire, reload, manPicku, manPickd;
+    private Button extend, retract, pickupRaise, pickupLower, auto, fire, reload, manPicku, manPickd;
     private static OI instance;
 
     public static OI getInstance() {
@@ -34,6 +31,8 @@ public class OI implements RobotMap{
     }
 
     private void initButtons() {
+        extend = new JoystickButton(stick, JOY_EXTEND);
+        retract = new JoystickButton(stick, JOY_RETRACT);
         pickupRaise = new JoystickButton(stick, PICKUP_RAISE_BUT);
         pickupLower = new JoystickButton(stick, PICKUP_LOWER_BUT);
         auto = new JoystickButton(stick, AUTO_BUT);
@@ -45,6 +44,8 @@ public class OI implements RobotMap{
     }
 
     private void tieButtons() {
+        extend.whenPressed(new Extend());
+        retract.whenPressed(new Retract());
         pickupRaise.whenPressed(new RaiseArm());
         pickupLower.whenPressed(new LowerArm());
         auto.whenPressed(new DriveForward());

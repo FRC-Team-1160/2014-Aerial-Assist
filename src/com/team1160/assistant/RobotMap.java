@@ -7,6 +7,20 @@ package com.team1160.assistant;
  * floating around.
  */
 public interface RobotMap {
+    
+    //Pneumatics stuff
+    
+    public static final int LEFT_PORT = 0;
+    public static final int RIGHT_PORT = 0;
+    public static final int PRESSURE_SWITCH = 0;
+    public static final int RELAY_CHANNEL = 0;
+    
+    public static final int JOY_EXTEND = 0;
+    public static final int JOY_RETRACT = 0;
+    
+    
+    
+    
     // ---NUMBER CONSTANTS---
     public static final double AUTO_TIME = 2.3;
     public static final double RAISE_ARM = -0.8;

@@ -18,12 +18,14 @@ public abstract class CommandBase extends Command {
     protected static Shooter shoot;
     //protected static Vision vision;
     protected static Pickup pickup;
+    protected static Pneumatics air;
 
     public static void init() {
         shoot = Shooter.getInstance();
         //vision = Vision.getInstance();
         pickup = Pickup.getInstance();
         dt = DrivetrainBase.getInstance();
+        air = Pneumatics.getInstance();
         OI.getInstance();
     }
 }
